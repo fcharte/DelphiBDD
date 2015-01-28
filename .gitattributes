@@ -1,0 +1,13 @@
+# Tratamiento general de archivos de texto
+* text=auto
+
+# Módulos de proyecto y fuentes
+*.pas            text            -whitespace
+*.fmx            text            -whitespace
+*.dfm            text            -whitespace
+*.dpr            eol=crlf        -whitespace
+*.dproj          eol=crlf        -whitespace
+
+# Módulos binarios
+*.dcr           -text
+*.res           -text
