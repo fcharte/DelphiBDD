@@ -1,11 +1,65 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Hola FireDAC'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object BindSourceEntradas: TBindSourceDB
+    DataSet = FDTableEntradas
+    ScopeMappings = <>
+    Left = 192
+    Top = 400
+  end
+  object FDTableEntradas: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    ConnectionName = 'HolaFireDAC'
+    FetchOptions.AssignedValues = [evLiveWindowParanoic]
+    FetchOptions.LiveWindowParanoic = True
+    UpdateOptions.UpdateTableName = 'Entradas'
+    TableName = 'Entradas'
+    Left = 80
+    Top = 400
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 68
+    Top = 293
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceEntradas
+      FillDisplayFieldName = 'cliente'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'asiento'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 192
+    Top = 296
+  end
 end

@@ -4,9 +4,8 @@ object DataModule1: TDataModule1
   Width = 401
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'Database=HolaFireDAC.sdb'
+      'Database=D:\DelphiBDD\HolaFireDAC\HolaFireDAC.sdb'
       'DriverID=SQLite')
-    Connected = True
     LoginPrompt = False
     Left = 48
     Top = 40
