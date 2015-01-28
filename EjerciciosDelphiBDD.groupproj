@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{238130DC-582E-49E1-A8F6-38F8BD4735E0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HolaFireDAC\HolaFireDAC.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HolaFireDAC">
+        <MSBuild Projects="HolaFireDAC\HolaFireDAC.dproj"/>
+    </Target>
+    <Target Name="HolaFireDAC:Clean">
+        <MSBuild Projects="HolaFireDAC\HolaFireDAC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HolaFireDAC:Make">
+        <MSBuild Projects="HolaFireDAC\HolaFireDAC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HolaFireDAC"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HolaFireDAC:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HolaFireDAC:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
