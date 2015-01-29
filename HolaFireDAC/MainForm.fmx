@@ -13,39 +13,28 @@ object Form2: TForm2
     ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
-    Align = Client
+    Align = Contents
     Size.Width = 640.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 0
+    TabOrder = 1
   end
-  object BindSourceEntradas: TBindSourceDB
-    DataSet = FDTableEntradas
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.FDTableEntradas
     ScopeMappings = <>
-    Left = 192
-    Top = 400
-  end
-  object FDTableEntradas: TFDTable
-    Active = True
-    IndexFieldNames = 'id'
-    ConnectionName = 'HolaFireDAC'
-    FetchOptions.AssignedValues = [evLiveWindowParanoic]
-    FetchOptions.LiveWindowParanoic = True
-    UpdateOptions.UpdateTableName = 'Entradas'
-    TableName = 'Entradas'
-    Left = 80
-    Top = 400
+    Left = 304
+    Top = 224
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
     Left = 68
-    Top = 293
+    Top = 213
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
       Control = ListView1
       Track = True
-      FillDataSource = BindSourceEntradas
+      FillDataSource = BindSourceDB1
       FillDisplayFieldName = 'cliente'
       AutoFill = True
       FillExpressions = <
@@ -56,10 +45,5 @@ object Form2: TForm2
       FillHeaderExpressions = <>
       FillBreakGroups = <>
     end
-  end
-  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
-    Provider = 'FMX'
-    Left = 192
-    Top = 296
   end
 end

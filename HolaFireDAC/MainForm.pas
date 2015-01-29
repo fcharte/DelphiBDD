@@ -16,11 +16,9 @@ uses
 type
   TForm2 = class(TForm)
     ListView1: TListView;
-    BindSourceEntradas: TBindSourceDB;
-    FDTableEntradas: TFDTable;
+    BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkFillControlToField1: TLinkFillControlToField;
-    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
   private
     { Private declarations }
   public
