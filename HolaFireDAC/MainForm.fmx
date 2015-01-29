@@ -17,19 +17,19 @@ object Form2: TForm2
     Size.Width = 640.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.FDTableEntradas
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 216
+    Top = 424
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 68
-    Top = 213
+    Left = 36
+    Top = 421
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
       Control = ListView1
@@ -43,6 +43,7 @@ object Form2: TForm2
           ControlMemberName = 'Detail'
         end>
       FillHeaderExpressions = <>
+      FillHeaderFieldName = 'id'
       FillBreakGroups = <>
     end
   end
