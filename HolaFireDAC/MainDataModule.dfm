@@ -11,10 +11,6 @@ object DataModule1: TDataModule1
     Left = 48
     Top = 40
   end
-  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
-    Left = 48
-    Top = 120
-  end
   object FDTableEntradas: TFDTable
     Active = True
     IndexFieldNames = 'id'

@@ -13,7 +13,6 @@ uses
 type
   TDataModule1 = class(TDataModule)
     FDConnection1: TFDConnection;
-    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
     FDTableEntradas: TFDTable;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
   private
