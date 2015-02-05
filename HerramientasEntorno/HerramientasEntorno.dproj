@@ -1,9 +1,9 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{E7394268-2A57-45F1-9E91-2C746F8C9CD8}</ProjectGuid>
+        <ProjectGuid>{B1332BAE-067B-49E4-B8DC-17F7C0749FA0}</ProjectGuid>
         <ProjectVersion>16.1</ProjectVersion>
         <FrameworkType>FMX</FrameworkType>
-        <MainSource>HolaFireDAC.dpr</MainSource>
+        <MainSource>HerramientasEntorno.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -62,7 +62,7 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <AUP_WRITE_CALENDAR>true</AUP_WRITE_CALENDAR>
         <AUP_WRITE_EXTERNAL_STORAGE>true</AUP_WRITE_EXTERNAL_STORAGE>
-        <SanitizedProjectName>HolaFireDAC</SanitizedProjectName>
+        <SanitizedProjectName>HerramientasEntorno</SanitizedProjectName>
         <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
@@ -222,13 +222,8 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="MainForm.pas">
-            <Form>Form2</Form>
+            <Form>Form3</Form>
             <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="MainDataModule.pas">
-            <Form>DataModule1</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -248,13 +243,13 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">HolaFireDAC.dpr</Source>
+                    <Source Name="MainSource">HerramientasEntorno.dpr</Source>
                 </Source>
             </Delphi.Personality>
             <Deployment>
-                <DeployFile LocalName="Win32\Debug\HolaFireDAC.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\HerramientasEntorno.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>HolaFireDAC.exe</RemoteName>
+                        <RemoteName>HerramientasEntorno.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -598,14 +593,13 @@
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
-                <Platform value="Android" ActiveMobileDevice="rsxe5_android">True</Platform>
+                <Platform value="Android" ActiveMobileDevice="Nexus5">True</Platform>
                 <Platform value="iOSDevice">True</Platform>
                 <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
                 <Platform value="OSX32">True</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
-            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>

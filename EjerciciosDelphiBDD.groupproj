@@ -6,6 +6,9 @@
         <Projects Include="HolaFireDAC\HolaFireDAC.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="HerramientasEntorno\HerramientasEntorno.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -23,14 +26,23 @@
     <Target Name="HolaFireDAC:Make">
         <MSBuild Projects="HolaFireDAC\HolaFireDAC.dproj" Targets="Make"/>
     </Target>
+    <Target Name="HerramientasEntorno">
+        <MSBuild Projects="HerramientasEntorno\HerramientasEntorno.dproj"/>
+    </Target>
+    <Target Name="HerramientasEntorno:Clean">
+        <MSBuild Projects="HerramientasEntorno\HerramientasEntorno.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HerramientasEntorno:Make">
+        <MSBuild Projects="HerramientasEntorno\HerramientasEntorno.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
