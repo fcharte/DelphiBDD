@@ -8,4 +8,32 @@ object Form3: TForm3
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object HolafiredacConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=HolaFireDAC')
+    LoginPrompt = False
+    Left = 75
+    Top = 24
+  end
+  object EntradasTable: TFDQuery
+    Connection = HolafiredacConnection
+    SQL.Strings = (
+      'SELECT * FROM Entradas')
+    Left = 75
+    Top = 72
+  end
+  object DbdemosConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=DBDEMOS')
+    LoginPrompt = False
+    Left = 336
+    Top = 28
+  end
+  object CustomerTable: TFDQuery
+    Connection = DbdemosConnection
+    SQL.Strings = (
+      'SELECT * FROM customer')
+    Left = 336
+    Top = 76
+  end
 end
