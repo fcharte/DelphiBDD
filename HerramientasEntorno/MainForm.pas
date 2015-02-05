@@ -14,10 +14,6 @@ uses
 
 type
   TForm3 = class(TForm)
-    HolafiredacConnection: TFDConnection;
-    EntradasTable: TFDQuery;
-    DbdemosConnection: TFDConnection;
-    CustomerTable: TFDQuery;
   private
     { Private declarations }
   public
