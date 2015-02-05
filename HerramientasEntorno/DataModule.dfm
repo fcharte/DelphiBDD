@@ -19,6 +19,7 @@ object DataModule2: TDataModule2
   object HolafiredacConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=HolaFireDAC')
+    Connected = True
     LoginPrompt = False
     Left = 241
     Top = 48
@@ -26,8 +27,18 @@ object DataModule2: TDataModule2
   object EntradasTable: TFDQuery
     Connection = HolafiredacConnection
     SQL.Strings = (
-      'SELECT * FROM Entradas')
+      'SELECT asiento, cliente FROM Entradas ORDER BY asiento')
     Left = 241
     Top = 96
+    object EntradasTableasiento: TIntegerField
+      FieldName = 'asiento'
+      Origin = 'asiento'
+    end
+    object EntradasTablecliente: TStringField
+      FieldName = 'cliente'
+      Origin = 'cliente'
+      FixedChar = True
+      Size = 50
+    end
   end
 end
