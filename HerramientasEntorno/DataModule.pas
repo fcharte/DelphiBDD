@@ -8,7 +8,8 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MSAcc,
   FireDAC.Phys.MSAccDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
   FireDAC.DApt, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
-  FireDAC.Stan.ExprFuncs, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  FireDAC.Stan.ExprFuncs, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FireDAC.Phys.IB, FireDAC.Phys.IBDef;
 
 type
   TDataModule2 = class(TDataModule)
@@ -18,6 +19,9 @@ type
     EntradasTable: TFDQuery;
     EntradasTableasiento: TIntegerField;
     EntradasTablecliente: TStringField;
+    EmployeeConnection: TFDConnection;
+    Add_emp_projProc: TFDStoredProc;
+    FDConnection1: TFDConnection;
   private
     { Private declarations }
   public

@@ -1,7 +1,7 @@
 object DataModule2: TDataModule2
   OldCreateOrder = False
-  Height = 186
-  Width = 354
+  Height = 367
+  Width = 513
   object DbdemosConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=DBDEMOS')
@@ -40,5 +40,40 @@ object DataModule2: TDataModule2
       FixedChar = True
       Size = 50
     end
+  end
+  object EmployeeConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=EMPLOYEE')
+    Connected = True
+    LoginPrompt = False
+    Left = 243
+    Top = 240
+  end
+  object Add_emp_projProc: TFDStoredProc
+    Connection = EmployeeConnection
+    StoredProcName = 'ADD_EMP_PROJ'
+    Left = 243
+    Top = 288
+    ParamData = <
+      item
+        Position = 1
+        Name = 'EMP_NO'
+        DataType = ftSmallint
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'PROJ_ID'
+        DataType = ftFixedChar
+        ParamType = ptInput
+        Size = 5
+      end>
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=D:\DelphiBDD\HolaFireDAC\HolaFireDAC.sdb'
+      'DriverID=SQLite')
+    Left = 48
+    Top = 256
   end
 end
