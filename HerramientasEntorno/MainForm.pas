@@ -10,10 +10,17 @@ uses
   FireDAC.Phys, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
   FireDAC.Stan.ExprFuncs, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
   FireDAC.DApt, FireDAC.Phys.MSAcc, FireDAC.Phys.MSAccDef, Data.DB,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.Rtti, Fmx.Bind.Grid,
+  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
+  Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
+  FMX.Layouts, FMX.Grid;
 
 type
   TForm3 = class(TForm)
+    Grid1: TGrid;
+    BindSourceDB1: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    BindingsList1: TBindingsList;
   private
     { Private declarations }
   public
@@ -26,5 +33,7 @@ var
 implementation
 
 {$R *.fmx}
+
+uses DataModule;
 
 end.

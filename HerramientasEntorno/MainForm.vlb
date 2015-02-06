@@ -1,0 +1,16 @@
+﻿[Grid1]
+Coordinates=10,10,41,51
+Visible=True
+
+[]
+Coordinates=70,1,82,33
+
+[BindSourceDB1]
+Coordinates=110,10,92,285
+
+[DataModule2.CustomerTable]
+Visible=False
+
+[BindingsList1]
+Coordinates=181,1,82,33
+

@@ -17,8 +17,6 @@ type
     CustomerTable: TFDQuery;
     HolafiredacConnection: TFDConnection;
     EntradasTable: TFDQuery;
-    EntradasTableasiento: TIntegerField;
-    EntradasTablecliente: TStringField;
     EmployeeConnection: TFDConnection;
     Add_emp_projProc: TFDStoredProc;
     FDConnection1: TFDConnection;

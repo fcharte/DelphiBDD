@@ -5,11 +5,13 @@ object DataModule2: TDataModule2
   object DbdemosConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=DBDEMOS')
+    Connected = True
     LoginPrompt = False
     Left = 70
     Top = 42
   end
   object CustomerTable: TFDQuery
+    Active = True
     Connection = DbdemosConnection
     SQL.Strings = (
       'SELECT * FROM customer')
@@ -30,16 +32,6 @@ object DataModule2: TDataModule2
       'SELECT asiento, cliente FROM Entradas ORDER BY asiento')
     Left = 241
     Top = 96
-    object EntradasTableasiento: TIntegerField
-      FieldName = 'asiento'
-      Origin = 'asiento'
-    end
-    object EntradasTablecliente: TStringField
-      FieldName = 'cliente'
-      Origin = 'cliente'
-      FixedChar = True
-      Size = 50
-    end
   end
   object EmployeeConnection: TFDConnection
     Params.Strings = (
