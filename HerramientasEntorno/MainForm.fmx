@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form3'
+  Caption = 'FireDAC'
   ClientHeight = 480
   ClientWidth = 874
   FormFactor.Width = 320
@@ -11,23 +11,37 @@ object Form3: TForm3
   object Grid1: TGrid
     Align = Client
     Size.Width = 874.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 431.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 1
-    RowCount = 55
+    TabOrder = 0
+    RowCount = 0
     RowHeight = 21.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 874.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object CheckBox1: TCheckBox
+      Position.X = 48.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Activar conexi'#243'n'
+      OnChange = CheckBox1Change
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule2.CustomerTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 312
+    Top = 232
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 20
-    Top = 5
+    Left = 148
+    Top = 237
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

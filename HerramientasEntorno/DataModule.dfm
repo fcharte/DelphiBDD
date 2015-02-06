@@ -4,14 +4,13 @@ object DataModule2: TDataModule2
   Width = 513
   object DbdemosConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=DBDEMOS')
-    Connected = True
+      'ConnectionDef=DBDEMOS'
+      'MonitorBy=Remote')
     LoginPrompt = False
     Left = 70
     Top = 42
   end
   object CustomerTable: TFDQuery
-    Active = True
     Connection = DbdemosConnection
     SQL.Strings = (
       'SELECT * FROM customer')
@@ -67,5 +66,15 @@ object DataModule2: TDataModule2
       'DriverID=SQLite')
     Left = 48
     Top = 256
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 240
+    Top = 168
+  end
+  object FDMoniRemoteClientLink1: TFDMoniRemoteClientLink
+    Tracing = True
+    Left = 400
+    Top = 160
   end
 end

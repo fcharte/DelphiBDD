@@ -6,11 +6,24 @@ Visible=True
 Coordinates=70,1,82,33
 
 [BindSourceDB1]
-Coordinates=110,10,92,285
+Coordinates=110,10,140,303
 
 [DataModule2.CustomerTable]
 Visible=False
+Coordinates=110,10,140,303
 
 [BindingsList1]
 Coordinates=181,1,82,33
+
+[DataModule2.Add_emp_projProc]
+Coordinates=420,160,176,51
+
+[DataModule2.EntradasTable]
+Coordinates=430,40,152,87
+
+[Panel1]
+Coordinates=760,180,47,33
+
+[CheckBox1]
+Coordinates=288,1,70,51
 

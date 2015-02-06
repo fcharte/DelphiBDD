@@ -9,7 +9,8 @@ uses
   FireDAC.Phys.MSAccDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
   FireDAC.DApt, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
   FireDAC.Stan.ExprFuncs, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  FireDAC.Phys.IB, FireDAC.Phys.IBDef;
+  FireDAC.Phys.IB, FireDAC.Phys.IBDef, FireDAC.FMXUI.Wait, FireDAC.Comp.UI,
+  FireDAC.Moni.Base, FireDAC.Moni.RemoteClient;
 
 type
   TDataModule2 = class(TDataModule)
@@ -20,6 +21,8 @@ type
     EmployeeConnection: TFDConnection;
     Add_emp_projProc: TFDStoredProc;
     FDConnection1: TFDConnection;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    FDMoniRemoteClientLink1: TFDMoniRemoteClientLink;
   private
     { Private declarations }
   public
