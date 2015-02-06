@@ -23,6 +23,19 @@ type
     FDConnection1: TFDConnection;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDMoniRemoteClientLink1: TFDMoniRemoteClientLink;
+    CustomerTableCustNo: TFloatField;
+    CustomerTableCompany: TWideStringField;
+    CustomerTableAddr1: TWideStringField;
+    CustomerTableAddr2: TWideStringField;
+    CustomerTableCity: TWideStringField;
+    CustomerTableState: TWideStringField;
+    CustomerTableZip: TWideStringField;
+    CustomerTableCountry: TWideStringField;
+    CustomerTablePhone: TWideStringField;
+    CustomerTableFAX: TWideStringField;
+    CustomerTableTaxRate: TFloatField;
+    CustomerTableContact: TWideStringField;
+    CustomerTableLastInvoiceDate: TSQLTimeStampField;
   private
     { Private declarations }
   public
