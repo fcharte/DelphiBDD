@@ -12,6 +12,10 @@ object DataModule2: TDataModule2
     Top = 42
   end
   object CustomerTable: TFDQuery
+    OnCalcFields = CustomerTableCalcFields
+    Aggregates = <
+      item
+      end>
     Connection = DbdemosConnection
     SQL.Strings = (
       'SELECT * FROM customer')
@@ -76,6 +80,11 @@ object DataModule2: TDataModule2
     object CustomerTableLastInvoiceDate: TSQLTimeStampField
       FieldName = 'LastInvoiceDate'
       Origin = 'LastInvoiceDate'
+    end
+    object CustomerTableDaysSinceLastInvoice: TIntegerField
+      FieldKind = fkCalculated
+      FieldName = 'DaysSinceLastInvoice'
+      Calculated = True
     end
   end
   object HolafiredacConnection: TFDConnection

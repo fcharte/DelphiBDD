@@ -8,7 +8,7 @@ Coordinates=109,10,85,87
 Coordinates=236,105,127,33
 
 [CustomerTable]
-Coordinates=10,10,89,285
+Coordinates=10,10,107,303
 
 [FDConnection1]
 Coordinates=108,177,90,33
@@ -66,4 +66,7 @@ Coordinates=419,261,109,33
 
 [CustomerTableContact]
 Coordinates=419,313,127,33
+
+[CustomerTableDaysSinceLastInvoice]
+Coordinates=213,80,198,33
 

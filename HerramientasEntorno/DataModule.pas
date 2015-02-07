@@ -36,6 +36,8 @@ type
     CustomerTableTaxRate: TFloatField;
     CustomerTableContact: TWideStringField;
     CustomerTableLastInvoiceDate: TSQLTimeStampField;
+    CustomerTableDaysSinceLastInvoice: TIntegerField;
+    procedure CustomerTableCalcFields(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -47,8 +49,16 @@ var
 
 implementation
 
+uses DateUtils;
+
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TDataModule2.CustomerTableCalcFields(DataSet: TDataSet);
+begin
+  CustomerTableDaysSinceLastInvoice.Value :=
+       DaysBetween(System.SysUtils.Date, CustomerTableLastInvoiceDate.AsDateTime);
+end;
 
 end.
