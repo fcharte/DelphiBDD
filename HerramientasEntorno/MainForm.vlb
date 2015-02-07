@@ -7,7 +7,7 @@ Coordinates=288,211,116,51
 Visible=False
 
 [BindSourceDB1]
-Coordinates=110,10,140,177
+Coordinates=110,10,148,177
 
 [DataModule2.CustomerTable]
 Visible=False
@@ -26,8 +26,11 @@ Coordinates=288,1,70,51
 Coordinates=269,71,115,51
 
 [Label1]
-Coordinates=60,80,46,51
+Coordinates=470,10,46,51
 
 [DataModule2.]
 Coordinates=420,160,176,51
+
+[MyDataModule.CustomerTable]
+Coordinates=277,141,164,33
 

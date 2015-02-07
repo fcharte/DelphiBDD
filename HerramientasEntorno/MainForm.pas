@@ -16,7 +16,7 @@ uses
   FMX.Layouts, FMX.Grid, FMX.StdCtrls, FMX.DateTimeCtrls;
 
 type
-  TForm3 = class(TForm)
+  TMyForm = class(TForm)
     Grid1: TGrid;
     BindSourceDB1: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
@@ -33,7 +33,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  MyForm: TMyForm;
 
 implementation
 
@@ -41,7 +41,7 @@ implementation
 
 uses DataModule;
 
-procedure TForm3.CheckBox1Change(Sender: TObject);
+procedure TMyForm.CheckBox1Change(Sender: TObject);
 begin
   with MyDataModule.CustomerTable do
   begin

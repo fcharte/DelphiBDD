@@ -222,7 +222,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="MainForm.pas">
-            <Form>Form3</Form>
+            <Form>MyForm</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="DataModule.pas">
