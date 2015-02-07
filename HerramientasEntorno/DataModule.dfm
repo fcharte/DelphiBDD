@@ -18,27 +18,14 @@ object DataModule2: TDataModule2
       end>
     Connection = DbdemosConnection
     SQL.Strings = (
-      'SELECT * FROM customer')
+      'SELECT Company, City, Country, Contact, LastInvoiceDate'
+      'FROM customer'
+      'ORDER BY Country, LastInvoiceDate DESC')
     Left = 70
     Top = 90
-    object CustomerTableCustNo: TFloatField
-      FieldName = 'CustNo'
-      Origin = 'CustNo'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-    end
     object CustomerTableCompany: TWideStringField
       FieldName = 'Company'
       Origin = 'Company'
-      Size = 30
-    end
-    object CustomerTableAddr1: TWideStringField
-      FieldName = 'Addr1'
-      Origin = 'Addr1'
-      Size = 30
-    end
-    object CustomerTableAddr2: TWideStringField
-      FieldName = 'Addr2'
-      Origin = 'Addr2'
       Size = 30
     end
     object CustomerTableCity: TWideStringField
@@ -46,32 +33,9 @@ object DataModule2: TDataModule2
       Origin = 'City'
       Size = 15
     end
-    object CustomerTableState: TWideStringField
-      FieldName = 'State'
-      Origin = 'State'
-    end
-    object CustomerTableZip: TWideStringField
-      FieldName = 'Zip'
-      Origin = 'Zip'
-      Size = 10
-    end
     object CustomerTableCountry: TWideStringField
       FieldName = 'Country'
       Origin = 'Country'
-    end
-    object CustomerTablePhone: TWideStringField
-      FieldName = 'Phone'
-      Origin = 'Phone'
-      Size = 15
-    end
-    object CustomerTableFAX: TWideStringField
-      FieldName = 'FAX'
-      Origin = 'FAX'
-      Size = 15
-    end
-    object CustomerTableTaxRate: TFloatField
-      FieldName = 'TaxRate'
-      Origin = 'TaxRate'
     end
     object CustomerTableContact: TWideStringField
       FieldName = 'Contact'
