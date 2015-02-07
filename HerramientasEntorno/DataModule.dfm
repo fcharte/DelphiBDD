@@ -20,9 +20,17 @@ object DataModule2: TDataModule2
     SQL.Strings = (
       'SELECT Company, City, Country, Contact, LastInvoiceDate'
       'FROM customer'
+      'WHERE LastInvoiceDate > :RefDate'
       'ORDER BY Country, LastInvoiceDate DESC')
     Left = 70
     Top = 90
+    ParamData = <
+      item
+        Name = 'REFDATE'
+        DataType = ftDate
+        ParamType = ptInput
+        Value = 34700d
+      end>
     object CustomerTableCompany: TWideStringField
       FieldName = 'Company'
       Origin = 'Company'

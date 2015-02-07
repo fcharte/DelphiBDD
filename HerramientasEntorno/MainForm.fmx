@@ -30,6 +30,17 @@ object Form3: TForm3
       Text = 'Activar conexi'#243'n'
       OnChange = CheckBox1Change
     end
+    object DateEdit1: TDateEdit
+      Date = 42042.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 13.000000000000000000
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Position.X = 264.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'A partir de fecha'
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule2.CustomerTable

@@ -13,7 +13,7 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.Rtti, Fmx.Bind.Grid,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
   Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
-  FMX.Layouts, FMX.Grid, FMX.StdCtrls;
+  FMX.Layouts, FMX.Grid, FMX.StdCtrls, FMX.DateTimeCtrls;
 
 type
   TForm3 = class(TForm)
@@ -23,6 +23,8 @@ type
     BindingsList1: TBindingsList;
     Panel1: TPanel;
     CheckBox1: TCheckBox;
+    DateEdit1: TDateEdit;
+    Label1: TLabel;
     procedure CheckBox1Change(Sender: TObject);
   private
     { Private declarations }
@@ -41,6 +43,7 @@ uses DataModule;
 
 procedure TForm3.CheckBox1Change(Sender: TObject);
 begin
+  DataModule2.CustomerTable.ParamByName('RefDate').AsDate := DateEdit1.Date;
   DataModule2.CustomerTable.Active := CheckBox1.IsChecked;
 end;
 
