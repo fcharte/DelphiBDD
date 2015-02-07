@@ -16,11 +16,6 @@ type
   TDataModule2 = class(TDataModule)
     DbdemosConnection: TFDConnection;
     CustomerTable: TFDQuery;
-    HolafiredacConnection: TFDConnection;
-    EntradasTable: TFDQuery;
-    EmployeeConnection: TFDConnection;
-    Add_emp_projProc: TFDStoredProc;
-    FDConnection1: TFDConnection;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDMoniRemoteClientLink1: TFDMoniRemoteClientLink;
     CustomerTableCompany: TWideStringField;

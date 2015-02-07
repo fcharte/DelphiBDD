@@ -1,23 +1,8 @@
-﻿[Add_emp_projProc]
-Coordinates=204,10,109,51
-
-[EntradasTable]
-Coordinates=109,10,85,87
-
-[HolafiredacConnection]
-Coordinates=236,105,127,33
-
-[CustomerTable]
+﻿[CustomerTable]
 Coordinates=10,10,107,159
-
-[FDConnection1]
-Coordinates=108,177,90,33
 
 [DbdemosConnection]
 Coordinates=10,305,117,33
-
-[EmployeeConnection]
-Coordinates=323,10,119,33
 
 [FDGUIxWaitCursor1]
 Coordinates=213,80,113,33
@@ -26,7 +11,7 @@ Coordinates=213,80,113,33
 Coordinates=213,80,145,33
 
 []
-Coordinates=213,288,120,33
+Coordinates=108,177,90,33
 
 [CustomerTableLastInvoiceDate]
 Coordinates=213,184,168,33
