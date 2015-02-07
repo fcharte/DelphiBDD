@@ -13,7 +13,7 @@ uses
   FireDAC.Moni.Base, FireDAC.Moni.RemoteClient;
 
 type
-  TDataModule2 = class(TDataModule)
+  TMyDataModule = class(TDataModule)
     DbdemosConnection: TFDConnection;
     CustomerTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
@@ -32,7 +32,7 @@ type
   end;
 
 var
-  DataModule2: TDataModule2;
+  MyDataModule: TMyDataModule;
 
 implementation
 
@@ -42,7 +42,7 @@ uses DateUtils;
 
 {$R *.dfm}
 
-procedure TDataModule2.CustomerTableCalcFields(DataSet: TDataSet);
+procedure TMyDataModule.CustomerTableCalcFields(DataSet: TDataSet);
 begin
   CustomerTableDaysSinceLastInvoice.Value :=
        DaysBetween(System.SysUtils.Date, CustomerTableLastInvoiceDate.AsDateTime);

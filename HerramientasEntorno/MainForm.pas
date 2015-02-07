@@ -43,8 +43,11 @@ uses DataModule;
 
 procedure TForm3.CheckBox1Change(Sender: TObject);
 begin
-  DataModule2.CustomerTable.ParamByName('RefDate').AsDate := DateEdit1.Date;
-  DataModule2.CustomerTable.Active := CheckBox1.IsChecked;
+  with MyDataModule.CustomerTable do
+  begin
+    ParamByName('RefDate').AsDate := DateEdit1.Date;
+    Active := CheckBox1.IsChecked;
+  end;
 end;
 
 end.

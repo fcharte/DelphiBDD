@@ -43,7 +43,7 @@ object Form3: TForm3
     end
   end
   object BindSourceDB1: TBindSourceDB
-    DataSet = DataModule2.CustomerTable
+    DataSet = MyDataModule.CustomerTable
     ScopeMappings = <>
     Left = 312
     Top = 232
