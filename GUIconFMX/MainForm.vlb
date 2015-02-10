@@ -7,3 +7,13 @@ Coordinates=66,1,70,51
 [Grid1]
 Coordinates=17,52,41,51
 
+[MyDataModule.CustomerTable]
+Coordinates=155,1,148,303
+Visible=False
+
+[BindSourceDB1]
+Coordinates=155,1,148,303
+
+[BindingsList1]
+Coordinates=136,71,82,33
+

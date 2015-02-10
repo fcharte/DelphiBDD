@@ -20,7 +20,7 @@ object Form4: TForm4
       Size.Width = 161.000000000000000000
       Size.Height = 19.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 1
+      TabOrder = 0
       Text = 'Conectar/Desconectar'
     end
   end
@@ -29,8 +29,26 @@ object Form4: TForm4
     Size.Width = 640.000000000000000000
     Size.Height = 423.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 2
-    RowCount = 100
+    TabOrder = 1
+    RowCount = 0
     RowHeight = 21.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MyDataModule.CustomerTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
   end
 end

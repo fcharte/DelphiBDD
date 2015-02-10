@@ -11,7 +11,7 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
-  TDataModule2 = class(TDataModule)
+  TMyDataModule = class(TDataModule)
     DbdemosConnection: TFDConnection;
     CustomerTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
@@ -22,7 +22,7 @@ type
   end;
 
 var
-  DataModule2: TDataModule2;
+  MyDataModule: TMyDataModule;
 
 implementation
 

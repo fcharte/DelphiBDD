@@ -1,10 +1,11 @@
-object DataModule2: TDataModule2
+object MyDataModule: TMyDataModule
   OldCreateOrder = False
   Height = 259
   Width = 383
   object DbdemosConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=DBDEMOS')
+    Connected = True
     LoginPrompt = False
     Left = 67
     Top = 31
