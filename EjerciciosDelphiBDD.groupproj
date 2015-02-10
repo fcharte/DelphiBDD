@@ -9,6 +9,9 @@
         <Projects Include="HerramientasEntorno\HerramientasEntorno.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="GUIconVCL\GUIconVCL.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="HerramientasEntorno:Make">
         <MSBuild Projects="HerramientasEntorno\HerramientasEntorno.dproj" Targets="Make"/>
     </Target>
+    <Target Name="GUIconVCL">
+        <MSBuild Projects="GUIconVCL\GUIconVCL.dproj"/>
+    </Target>
+    <Target Name="GUIconVCL:Clean">
+        <MSBuild Projects="GUIconVCL\GUIconVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GUIconVCL:Make">
+        <MSBuild Projects="GUIconVCL\GUIconVCL.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
