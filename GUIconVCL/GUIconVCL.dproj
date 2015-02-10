@@ -88,7 +88,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="DataModule.pas">
-            <Form>DataModule2</Form>
+            <Form>MyDataModule</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>

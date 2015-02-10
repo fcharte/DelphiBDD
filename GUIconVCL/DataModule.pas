@@ -11,10 +11,11 @@ uses
   FireDAC.VCLUI.Wait, FireDAC.Comp.UI;
 
 type
-  TDataModule2 = class(TDataModule)
+  TMyDataModule = class(TDataModule)
     DbdemosConnection: TFDConnection;
     CustomerTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    CustomerDataSource: TDataSource;
   private
     { Private declarations }
   public
@@ -22,7 +23,7 @@ type
   end;
 
 var
-  DataModule2: TDataModule2;
+  MyDataModule: TMyDataModule;
 
 implementation
 

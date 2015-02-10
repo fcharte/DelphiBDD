@@ -19,6 +19,7 @@ object Form3: TForm3
     Width = 635
     Height = 295
     Align = alClient
+    DataSource = MyDataModule.CustomerDataSource
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
