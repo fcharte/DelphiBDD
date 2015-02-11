@@ -5,7 +5,6 @@ object MyDataModule: TMyDataModule
   object DbdemosConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=DBDEMOS')
-    Connected = True
     LoginPrompt = False
     Left = 48
     Top = 40
