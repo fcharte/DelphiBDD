@@ -8,7 +8,7 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MSAcc,
   FireDAC.Phys.MSAccDef, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
   FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  FireDAC.VCLUI.Wait, FireDAC.Comp.UI;
+  FireDAC.VCLUI.Wait, FireDAC.Comp.UI, FireDAC.Phys.ODBCBase;
 
 type
   TMyDataModule = class(TDataModule)
@@ -16,6 +16,7 @@ type
     CustomerTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     CustomerDataSource: TDataSource;
+    FDPhysMSAccessDriverLink1: TFDPhysMSAccessDriverLink;
   private
     { Private declarations }
   public

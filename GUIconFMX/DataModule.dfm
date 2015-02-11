@@ -22,4 +22,8 @@ object MyDataModule: TMyDataModule
     Left = 240
     Top = 32
   end
+  object FDPhysMSAccessDriverLink1: TFDPhysMSAccessDriverLink
+    Left = 256
+    Top = 96
+  end
 end
