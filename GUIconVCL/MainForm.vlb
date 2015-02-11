@@ -1,12 +1,13 @@
 ﻿[DBGrid1]
-Coordinates=115,71,56,33
+Coordinates=60,20,56,33
 Visible=True
 
 [Panel1]
-Coordinates=176,10,47,51
+Coordinates=130,10,47,51
 
 [CheckBox1]
-Coordinates=10,71,95,51
+Coordinates=540,10,95,69
+ExplicitSubNodes=Checked
 
 [DataModule2.CustomerTable]
 Coordinates=10,10,156,51
@@ -18,8 +19,12 @@ Coordinates=374,1,82,33
 Coordinates=185,80,144,51
 
 [MyDataModule.CustomerTable]
-Coordinates=190,80,164,285
+Coordinates=270,10,164,303
+ExplicitSubNodes=Active
 
 [MyDataModule.CustomerDataSource]
-Coordinates=373,1,195,285
+Coordinates=242,1,195,285
+
+[BindingsList1]
+Coordinates=0,0,82,33
 

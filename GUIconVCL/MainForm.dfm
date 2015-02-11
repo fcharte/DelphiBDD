@@ -47,4 +47,10 @@ object Form3: TForm3
       OnClick = CheckBox1Click
     end
   end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+  end
 end
