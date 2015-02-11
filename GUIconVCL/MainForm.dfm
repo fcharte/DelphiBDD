@@ -44,6 +44,7 @@ object Form3: TForm3
       Height = 17
       Caption = 'Conectar/Desconectar'
       TabOrder = 0
+      OnClick = CheckBox1Click
     end
   end
 end

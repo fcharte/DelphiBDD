@@ -12,6 +12,7 @@ type
     DBGrid1: TDBGrid;
     Panel1: TPanel;
     CheckBox1: TCheckBox;
+    procedure CheckBox1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,5 +27,10 @@ implementation
 {$R *.dfm}
 
 uses DataModule;
+
+procedure TForm3.CheckBox1Click(Sender: TObject);
+begin
+  DBGrid1.DataSource.DataSet.Active := CheckBox1.Checked;
+end;
 
 end.

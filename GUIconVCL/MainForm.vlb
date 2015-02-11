@@ -18,8 +18,8 @@ Coordinates=374,1,82,33
 Coordinates=185,80,144,51
 
 [MyDataModule.CustomerTable]
-Coordinates=214,1,164,285
+Coordinates=190,80,164,285
 
 [MyDataModule.CustomerDataSource]
-Coordinates=0,0,195,51
+Coordinates=373,1,195,285
 
