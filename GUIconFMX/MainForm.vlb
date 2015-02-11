@@ -2,21 +2,33 @@
 Coordinates=0,0,47,33
 
 [CheckBox1]
-Coordinates=66,1,70,51
+Coordinates=570,10,70,69
+ExplicitSubNodes=IsChecked
 
 [Grid1]
 Coordinates=17,52,41,51
 
-[MyDataModule.CustomerTable]
-Coordinates=155,1,148,303
-Visible=False
-
 [BindSourceDB1]
-Coordinates=155,1,148,303
+Coordinates=155,1,92,285
 
 [BindingsList1]
 Coordinates=136,71,82,33
 
 [FloatAnimation1]
 Coordinates=341,1,95,33
+
+[MyDataModule.CustomerTable]
+Coordinates=300,10,164,321
+ExplicitSubNodes=Active
+
+[MyDataModule.CustomerDataSource]
+Coordinates=67,305,195,285
+
+[LinkControlToPropertyActive]
+LayerNames=
+
+[Module Settings]
+ModelLayerNames=
+ActiveLayerNames=
+EditingLayerName=
 

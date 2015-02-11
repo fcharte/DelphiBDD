@@ -22,6 +22,7 @@ object Form4: TForm4
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Conectar/Desconectar'
+      OnChange = CheckBox1Change
       object FloatAnimation1: TFloatAnimation
         Enabled = True
         Duration = 1.000000000000000000
@@ -56,6 +57,21 @@ object Form4: TForm4
       DataSource = BindSourceDB1
       GridControl = Grid1
       Columns = <>
+    end
+    object LinkControlToPropertyActive: TLinkControlToProperty
+      Category = 'Quick Bindings'
+      Control = CheckBox1
+      Track = True
+      Component = MyDataModule.CustomerTable
+      ComponentProperty = 'Active'
+    end
+    object LinkControlToPropertyActive2: TLinkControlToProperty
+      Category = 'Quick Bindings'
+      Control = CheckBox1
+      Track = True
+      Component = MyDataModule.CustomerTable
+      ComponentProperty = 'Active'
+      InitializeControlValue = False
     end
   end
 end

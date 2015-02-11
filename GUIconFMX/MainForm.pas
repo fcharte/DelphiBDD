@@ -18,6 +18,9 @@ type
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindingsList1: TBindingsList;
     FloatAnimation1: TFloatAnimation;
+    LinkControlToPropertyActive: TLinkControlToProperty;
+    LinkControlToPropertyActive2: TLinkControlToProperty;
+    procedure CheckBox1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,5 +35,10 @@ implementation
 {$R *.fmx}
 
 uses DataModule;
+
+procedure TForm4.CheckBox1Change(Sender: TObject);
+begin
+  MyDataModule.CustomerTable.Active := CheckBox1.IsChecked;
+end;
 
 end.
