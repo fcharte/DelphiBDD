@@ -22,6 +22,13 @@ object Form4: TForm4
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Conectar/Desconectar'
+      object FloatAnimation1: TFloatAnimation
+        Enabled = True
+        Duration = 1.000000000000000000
+        PropertyName = 'Opacity'
+        StartValue = 0.000000000000000000
+        StopValue = 1.000000000000000000
+      end
     end
   end
   object Grid1: TGrid
@@ -42,8 +49,8 @@ object Form4: TForm4
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 20
-    Top = 5
+    Left = 172
+    Top = 221
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
