@@ -14,7 +14,9 @@ type
     Panel1: TPanel;
     CheckBox1: TCheckBox;
     BindingsList1: TBindingsList;
+    Button1: TButton;
     procedure CheckBox1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,7 +30,12 @@ implementation
 
 {$R *.dfm}
 
-uses DataModule;
+uses DataModule, DataNavigation;
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  DataNavigation.frmNavegacion.ShowModal;
+end;
 
 procedure TForm3.CheckBox1Click(Sender: TObject);
 begin

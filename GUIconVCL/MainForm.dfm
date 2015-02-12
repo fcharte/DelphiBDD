@@ -46,6 +46,15 @@ object Form3: TForm3
       TabOrder = 0
       OnClick = CheckBox1Click
     end
+    object Button1: TButton
+      Left = 416
+      Top = 10
+      Width = 161
+      Height = 25
+      Caption = 'Abrir formulario navegaci'#243'n'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
   end
   object BindingsList1: TBindingsList
     Methods = <>
