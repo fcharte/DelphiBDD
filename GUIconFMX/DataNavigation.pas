@@ -4,10 +4,23 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Controls,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, FMX.Layouts,
+  Fmx.Bind.Navigator, Data.Bind.DBScope, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit;
 
 type
   TfrmNavegacion = class(TForm)
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    BindSourceDB1: TBindSourceDB;
+    LinkControlToFieldCompany: TLinkControlToField;
+    NavigatorBindSourceDB1: TBindNavigator;
+    BindingsList1: TBindingsList;
+    LinkControlToField1: TLinkControlToField;
   private
     { Private declarations }
   public
