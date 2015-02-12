@@ -15,14 +15,14 @@ Visible=False
 Coordinates=170,1,82,33
 
 [Label1]
-Coordinates=189,1,46,51
+Coordinates=270,210,46,51
 
 [Edit2]
-Coordinates=189,71,40,51
+Coordinates=220,90,40,51
 Visible=True
 
 [NavigatorBindSourceDB1]
-Coordinates=170,141,140,51
+Coordinates=270,0,140,51
 
 [Label2]
 Coordinates=189,211,46,51
