@@ -20,6 +20,7 @@ Coordinates=341,1,95,33
 [MyDataModule.CustomerTable]
 Coordinates=300,10,164,321
 ExplicitSubNodes=Active
+Visible=False
 
 [MyDataModule.CustomerDataSource]
 Coordinates=67,305,195,285

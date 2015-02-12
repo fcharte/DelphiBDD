@@ -20,7 +20,9 @@ type
     FloatAnimation1: TFloatAnimation;
     LinkControlToPropertyActive: TLinkControlToProperty;
     LinkControlToPropertyActive2: TLinkControlToProperty;
+    Button1: TButton;
     procedure CheckBox1Change(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,7 +36,12 @@ implementation
 
 {$R *.fmx}
 
-uses DataModule;
+uses DataModule, DataNavigation;
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+  DataNavigation.frmNavegacion.ShowModal;
+end;
 
 procedure TForm4.CheckBox1Change(Sender: TObject);
 begin

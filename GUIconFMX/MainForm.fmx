@@ -31,6 +31,16 @@ object Form4: TForm4
         StopValue = 1.000000000000000000
       end
     end
+    object Button1: TButton
+      Position.X = 376.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Abrir formulario navegaci'#243'n'
+      OnClick = Button1Click
+    end
   end
   object Grid1: TGrid
     Align = Client
