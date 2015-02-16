@@ -18,8 +18,6 @@ type
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindingsList1: TBindingsList;
     FloatAnimation1: TFloatAnimation;
-    LinkControlToPropertyActive: TLinkControlToProperty;
-    LinkControlToPropertyActive2: TLinkControlToProperty;
     Button1: TButton;
     procedure CheckBox1Change(Sender: TObject);
     procedure Button1Click(Sender: TObject);

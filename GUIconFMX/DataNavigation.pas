@@ -8,7 +8,7 @@ uses
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Controls,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, FMX.Layouts,
   Fmx.Bind.Navigator, Data.Bind.DBScope, FMX.StdCtrls,
-  FMX.Controls.Presentation, FMX.Edit;
+  FMX.Controls.Presentation, FMX.Edit, FMX.ComboEdit, FMX.CalendarEdit;
 
 type
   TfrmNavegacion = class(TForm)
@@ -21,6 +21,9 @@ type
     NavigatorBindSourceDB1: TBindNavigator;
     BindingsList1: TBindingsList;
     LinkControlToField1: TLinkControlToField;
+    CalendarEditLastInvoiceDate: TCalendarEdit;
+    LabelLastInvoiceDate: TLabel;
+    LinkControlToFieldLastInvoiceDate: TLinkControlToField;
   private
     { Private declarations }
   public

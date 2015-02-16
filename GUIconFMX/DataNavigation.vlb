@@ -11,14 +11,23 @@ Coordinates=40,70,46,51
 Coordinates=137,1,46,51
 
 [BindSourceDB1]
-Coordinates=118,71,92,285
-
-[MyDataModule.CustomerTable]
-Visible=False
-
-[NavigatorBindSourceDB1]
-Coordinates=248,1,140,51
+Coordinates=118,71,107,159
 
 [BindingsList1]
 Coordinates=248,71,82,33
+
+[MyDataModule.CustomerTable]
+Coordinates=426,1,164,51
+
+[CalendarEditLastInvoiceDate]
+Coordinates=263,71,156,51
+
+[LabelLastInvoiceDate]
+Coordinates=69,159,120,51
+
+[]
+Coordinates=263,141,82,33
+
+[NavigatorBindSourceDB1]
+Coordinates=118,1,140,51
 

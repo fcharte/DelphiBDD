@@ -37,7 +37,7 @@ object Form4: TForm4
       Size.Width = 193.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
+      TabOrder = 1
       Text = 'Abrir formulario navegaci'#243'n'
       OnClick = Button1Click
     end
@@ -54,8 +54,8 @@ object Form4: TForm4
   object BindSourceDB1: TBindSourceDB
     DataSet = MyDataModule.CustomerTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 40
+    Top = 296
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -67,21 +67,6 @@ object Form4: TForm4
       DataSource = BindSourceDB1
       GridControl = Grid1
       Columns = <>
-    end
-    object LinkControlToPropertyActive: TLinkControlToProperty
-      Category = 'Quick Bindings'
-      Control = CheckBox1
-      Track = True
-      Component = MyDataModule.CustomerTable
-      ComponentProperty = 'Active'
-    end
-    object LinkControlToPropertyActive2: TLinkControlToProperty
-      Category = 'Quick Bindings'
-      Control = CheckBox1
-      Track = True
-      Component = MyDataModule.CustomerTable
-      ComponentProperty = 'Active'
-      InitializeControlValue = False
     end
   end
 end

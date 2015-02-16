@@ -49,11 +49,24 @@ object frmNavegacion: TfrmNavegacion
     xRadius = 4.000000000000000000
     yRadius = 4.000000000000000000
   end
+  object CalendarEditLastInvoiceDate: TCalendarEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Cursor = crIBeam
+    Date = 42051.000000000000000000
+    Position.X = 272.000000000000000000
+    Position.Y = 232.000000000000000000
+    object LabelLastInvoiceDate: TLabel
+      Position.Y = -16.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'LastInvoiceDate'
+    end
+  end
   object BindSourceDB1: TBindSourceDB
     DataSet = MyDataModule.CustomerTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 136
+    Top = 312
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -72,6 +85,13 @@ object frmNavegacion: TfrmNavegacion
       DataSource = BindSourceDB1
       FieldName = 'City'
       Control = Edit1
+      Track = False
+    end
+    object LinkControlToFieldLastInvoiceDate: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'LastInvoiceDate'
+      Control = CalendarEditLastInvoiceDate
       Track = False
     end
   end
