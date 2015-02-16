@@ -34,9 +34,6 @@ object Form3: TForm3
     Height = 41
     Align = alTop
     TabOrder = 1
-    ExplicitLeft = 232
-    ExplicitTop = 168
-    ExplicitWidth = 185
     object CheckBox1: TCheckBox
       Left = 16
       Top = 13
@@ -59,7 +56,7 @@ object Form3: TForm3
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 20
-    Top = 5
+    Left = 76
+    Top = 181
   end
 end
