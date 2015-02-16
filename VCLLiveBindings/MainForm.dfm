@@ -2,7 +2,7 @@ object Form5: TForm5
   Left = 0
   Top = 0
   Caption = 'LiveBindings con VCL'
-  ClientHeight = 336
+  ClientHeight = 263
   ClientWidth = 555
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -827,6 +827,19 @@ object Form5: TForm5
       'parturient montes, nascetur ridiculus mus. Sed vestibulum '
       'bibendum sodales.Mauris consectetur ipsum')
     TabOrder = 3
+  end
+  object NavigatorPrototypeBindSource1: TBindNavigator
+    Left = 0
+    Top = 238
+    Width = 555
+    Height = 25
+    DataSource = PrototypeBindSource1
+    Align = alBottom
+    Orientation = orHorizontal
+    TabOrder = 4
+    ExplicitLeft = 168
+    ExplicitTop = 136
+    ExplicitWidth = 240
   end
   object PrototypeBindSource1: TPrototypeBindSource
     AutoActivate = True

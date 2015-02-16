@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.Bind.GenData, System.Rtti,
   System.Bindings.Outputs, Vcl.Bind.Editors, Data.Bind.EngExt,
   Vcl.Bind.DBEngExt, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Mask, Data.Bind.Components,
-  Data.Bind.ObjectScope;
+  Data.Bind.ObjectScope, Data.Bind.Controls, Vcl.Buttons, Vcl.Bind.Navigator;
 
 type
   TForm5 = class(TForm)
@@ -24,6 +24,7 @@ type
     LinkControlToFieldContactBitmap1: TLinkControlToField;
     MemoStringsField1: TMemo;
     LinkControlToFieldStringsField1: TLinkControlToField;
+    NavigatorPrototypeBindSource1: TBindNavigator;
   private
     { Private declarations }
   public

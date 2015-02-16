@@ -1,5 +1,5 @@
 ﻿[PrototypeBindSource1]
-Coordinates=0,0,125,141
+Coordinates=230,40,125,141
 
 [BindingsList1]
 Coordinates=144,71,82,33
@@ -8,20 +8,23 @@ Coordinates=144,71,82,33
 Coordinates=144,1,105,51
 
 [LabeledEditContactName]
-Coordinates=144,1,139,51
+Coordinates=40,30,139,51
 
 [LabeledEditContactTitle1]
-Coordinates=144,71,137,51
+Coordinates=40,120,137,51
 
 [MaskEditCurrencyField1]
-Coordinates=144,141,134,51
+Coordinates=430,90,134,51
 
 [Label1]
-Coordinates=95,160,46,51
+Coordinates=770,210,46,51
 
 [ImageContactBitmap1]
-Coordinates=36,160,123,51
+Coordinates=410,20,123,51
 
 [MemoStringsField1]
-Coordinates=321,1,109,51
+Coordinates=420,170,109,51
+
+[NavigatorPrototypeBindSource1]
+Coordinates=323,219,173,51
 
