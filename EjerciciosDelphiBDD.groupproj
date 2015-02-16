@@ -15,6 +15,9 @@
         <Projects Include="GUIconFMX\GUIconFMX.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="VCLLiveBindings\VCLLiveBindings.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
     <Target Name="GUIconFMX:Make">
         <MSBuild Projects="GUIconFMX\GUIconFMX.dproj" Targets="Make"/>
     </Target>
+    <Target Name="VCLLiveBindings">
+        <MSBuild Projects="VCLLiveBindings\VCLLiveBindings.dproj"/>
+    </Target>
+    <Target Name="VCLLiveBindings:Clean">
+        <MSBuild Projects="VCLLiveBindings\VCLLiveBindings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLLiveBindings:Make">
+        <MSBuild Projects="VCLLiveBindings\VCLLiveBindings.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
