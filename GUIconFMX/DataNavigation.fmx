@@ -54,8 +54,8 @@ object frmNavegacion: TfrmNavegacion
     TabOrder = 13
     Cursor = crIBeam
     Date = 42051.000000000000000000
-    Position.X = 272.000000000000000000
-    Position.Y = 232.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 200.000000000000000000
     object LabelLastInvoiceDate: TLabel
       Position.Y = -16.000000000000000000
       TextSettings.WordWrap = False
@@ -71,8 +71,8 @@ object frmNavegacion: TfrmNavegacion
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 60
-    Top = 213
+    Left = 52
+    Top = 349
     object LinkControlToFieldCompany: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
