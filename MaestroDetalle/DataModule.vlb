@@ -1,0 +1,12 @@
+﻿[OrdersTable]
+Coordinates=0,0,81,429
+
+[DbdemosConnection]
+Coordinates=94,1,117,33
+
+[ItemsTable]
+Coordinates=94,1,68,141
+
+[FDGUIxWaitCursor1]
+Coordinates=181,1,113,33
+
