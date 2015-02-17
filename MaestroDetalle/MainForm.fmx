@@ -2,8 +2,8 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Relaci'#243'n maestro/detalle'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 353
+  ClientWidth = 630
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -43,7 +43,7 @@ object frmMain: TfrmMain
   end
   object EditCustomerName: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 10
+    TabOrder = 9
     Text = 'Sight Diver'
     Position.X = 136.000000000000000000
     Position.Y = 40.000000000000000000
@@ -55,7 +55,7 @@ object frmMain: TfrmMain
   end
   object CalendarEditSaleDate: TCalendarEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 11
+    TabOrder = 10
     Cursor = crIBeam
     Date = 32245.000000000000000000
     Position.X = 248.000000000000000000
@@ -69,14 +69,14 @@ object frmMain: TfrmMain
   object BindSourceDB1: TBindSourceDB
     DataSet = dmMaestroDetalle.OrdersTable
     ScopeMappings = <>
-    Left = 32
-    Top = 304
+    Left = 64
+    Top = 256
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 52
-    Top = 373
+    Left = 212
+    Top = 253
     object LinkControlToFieldOrderNo: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
@@ -108,7 +108,7 @@ object frmMain: TfrmMain
   object BindSourceDB2: TBindSourceDB
     DataSet = dmMaestroDetalle.ItemsTable
     ScopeMappings = <>
-    Left = 144
-    Top = 416
+    Left = 344
+    Top = 256
   end
 end

@@ -51,8 +51,8 @@ object dmMaestroDetalle: TdmMaestroDetalle
     SQL.Strings = (
       'SELECT * FROM items'
       'WHERE OrderNo = :OrderNo')
-    Left = 274
-    Top = 59
+    Left = 74
+    Top = 243
     ParamData = <
       item
         Name = 'ORDERNO'
@@ -64,8 +64,8 @@ object dmMaestroDetalle: TdmMaestroDetalle
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 232
-    Top = 144
+    Left = 184
+    Top = 40
   end
   object dsOrders: TDataSource
     DataSet = OrdersTable
@@ -77,7 +77,7 @@ object dmMaestroDetalle: TdmMaestroDetalle
     Connection = DbdemosConnection
     SQL.Strings = (
       'SELECT * FROM customer')
-    Left = 350
-    Top = 220
+    Left = 174
+    Top = 156
   end
 end
