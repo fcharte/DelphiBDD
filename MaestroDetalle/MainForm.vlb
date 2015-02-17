@@ -1,16 +1,53 @@
 ﻿[]
-Coordinates=205,56,91,36
+Coordinates=0,0,145,105
 
 [BindSourceDB1]
-Coordinates=0,0,179,542
+Coordinates=370,20,150,141
 
 [MyDataModule.CustomerTable]
 Coordinates=210,10,164,159
 
 [dmMaestroDetalle.OrdersTable]
 Visible=False
-Coordinates=0,0,179,542
+Coordinates=370,20,150,141
 
 [dmMaestroDetalle.ItemsTable]
-Coordinates=290,10,186,168
+Coordinates=680,20,143,159
+Visible=False
+
+[dmMaestroDetalle.dsOrders]
+Coordinates=169,170,151,429
+
+[EditOrderNo]
+Coordinates=169,1,75,51
+
+[LabelOrderNo]
+Coordinates=169,71,83,51
+
+[BindingsList1]
+Coordinates=169,141,82,33
+
+[BindSourceDB2]
+Coordinates=680,20,143,159
+
+[GridBindSourceDB2]
+Coordinates=540,90,113,51
+
+[NavigatorBindSourceDB1]
+Coordinates=169,141,140,51
+
+[dmMaestroDetalle.CustomerTable]
+Coordinates=339,180,180,285
+
+[EditCustomerName]
+Coordinates=0,0,109,51
+
+[LabelCustomerName]
+Coordinates=59,1,117,51
+
+[CalendarEditSaleDate]
+Coordinates=80,71,121,51
+
+[LabelSaleDate]
+Coordinates=30,70,84,51
 

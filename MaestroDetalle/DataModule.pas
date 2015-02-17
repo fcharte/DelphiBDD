@@ -17,6 +17,11 @@ type
     ItemsTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     dsOrders: TDataSource;
+    CustomerTable: TFDQuery;
+    OrdersTableOrderNo: TFloatField;
+    OrdersTableSaleDate: TSQLTimeStampField;
+    OrdersTableCustNo: TFloatField;
+    OrdersTableCustomerName: TStringField;
   private
     { Private declarations }
   public

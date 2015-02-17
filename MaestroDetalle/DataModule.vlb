@@ -1,5 +1,5 @@
 ﻿[OrdersTable]
-Coordinates=0,0,81,429
+Coordinates=0,0,78,123
 
 [DbdemosConnection]
 Coordinates=94,1,117,33
@@ -12,4 +12,19 @@ Coordinates=181,1,113,33
 
 [dsOrders]
 Coordinates=100,161,77,51
+
+[CustomerTable]
+Coordinates=100,161,89,285
+
+[OrdersTableOrderNo]
+Coordinates=181,1,116,33
+
+[OrdersTableSaleDate]
+Coordinates=181,53,118,33
+
+[OrdersTableCustNo]
+Coordinates=181,1,111,33
+
+[OrdersTableCustomerName]
+Coordinates=181,1,151,33
 

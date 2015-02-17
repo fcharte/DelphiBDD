@@ -17,16 +17,50 @@ object dmMaestroDetalle: TdmMaestroDetalle
       'SELECT * FROM orders')
     Left = 68
     Top = 105
+    object OrdersTableOrderNo: TFloatField
+      FieldName = 'OrderNo'
+      Origin = 'OrderNo'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object OrdersTableSaleDate: TSQLTimeStampField
+      FieldName = 'SaleDate'
+      Origin = 'SaleDate'
+    end
+    object OrdersTableCustNo: TFloatField
+      FieldName = 'CustNo'
+      Origin = 'CustNo'
+    end
+    object OrdersTableCustomerName: TStringField
+      FieldKind = fkLookup
+      FieldName = 'CustomerName'
+      LookupDataSet = CustomerTable
+      LookupKeyFields = 'CustNo'
+      LookupResultField = 'Company'
+      KeyFields = 'CustNo'
+      Lookup = True
+    end
   end
   object ItemsTable: TFDQuery
     Active = True
     MasterSource = dsOrders
     MasterFields = 'OrderNo'
+    DetailFields = 'OrderNo'
     Connection = DbdemosConnection
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
     SQL.Strings = (
-      'SELECT * FROM items')
+      'SELECT * FROM items'
+      'WHERE OrderNo = :OrderNo')
     Left = 274
     Top = 59
+    ParamData = <
+      item
+        Name = 'ORDERNO'
+        DataType = ftFloat
+        ParamType = ptInput
+        Size = 8
+        Value = 1003.000000000000000000
+      end>
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
@@ -37,5 +71,13 @@ object dmMaestroDetalle: TdmMaestroDetalle
     DataSet = OrdersTable
     Left = 72
     Top = 192
+  end
+  object CustomerTable: TFDQuery
+    Active = True
+    Connection = DbdemosConnection
+    SQL.Strings = (
+      'SELECT * FROM customer')
+    Left = 350
+    Top = 220
   end
 end
