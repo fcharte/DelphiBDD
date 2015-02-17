@@ -8,4 +8,10 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmMaestroDetalle.OrdersTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
 end

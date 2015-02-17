@@ -1,0 +1,16 @@
+﻿[]
+Coordinates=205,56,91,36
+
+[BindSourceDB1]
+Coordinates=0,0,179,542
+
+[MyDataModule.CustomerTable]
+Coordinates=210,10,164,159
+
+[dmMaestroDetalle.OrdersTable]
+Visible=False
+Coordinates=0,0,179,542
+
+[dmMaestroDetalle.ItemsTable]
+Coordinates=290,10,186,168
+

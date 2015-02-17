@@ -20,6 +20,8 @@ object dmMaestroDetalle: TdmMaestroDetalle
   end
   object ItemsTable: TFDQuery
     Active = True
+    MasterSource = dsOrders
+    MasterFields = 'OrderNo'
     Connection = DbdemosConnection
     SQL.Strings = (
       'SELECT * FROM items')
@@ -30,5 +32,10 @@ object dmMaestroDetalle: TdmMaestroDetalle
     Provider = 'FMX'
     Left = 232
     Top = 144
+  end
+  object dsOrders: TDataSource
+    DataSet = OrdersTable
+    Left = 72
+    Top = 192
   end
 end

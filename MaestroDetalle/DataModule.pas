@@ -16,6 +16,7 @@ type
     OrdersTable: TFDQuery;
     ItemsTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    dsOrders: TDataSource;
   private
     { Private declarations }
   public
