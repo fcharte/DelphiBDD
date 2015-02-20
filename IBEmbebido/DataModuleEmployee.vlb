@@ -1,0 +1,15 @@
+﻿[DepartmentTable]
+Coordinates=0,0,98,177
+
+[EmployeeConnection]
+Coordinates=117,1,119,33
+
+[EmployeeTable]
+Coordinates=117,1,89,249
+
+[dsDepartment]
+Coordinates=98,70,77,51
+
+[FDGUIxWaitCursor1]
+Coordinates=98,70,113,33
+
