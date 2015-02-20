@@ -11,14 +11,14 @@ uses
 
 type
   TfrmMain = class(TForm)
-    BindSourceDB1: TBindSourceDB;
+    BindSourceDepartment: TBindSourceDB;
     ListViewDEPARTMENT: TListView;
     BindingsList1: TBindingsList;
     TabControl1: TTabControl;
     TabItem1: TTabItem;
     TabItem2: TTabItem;
-    ListView1: TListView;
-    BindSourceDB2: TBindSourceDB;
+    ListViewEMPLOYEE: TListView;
+    BindSourceEmployee: TBindSourceDB;
     LinkListControlToField1: TLinkListControlToField;
     LinkListControlToField2: TLinkListControlToField;
     ToolBar1: TToolBar;
@@ -27,13 +27,13 @@ type
     Button1: TButton;
     ToolBar2: TToolBar;
     Label2: TLabel;
-    BindSourceDB3: TBindSourceDB;
+    BindSourceSalaryHistory: TBindSourceDB;
     TabItem3: TTabItem;
     ToolBar3: TToolBar;
     Label3: TLabel;
     LinkPropertyToFieldText2: TLinkPropertyToField;
     Button2: TButton;
-    ListView2: TListView;
+    ListViewSALARYHISTORY: TListView;
     LinkFillControlToField1: TLinkFillControlToField;
     procedure ListView1ItemClick(const Sender: TObject;
       const AItem: TListViewItem);

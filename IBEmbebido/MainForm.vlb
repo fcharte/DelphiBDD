@@ -1,79 +1,90 @@
 ﻿[]
 Coordinates=217,339,53,51
 
-[BindSourceDB1]
-Coordinates=0,0,148,213
-
 [dmEmployee.DepartmentTable]
 Visible=False
-Coordinates=0,0,148,213
+Coordinates=0,0,178,248
 
 [ListViewDEPARTMENT]
-Coordinates=160,20,127,141
+Coordinates=270,0,150,168
+Visible=True
 
 [BindingsList1]
 Coordinates=111,161,82,33
 
 [TabControl1]
-Coordinates=111,170,74,33
+Coordinates=633,641,85,36
+Visible=False
 
 [TabItem1]
-Coordinates=42,196,59,33
+Coordinates=830,580,69,36
+Visible=False
 
 [TabItem2]
-Coordinates=305,1,59,33
-
-[ListView1]
-Coordinates=305,53,89,141
-Visible=True
-
-[BindSourceDB2]
-Coordinates=470,0,140,285
+Coordinates=603,601,69,36
+Visible=False
 
 [dmEmployee.EmployeeTable]
 Visible=False
-Coordinates=470,0,140,285
+Coordinates=0,300,168,336
 
 [dmEmployee.dsDepartment]
 Coordinates=286,213,150,177
 
 [ToolBar1]
-Coordinates=325,213,58,33
+Coordinates=1013,611,67,36
+Visible=False
 
 [Label1]
-Coordinates=220,250,46,51
+Coordinates=200,190,53,58
 
 [Button1]
-Coordinates=157,232,53,51
+Coordinates=693,581,59,58
+Visible=False
 
 [ToolBar2]
-Coordinates=98,232,58,33
+Coordinates=623,691,67,36
+Visible=False
 
 [Label2]
-Coordinates=49,232,46,51
+Coordinates=543,601,53,58
+Visible=False
 
 [dmEmployee.dsEmployee]
 Coordinates=141,302,141,249
 
 [dmEmployee.SalaryHistoryTable]
-Coordinates=664,1,156,177
+Coordinates=420,220,187,212
 Visible=False
 
-[BindSourceDB3]
-Coordinates=664,1,156,177
-
 [TabItem3]
-Coordinates=325,265,59,33
+Coordinates=913,611,69,36
+Visible=False
 
 [ToolBar3]
-Coordinates=325,317,58,33
+Coordinates=833,651,67,36
+Visible=False
 
 [Label3]
-Coordinates=276,321,46,51
+Coordinates=220,580,53,58
 
 [Button2]
-Coordinates=217,339,53,51
+Coordinates=760,600,59,58
+Visible=False
 
-[ListView2]
-Coordinates=930,10,89,141
+[ListViewEMPLOYEE]
+Coordinates=220,310,133,168
+Visible=True
+
+[ListViewSALARYHISTORY]
+Coordinates=710,270,170,168
+
+[BindSourceDepartment]
+Coordinates=0,0,178,248
+
+[BindSourceEmployee]
+Coordinates=0,300,168,336
+
+[BindSourceSalaryHistory]
+Coordinates=420,220,187,212
 

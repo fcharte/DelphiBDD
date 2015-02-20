@@ -10,8 +10,8 @@ object dmEmployee: TdmEmployee
       'DriverID=IBLite')
     Connected = True
     LoginPrompt = False
-    Left = 66
-    Top = 38
+    Left = 42
+    Top = 14
   end
   object DepartmentTable: TFDQuery
     Active = True
@@ -32,8 +32,8 @@ object dmEmployee: TdmEmployee
     SQL.Strings = (
       'SELECT * FROM EMPLOYEE'
       'WHERE DEPT_NO = :DEPT_NO')
-    Left = 285
-    Top = 51
+    Left = 189
+    Top = 83
     ParamData = <
       item
         Name = 'DEPT_NO'
@@ -45,13 +45,13 @@ object dmEmployee: TdmEmployee
   end
   object dsDepartment: TDataSource
     DataSet = DepartmentTable
-    Left = 64
-    Top = 160
+    Left = 72
+    Top = 144
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 176
-    Top = 200
+    Left = 160
+    Top = 14
   end
   object SalaryHistoryTable: TFDQuery
     Active = True
@@ -64,8 +64,8 @@ object dmEmployee: TdmEmployee
     SQL.Strings = (
       'SELECT * FROM SALARY_HISTORY'
       'WHERE EMP_NO = :EMP_NO')
-    Left = 216
-    Top = 120
+    Left = 320
+    Top = 83
     ParamData = <
       item
         Name = 'EMP_NO'
@@ -77,7 +77,11 @@ object dmEmployee: TdmEmployee
   end
   object dsEmployee: TDataSource
     DataSet = EmployeeTable
-    Left = 352
-    Top = 136
+    Left = 192
+    Top = 144
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 280
+    Top = 16
   end
 end

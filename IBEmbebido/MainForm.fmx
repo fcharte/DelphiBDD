@@ -68,7 +68,7 @@ object frmMain: TfrmMain
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Empleados'
-      object ListView1: TListView
+      object ListViewEMPLOYEE: TListView
         ItemAppearanceClassName = 'TListItemAppearance'
         ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
         HeaderAppearanceClassName = 'TListHeaderObjects'
@@ -79,7 +79,6 @@ object frmMain: TfrmMain
         Size.Height = 432.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        OnItemClick = ListView1ItemClick
       end
       object ToolBar1: TToolBar
         Size.Width = 640.000000000000000000
@@ -144,7 +143,7 @@ object frmMain: TfrmMain
           OnClick = Button2Click
         end
       end
-      object ListView2: TListView
+      object ListViewSALARYHISTORY: TListView
         ItemAppearanceClassName = 'TListItemAppearance'
         ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
         HeaderAppearanceClassName = 'TListHeaderObjects'
@@ -157,11 +156,11 @@ object frmMain: TfrmMain
       end
     end
   end
-  object BindSourceDB1: TBindSourceDB
+  object BindSourceDepartment: TBindSourceDB
     DataSet = dmEmployee.DepartmentTable
     ScopeMappings = <>
-    Left = 400
-    Top = 248
+    Left = 424
+    Top = 352
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -170,7 +169,7 @@ object frmMain: TfrmMain
     Top = 245
     object LinkListControlToField1: TLinkListControlToField
       Category = 'Quick Bindings'
-      DataSource = BindSourceDB1
+      DataSource = BindSourceDepartment
       FieldName = 'DEPARTMENT'
       Control = ListViewDEPARTMENT
       FillExpressions = <>
@@ -179,32 +178,32 @@ object frmMain: TfrmMain
     end
     object LinkListControlToField2: TLinkListControlToField
       Category = 'Quick Bindings'
-      DataSource = BindSourceDB2
+      DataSource = BindSourceEmployee
       FieldName = 'FULL_NAME'
-      Control = ListView1
+      Control = ListViewEMPLOYEE
       FillExpressions = <>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
     end
     object LinkPropertyToFieldText: TLinkPropertyToField
       Category = 'Quick Bindings'
-      DataSource = BindSourceDB1
+      DataSource = BindSourceDepartment
       FieldName = 'DEPARTMENT'
       Component = Label1
       ComponentProperty = 'Text'
     end
     object LinkPropertyToFieldText2: TLinkPropertyToField
       Category = 'Quick Bindings'
-      DataSource = BindSourceDB2
+      DataSource = BindSourceEmployee
       FieldName = 'FULL_NAME'
       Component = Label3
       ComponentProperty = 'Text'
     end
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
-      Control = ListView2
+      Control = ListViewSALARYHISTORY
       Track = True
-      FillDataSource = BindSourceDB3
+      FillDataSource = BindSourceSalaryHistory
       FillDisplayFieldName = 'NEW_SALARY'
       AutoFill = True
       FillExpressions = <>
@@ -213,16 +212,16 @@ object frmMain: TfrmMain
       FillBreakGroups = <>
     end
   end
-  object BindSourceDB2: TBindSourceDB
+  object BindSourceEmployee: TBindSourceDB
     DataSet = dmEmployee.EmployeeTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 192
+    Top = 352
   end
-  object BindSourceDB3: TBindSourceDB
+  object BindSourceSalaryHistory: TBindSourceDB
     DataSet = dmEmployee.SalaryHistoryTable
     ScopeMappings = <>
-    Left = 312
-    Top = 232
+    Left = 304
+    Top = 352
   end
 end
