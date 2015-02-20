@@ -21,6 +21,9 @@
         <Projects Include="MaestroDetalle\MaestroDetalle.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="IBEmbebido\IBEmbebido.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -83,14 +86,23 @@
     <Target Name="MaestroDetalle:Make">
         <MSBuild Projects="MaestroDetalle\MaestroDetalle.dproj" Targets="Make"/>
     </Target>
+    <Target Name="IBEmbebido">
+        <MSBuild Projects="IBEmbebido\IBEmbebido.dproj"/>
+    </Target>
+    <Target Name="IBEmbebido:Clean">
+        <MSBuild Projects="IBEmbebido\IBEmbebido.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBEmbebido:Make">
+        <MSBuild Projects="IBEmbebido\IBEmbebido.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
