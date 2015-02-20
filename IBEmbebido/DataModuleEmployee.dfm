@@ -4,10 +4,10 @@ object dmEmployee: TdmEmployee
   Width = 470
   object EmployeeConnection: TFDConnection
     Params.Strings = (
+      'Database=localhost:D:\DelphiBDD\IBEmbebido\EMPLOYEE.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
-      'Database=D:\DelphiBDD\IBEmbebido\EMPLOYEE.GDB'
-      'DriverID=IB')
+      'DriverID=IBLite')
     Connected = True
     LoginPrompt = False
     Left = 66
@@ -40,7 +40,7 @@ object dmEmployee: TdmEmployee
         DataType = ftFixedChar
         ParamType = ptInput
         Size = 4
-        Value = '621'
+        Value = '000'
       end>
   end
   object dsDepartment: TDataSource
@@ -72,7 +72,7 @@ object dmEmployee: TdmEmployee
         DataType = ftSmallint
         ParamType = ptInput
         Size = 2
-        Value = 4
+        Value = 12
       end>
   end
   object dsEmployee: TDataSource

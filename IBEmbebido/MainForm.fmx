@@ -15,14 +15,14 @@ object frmMain: TfrmMain
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 2
+    TabIndex = 0
     TabOrder = 4
     TabPosition = None
     object TabItem1: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -33,7 +33,7 @@ object frmMain: TfrmMain
         ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
         HeaderAppearanceClassName = 'TListHeaderObjects'
         FooterAppearanceClassName = 'TListHeaderObjects'
-        ItemIndex = 6
+        ItemIndex = 0
         Align = Client
         Size.Width = 640.000000000000000000
         Size.Height = 432.000000000000000000
@@ -87,12 +87,12 @@ object frmMain: TfrmMain
         object Label1: TLabel
           Position.X = 264.000000000000000000
           Position.Y = 16.000000000000000000
-          Text = 'Software Development'
+          Text = 'Corporate Headquarters'
         end
         object Button1: TButton
           Position.X = 16.000000000000000000
           Size.Width = 80.000000000000000000
-          Size.Height = 44.000000000000000000
+          Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'backtoolbutton'
           TabOrder = 1
@@ -105,7 +105,7 @@ object frmMain: TfrmMain
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -119,7 +119,7 @@ object frmMain: TfrmMain
         object Label3: TLabel
           Position.X = 280.000000000000000000
           Position.Y = 16.000000000000000000
-          Text = 'Young, Bruce'
+          Text = 'Lee, Terri'
         end
         object Button2: TButton
           Position.X = 8.000000000000000000
