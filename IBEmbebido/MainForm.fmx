@@ -47,11 +47,13 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 1
         object Label2: TLabel
+          AutoSize = True
           Position.X = 248.000000000000000000
           Position.Y = 16.000000000000000000
-          Size.Width = 114.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Width = 131.000000000000000000
+          Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.WordWrap = False
           Text = 'Departamentos'
         end
       end
@@ -85,8 +87,13 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 1
         object Label1: TLabel
+          AutoSize = True
           Position.X = 264.000000000000000000
           Position.Y = 16.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
           Text = 'Corporate Headquarters'
         end
         object Button1: TButton
@@ -117,8 +124,13 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 0
         object Label3: TLabel
+          AutoSize = True
           Position.X = 280.000000000000000000
           Position.Y = 16.000000000000000000
+          Size.Width = 78.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
           Text = 'Lee, Terri'
         end
         object Button2: TButton
