@@ -25,11 +25,22 @@ type
     Label1: TLabel;
     LinkPropertyToFieldText: TLinkPropertyToField;
     Button1: TButton;
+    ToolBar2: TToolBar;
+    Label2: TLabel;
+    BindSourceDB3: TBindSourceDB;
+    TabItem3: TTabItem;
+    ToolBar3: TToolBar;
+    Label3: TLabel;
+    LinkPropertyToFieldText2: TLinkPropertyToField;
+    Button2: TButton;
+    ListView2: TListView;
+    LinkFillControlToField1: TLinkFillControlToField;
     procedure ListView1ItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure ListViewDEPARTMENTItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,10 +61,15 @@ begin
   TabControl1.ActiveTab := TabItem1;
 end;
 
+procedure TfrmMain.Button2Click(Sender: TObject);
+begin
+  TabControl1.ActiveTab := TabItem2;
+end;
+
 procedure TfrmMain.ListView1ItemClick(const Sender: TObject;
   const AItem: TListViewItem);
 begin
-  TabControl1.ActiveTab := TabItem2;
+  TabControl1.ActiveTab := TabItem3;
 end;
 
 procedure TfrmMain.ListViewDEPARTMENTItemClick(const Sender: TObject;

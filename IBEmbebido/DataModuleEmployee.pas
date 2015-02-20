@@ -17,6 +17,8 @@ type
     EmployeeTable: TFDQuery;
     dsDepartment: TDataSource;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    SalaryHistoryTable: TFDQuery;
+    dsEmployee: TDataSource;
   private
     { Private declarations }
   public

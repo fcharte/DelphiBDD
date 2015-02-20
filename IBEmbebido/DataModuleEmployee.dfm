@@ -50,7 +50,34 @@ object dmEmployee: TdmEmployee
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 320
-    Top = 152
+    Left = 176
+    Top = 200
+  end
+  object SalaryHistoryTable: TFDQuery
+    Active = True
+    MasterSource = dsEmployee
+    MasterFields = 'EMP_NO'
+    DetailFields = 'EMP_NO'
+    Connection = EmployeeConnection
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
+    SQL.Strings = (
+      'SELECT * FROM SALARY_HISTORY'
+      'WHERE EMP_NO = :EMP_NO')
+    Left = 216
+    Top = 120
+    ParamData = <
+      item
+        Name = 'EMP_NO'
+        DataType = ftSmallint
+        ParamType = ptInput
+        Size = 2
+        Value = 4
+      end>
+  end
+  object dsEmployee: TDataSource
+    DataSet = EmployeeTable
+    Left = 352
+    Top = 136
   end
 end

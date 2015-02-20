@@ -7,7 +7,7 @@ object frmMain: TfrmMain
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 2
+  DesignerMasterStyle = 3
   object TabControl1: TTabControl
     Align = Client
     FullSize = True
@@ -15,16 +15,16 @@ object frmMain: TfrmMain
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 1
+    TabIndex = 2
     TabOrder = 4
-    TabPosition = PlatformDefault
+    TabPosition = None
     object TabItem1: TTabItem
       CustomIcon = <
         item
         end>
       IsSelected = False
-      Size.Width = 320.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Departamentos'
@@ -36,19 +36,33 @@ object frmMain: TfrmMain
         ItemIndex = 6
         Align = Client
         Size.Width = 640.000000000000000000
-        Size.Height = 431.000000000000000000
+        Size.Height = 432.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         OnItemClick = ListViewDEPARTMENTItemClick
+      end
+      object ToolBar2: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Position.X = 248.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Departamentos'
+        end
       end
     end
     object TabItem2: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
-      Size.Width = 320.000000000000000000
-      Size.Height = 49.000000000000000000
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Empleados'
@@ -57,16 +71,17 @@ object frmMain: TfrmMain
         ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
         HeaderAppearanceClassName = 'TListHeaderObjects'
         FooterAppearanceClassName = 'TListHeaderObjects'
-        ItemIndex = 1
+        ItemIndex = 0
         Align = Client
         Size.Width = 640.000000000000000000
-        Size.Height = 387.000000000000000000
+        Size.Height = 432.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
+        OnItemClick = ListView1ItemClick
       end
       object ToolBar1: TToolBar
         Size.Width = 640.000000000000000000
-        Size.Height = 44.000000000000000000
+        Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object Label1: TLabel
@@ -84,6 +99,49 @@ object frmMain: TfrmMain
           Text = 'Volver'
           OnClick = Button1Click
         end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'TabItem3'
+      object ToolBar3: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          Position.X = 280.000000000000000000
+          Position.Y = 16.000000000000000000
+          Text = 'Young, Bruce'
+        end
+        object Button2: TButton
+          Position.X = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 1
+          Text = 'Volver'
+          OnClick = Button2Click
+        end
+      end
+      object ListView2: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
       end
     end
   end
@@ -114,7 +172,6 @@ object frmMain: TfrmMain
       Control = ListView1
       FillExpressions = <>
       FillHeaderExpressions = <>
-      FillHeaderFieldName = 'JOB_COUNTRY'
       FillBreakGroups = <>
     end
     object LinkPropertyToFieldText: TLinkPropertyToField
@@ -124,11 +181,36 @@ object frmMain: TfrmMain
       Component = Label1
       ComponentProperty = 'Text'
     end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'FULL_NAME'
+      Component = Label3
+      ComponentProperty = 'Text'
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView2
+      Track = True
+      FillDataSource = BindSourceDB3
+      FillDisplayFieldName = 'NEW_SALARY'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'CHANGE_DATE'
+      FillBreakGroups = <>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = dmEmployee.EmployeeTable
     ScopeMappings = <>
     Left = 304
     Top = 224
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = dmEmployee.SalaryHistoryTable
+    ScopeMappings = <>
+    Left = 312
+    Top = 232
   end
 end

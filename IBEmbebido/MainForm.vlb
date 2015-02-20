@@ -1,5 +1,5 @@
 ﻿[]
-Coordinates=0,0,119,33
+Coordinates=217,339,53,51
 
 [BindSourceDB1]
 Coordinates=0,0,148,213
@@ -28,11 +28,11 @@ Coordinates=305,53,89,141
 Visible=True
 
 [BindSourceDB2]
-Coordinates=470,0,140,267
+Coordinates=470,0,140,285
 
 [dmEmployee.EmployeeTable]
 Visible=False
-Coordinates=470,0,140,267
+Coordinates=470,0,140,285
 
 [dmEmployee.dsDepartment]
 Coordinates=286,213,150,177
@@ -45,4 +45,35 @@ Coordinates=220,250,46,51
 
 [Button1]
 Coordinates=157,232,53,51
+
+[ToolBar2]
+Coordinates=98,232,58,33
+
+[Label2]
+Coordinates=49,232,46,51
+
+[dmEmployee.dsEmployee]
+Coordinates=141,302,141,249
+
+[dmEmployee.SalaryHistoryTable]
+Coordinates=664,1,156,177
+Visible=False
+
+[BindSourceDB3]
+Coordinates=664,1,156,177
+
+[TabItem3]
+Coordinates=325,265,59,33
+
+[ToolBar3]
+Coordinates=325,317,58,33
+
+[Label3]
+Coordinates=276,321,46,51
+
+[Button2]
+Coordinates=217,339,53,51
+
+[ListView2]
+Coordinates=930,10,89,141
 
