@@ -4,7 +4,10 @@ object dmEmployee: TdmEmployee
   Width = 470
   object EmployeeConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=EMPLOYEE')
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Database=D:\DelphiBDD\IBEmbebido\EMPLOYEE.GDB'
+      'DriverID=IB')
     Connected = True
     LoginPrompt = False
     Left = 66
@@ -37,7 +40,7 @@ object dmEmployee: TdmEmployee
         DataType = ftFixedChar
         ParamType = ptInput
         Size = 4
-        Value = '000'
+        Value = '621'
       end>
   end
   object dsDepartment: TDataSource
