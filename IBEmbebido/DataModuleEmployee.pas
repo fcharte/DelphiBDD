@@ -21,6 +21,7 @@ type
     SalaryHistoryTable: TFDQuery;
     dsEmployee: TDataSource;
     FDPhysIBDriverLink1: TFDPhysIBDriverLink;
+    procedure EmployeeConnectionBeforeConnect(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,5 +36,16 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+uses
+  System.IOUtils;
+
+procedure TdmEmployee.EmployeeConnectionBeforeConnect(Sender: TObject);
+begin
+  {$IF DEFINED(iOS) or DEFINED(ANDROID)}
+   EmployeeConnection.Params.Values['Database'] :=
+      TPath.Combine(TPath.GetDocumentsPath, 'EMPLOYEE.GDB');
+  {$ENDIF}
+end;
 
 end.

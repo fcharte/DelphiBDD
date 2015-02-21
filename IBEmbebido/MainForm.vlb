@@ -1,12 +1,12 @@
 ﻿[]
-Coordinates=217,339,53,51
+Coordinates=167,1,53,51
 
 [dmEmployee.DepartmentTable]
 Visible=False
-Coordinates=0,0,178,248
+Coordinates=0,0,148,213
 
 [ListViewDEPARTMENT]
-Coordinates=270,0,150,168
+Coordinates=270,0,127,141
 Visible=True
 
 [BindingsList1]
@@ -26,7 +26,7 @@ Visible=False
 
 [dmEmployee.EmployeeTable]
 Visible=False
-Coordinates=0,300,168,336
+Coordinates=0,300,140,285
 
 [dmEmployee.dsDepartment]
 Coordinates=286,213,150,177
@@ -36,7 +36,7 @@ Coordinates=1013,611,67,36
 Visible=False
 
 [Label1]
-Coordinates=200,190,53,58
+Coordinates=200,190,46,51
 
 [Button1]
 Coordinates=693,581,59,58
@@ -54,7 +54,7 @@ Visible=False
 Coordinates=141,302,141,249
 
 [dmEmployee.SalaryHistoryTable]
-Coordinates=420,220,187,212
+Coordinates=420,220,156,177
 Visible=False
 
 [TabItem3]
@@ -66,25 +66,25 @@ Coordinates=833,651,67,36
 Visible=False
 
 [Label3]
-Coordinates=220,580,53,58
+Coordinates=220,580,46,51
 
 [Button2]
 Coordinates=760,600,59,58
 Visible=False
 
 [ListViewEMPLOYEE]
-Coordinates=220,310,133,168
+Coordinates=220,310,113,141
 Visible=True
 
 [ListViewSALARYHISTORY]
-Coordinates=710,270,170,168
+Coordinates=710,270,144,141
 
 [BindSourceDepartment]
-Coordinates=0,0,178,248
+Coordinates=0,0,148,213
 
 [BindSourceEmployee]
-Coordinates=0,300,168,336
+Coordinates=0,300,140,285
 
 [BindSourceSalaryHistory]
-Coordinates=420,220,187,212
+Coordinates=420,220,156,177
 

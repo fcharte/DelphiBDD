@@ -35,12 +35,12 @@ type
     Button2: TButton;
     ListViewSALARYHISTORY: TListView;
     LinkFillControlToField1: TLinkFillControlToField;
-    procedure ListView1ItemClick(const Sender: TObject;
-      const AItem: TListViewItem);
     procedure ListViewDEPARTMENTItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure ListViewEMPLOYEEItemClick(const Sender: TObject;
+      const AItem: TListViewItem);
   private
     { Private declarations }
   public
@@ -66,16 +66,16 @@ begin
   TabControl1.ActiveTab := TabItem2;
 end;
 
-procedure TfrmMain.ListView1ItemClick(const Sender: TObject;
-  const AItem: TListViewItem);
-begin
-  TabControl1.ActiveTab := TabItem3;
-end;
-
 procedure TfrmMain.ListViewDEPARTMENTItemClick(const Sender: TObject;
   const AItem: TListViewItem);
 begin
   TabControl1.ActiveTab := TabItem2;
+end;
+
+procedure TfrmMain.ListViewEMPLOYEEItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
+begin
+  TabControl1.ActiveTab := TabItem3;
 end;
 
 end.

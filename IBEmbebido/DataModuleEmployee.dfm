@@ -10,6 +10,7 @@ object dmEmployee: TdmEmployee
       'DriverID=IBLite')
     Connected = True
     LoginPrompt = False
+    BeforeConnect = EmployeeConnectionBeforeConnect
     Left = 42
     Top = 14
   end

@@ -47,9 +47,8 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 1
         object Label2: TLabel
+          Align = Center
           AutoSize = True
-          Position.X = 248.000000000000000000
-          Position.Y = 16.000000000000000000
           Size.Width = 131.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
@@ -79,6 +78,7 @@ object frmMain: TfrmMain
         Size.Height = 432.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
+        OnItemClick = ListViewEMPLOYEEItemClick
       end
       object ToolBar1: TToolBar
         Size.Width = 640.000000000000000000
@@ -86,9 +86,8 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 1
         object Label1: TLabel
+          Align = Center
           AutoSize = True
-          Position.X = 264.000000000000000000
-          Position.Y = 16.000000000000000000
           Size.Width = 200.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
@@ -123,9 +122,8 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 0
         object Label3: TLabel
+          Align = Center
           AutoSize = True
-          Position.X = 280.000000000000000000
-          Position.Y = 16.000000000000000000
           Size.Width = 78.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
