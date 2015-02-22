@@ -1,0 +1,12 @@
+﻿[PoblacionPaisTable]
+Coordinates=10,10,111,105
+
+[PoblacionConnection]
+Coordinates=131,10,120,33
+
+[FDGUIxWaitCursor1]
+Coordinates=140,1,113,33
+
+[FDPhysODBCDriverLink1]
+Coordinates=140,1,139,33
+

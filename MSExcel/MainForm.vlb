@@ -1,15 +1,17 @@
 ﻿[Grid1]
-Coordinates=10,10,53,105
+Coordinates=10,10,63,124
 Visible=True
 
 []
 Coordinates=61,10,82,33
 
 [BindSourceDB1]
-Coordinates=70,1,92,105
+Coordinates=170,0,191,146
+Visible=True
 
 [dmPoblacion.PoblacionPaisTable]
 Visible=False
+Coordinates=170,0,191,146
 
 [BindingsList1]
 Coordinates=181,1,82,33

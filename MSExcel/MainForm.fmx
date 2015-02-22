@@ -3,7 +3,7 @@ object frmMain: TfrmMain
   Top = 0
   Caption = 'Form6'
   ClientHeight = 480
-  ClientWidth = 673
+  ClientWidth = 556
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,25 +11,25 @@ object frmMain: TfrmMain
   DesignerMasterStyle = 0
   object Grid1: TGrid
     Align = Client
-    Size.Width = 673.000000000000000000
+    Size.Width = 556.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 0
+    RowCount = 45
     RowHeight = 21.000000000000000000
     TextSettings.HorzAlign = Trailing
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmPoblacion.PoblacionPaisTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 584
+    Top = 368
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 124
-    Top = 205
+    Left = 588
+    Top = 437
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

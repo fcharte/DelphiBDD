@@ -29,4 +29,13 @@ object dmPoblacion: TdmPoblacion
     Left = 79
     Top = 94
   end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 232
+    Top = 96
+  end
+  object FDPhysODBCDriverLink1: TFDPhysODBCDriverLink
+    Left = 232
+    Top = 24
+  end
 end
