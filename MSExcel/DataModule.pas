@@ -16,6 +16,7 @@ type
     PoblacionPaisTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDPhysODBCDriverLink1: TFDPhysODBCDriverLink;
+    procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,5 +31,10 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TdmPoblacion.DataModuleCreate(Sender: TObject);
+begin
+  PoblacionPaisTable.Active := True;
+end;
 
 end.

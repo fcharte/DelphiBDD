@@ -15,7 +15,6 @@ type
     BindSourceDB1: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindingsList1: TBindingsList;
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,10 +29,5 @@ implementation
 {$R *.fmx}
 
 uses DataModule;
-
-procedure TfrmMain.FormCreate(Sender: TObject);
-begin
-  dmPoblacion.PoblacionPaisTable.Active := True;
-end;
 
 end.

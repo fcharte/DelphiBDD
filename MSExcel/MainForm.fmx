@@ -1,13 +1,12 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form6'
+  Caption = 'Datos de Excel'
   ClientHeight = 480
   ClientWidth = 556
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Grid1: TGrid
     Align = Client
@@ -15,7 +14,7 @@ object frmMain: TfrmMain
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 45
+    RowCount = 0
     RowHeight = 21.000000000000000000
     TextSettings.HorzAlign = Trailing
   end
@@ -36,7 +35,8 @@ object frmMain: TfrmMain
       GridControl = Grid1
       Columns = <
         item
-          MemberName = 'Pa'#237's'
+          MemberName = 'Pais'
+          Header = 'Pa'#237's'
           Width = 240
         end
         item

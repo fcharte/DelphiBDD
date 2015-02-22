@@ -1,5 +1,6 @@
 object dmPoblacion: TdmPoblacion
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 305
   Width = 487
   object PoblacionConnection: TFDConnection
@@ -11,21 +12,19 @@ object dmPoblacion: TdmPoblacion
       'User_Name=admin'
       'ODBCAdvanced=Mode=ReadWrite;ReadOnly=false; HDR=YES'
       'DriverID=ODBC')
-    Connected = True
     LoginPrompt = False
     Left = 79
     Top = 22
   end
   object PoblacionPaisTable: TFDQuery
-    Active = True
     Connection = PoblacionConnection
     SQL.Strings = (
       
-        'SELECT Pa'#237's, sum(Hombres) AS TotalHombres, sum(Mujeres) AS Total' +
+        'SELECT Pais, sum(Hombres) AS TotalHombres, sum(Mujeres) AS Total' +
         'Mujeres'
       'FROM [DatosIniciales$]'
       'WHERE Continente = '#39'Europa'#39
-      'GROUP BY Pa'#237's')
+      'GROUP BY Pais')
     Left = 79
     Top = 94
   end
@@ -35,6 +34,8 @@ object dmPoblacion: TdmPoblacion
     Top = 96
   end
   object FDPhysODBCDriverLink1: TFDPhysODBCDriverLink
+    ODBCDriver = 'Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)'
+    ODBCAdvanced = 'Mode=ReadWrite;ReadOnly=false; HDR=YES'
     Left = 232
     Top = 24
   end
