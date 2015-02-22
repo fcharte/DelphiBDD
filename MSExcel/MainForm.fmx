@@ -3,18 +3,19 @@ object frmMain: TfrmMain
   Top = 0
   Caption = 'Form6'
   ClientHeight = 480
-  ClientWidth = 640
+  ClientWidth = 673
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Grid1: TGrid
     Align = Client
-    Size.Width = 640.000000000000000000
+    Size.Width = 673.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 45
+    RowCount = 0
     RowHeight = 21.000000000000000000
     TextSettings.HorzAlign = Trailing
   end
