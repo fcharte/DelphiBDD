@@ -16,6 +16,7 @@ type
     PoblacionPaisTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDPhysODBCDriverLink1: TFDPhysODBCDriverLink;
+    qryPoblacion: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
