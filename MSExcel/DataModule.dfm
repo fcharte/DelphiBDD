@@ -17,6 +17,7 @@ object dmPoblacion: TdmPoblacion
     Top = 22
   end
   object PoblacionPaisTable: TFDQuery
+    Active = True
     Connection = PoblacionConnection
     SQL.Strings = (
       

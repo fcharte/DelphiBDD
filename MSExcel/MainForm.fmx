@@ -8,4 +8,46 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object Grid1: TGrid
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 45
+    RowHeight = 21.000000000000000000
+    TextSettings.HorzAlign = Trailing
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmPoblacion.PoblacionPaisTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 124
+    Top = 205
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Pa'#237's'
+          Width = 240
+        end
+        item
+          MemberName = 'TotalHombres'
+          Header = 'Total hombres'
+          Width = 96
+        end
+        item
+          MemberName = 'TotalMujeres'
+          Header = 'Total mujeres'
+          Width = 96
+        end>
+    end
+  end
 end
