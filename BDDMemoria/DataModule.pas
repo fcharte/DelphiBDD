@@ -42,6 +42,7 @@ procedure TdmMemoria.DataModuleCreate(Sender: TObject);
 begin
   with FDTable1 do
   begin
+    FieldDefs.Add('Lugar', ftInteger);
     FieldDefs.Add('TimeStamp', ftDateTime);
     FieldDefs.Add('Coords', ftString, 18);
     FieldDefs.Add('Altitud', ftFloat);
@@ -49,13 +50,16 @@ begin
 
     CreateDataSet;
 
-    AppendRecord([Now,'(37.779594, -3.784906)', 574, 'Salida']);
-    AppendRecord([IncMinute(Now, 120), '(37.769031, -3.807063)', 923, 'Castillo']);
+    AppendRecord([1, Now,'(37.779594, -3.784906)', 574, 'Salida']);
+    AppendRecord([1, IncMinute(Now, 120), '(37.769031, -3.807063)', 923, 'Castillo']);
 
     FDLocalSQL1.DataSets.Add(FDTable1);
 
     Open;
   end;
+
+  FDConnection1.ExecSQL('CREATE TABLE Lugares (codigo INT PRIMARY KEY, nombre TEXT)');
+  FDConnection1.ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
 end;
 
 end.
