@@ -39,9 +39,4 @@ object dmPoblacion: TdmPoblacion
     Left = 232
     Top = 24
   end
-  object qryPoblacion: TFDQuery
-    Connection = PoblacionConnection
-    Left = 88
-    Top = 184
-  end
 end

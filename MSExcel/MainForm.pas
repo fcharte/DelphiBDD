@@ -42,11 +42,12 @@ begin
     query := 'CREATE TABLE SumEuropa (Pais varchar, Hombres integer, Mujeres integer)';
     ExecSQL(query);
 
-    query := 'INSERT INTO [SumEuropa$](Pais, Hombres, Mujeres) ' +
-               'SELECT Pais, sum(Hombres) AS TotalHombres, sum(Mujeres) AS TotalMujeres ' +
-               'FROM [DatosIniciales$] ' +
-               'WHERE Continente = ''Europa'' ' +
-               'GROUP BY Pais';
+    query :=
+      'INSERT INTO [SumEuropa$](Pais, Hombres, Mujeres) ' +
+         'SELECT Pais, sum(Hombres) AS TotalHombres, sum(Mujeres) AS TotalMujeres ' +
+         'FROM [DatosIniciales$] ' +
+         'WHERE Continente = ''Europa'' ' +
+         'GROUP BY Pais';
     ExecSQL(query);
   end;
 end;
