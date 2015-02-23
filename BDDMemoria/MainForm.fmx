@@ -58,8 +58,8 @@ object frmMain: TfrmMain
   object BindSourceDB1: TBindSourceDB
     DataSet = dmMemoria.RastroTable
     ScopeMappings = <>
-    Left = 576
-    Top = 8
+    Left = 568
+    Top = 16
   end
   object BindingsList1: TBindingsList
     Methods = <>

@@ -19,6 +19,7 @@ type
     FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
     FDQuery1: TFDQuery;
     RastroTable: TFDMemTable;
+    FDTable1: TFDTable;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -39,7 +40,7 @@ uses DateUtils;
 
 procedure TdmMemoria.DataModuleCreate(Sender: TObject);
 begin
-  with RastroTable do
+  with FDTable1 do
   begin
     FieldDefs.Add('TimeStamp', ftDateTime);
     FieldDefs.Add('Coords', ftString, 18);
@@ -51,7 +52,7 @@ begin
     AppendRecord([Now,'(37.779594, -3.784906)', 574, 'Salida']);
     AppendRecord([IncMinute(Now, 120), '(37.769031, -3.807063)', 923, 'Castillo']);
 
-    FDLocalSQL1.DataSets.Add(RastroTable, '', 'Rastro');
+    FDLocalSQL1.DataSets.Add(FDTable1);
 
     Open;
   end;

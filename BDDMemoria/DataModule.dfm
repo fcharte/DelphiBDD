@@ -42,4 +42,12 @@ object dmMemoria: TdmMemoria
     Left = 56
     Top = 200
   end
+  object FDTable1: TFDTable
+    CachedUpdates = True
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'Rastro'
+    TableName = 'Rastro'
+    Left = 160
+    Top = 200
+  end
 end
