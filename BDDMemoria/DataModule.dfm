@@ -1,5 +1,6 @@
 object dmMemoria: TdmMemoria
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 317
   Width = 517
   object FDConnection1: TFDConnection
@@ -21,5 +22,16 @@ object dmMemoria: TdmMemoria
   object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
     Left = 424
     Top = 104
+  end
+  object RastroTable: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    AutoCommitUpdates = False
+    Left = 48
+    Top = 200
   end
 end
