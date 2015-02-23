@@ -1,46 +1,50 @@
 object dmIris: TdmIris
   OldCreateOrder = False
-  OnCreate = DataModuleCreate
   Height = 272
   Width = 412
   object FDBatchMove1: TFDBatchMove
     Reader = IrisCSVReader
     Writer = IrisDSWriter
     Mappings = <>
+    LogFileAction = laAppend
     LogFileName = 'Data.log'
+    Analyze = [taDelimSep, taHeader, taFields]
     Left = 192
     Top = 120
   end
   object IrisCSVReader: TFDBatchMoveTextReader
-    FileName = 'D:\DelphiBDD\DatosCSV\iris.csv'
     DataDef.Fields = <>
+    DataDef.FormatSettings.DecimalSeparator = '.'
     Left = 48
     Top = 200
   end
   object IrisDSWriter: TFDBatchMoveDataSetWriter
-    DataSet = IrisTable
+    DataSet = IrisMemTable
     Left = 192
     Top = 200
   end
-  object IrisTable: TFDMemTable
+  object IrisMemTable: TFDMemTable
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
     ResourceOptions.AssignedValues = [rvSilentMode]
     ResourceOptions.SilentMode = True
     UpdateOptions.AssignedValues = [uvCheckRequired]
     UpdateOptions.CheckRequired = False
-    LocalSQL = FDLocalSQL1
     AutoCommitUpdates = False
     Left = 312
     Top = 192
   end
   object IrisConnection: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    Connected = True
     Left = 56
     Top = 40
   end
   object FDLocalSQL1: TFDLocalSQL
     Connection = IrisConnection
-    DataSets = <>
+    Active = True
+    OnGetDataSet = FDLocalSQL1GetDataSet
     Left = 176
     Top = 40
   end
@@ -48,5 +52,12 @@ object dmIris: TdmIris
     Provider = 'FMX'
     Left = 312
     Top = 56
+  end
+  object IrisTable: TFDQuery
+    Connection = IrisConnection
+    SQL.Strings = (
+      'SELECT * FROM iris')
+    Left = 56
+    Top = 120
   end
 end

@@ -9,18 +9,22 @@ uses
   FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Comp.Client,
   FireDAC.Phys.SQLiteVDataSet, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.BatchMove.DataSet, FireDAC.Comp.BatchMove,
-  FireDAC.Comp.BatchMove.Text, FireDAC.FMXUI.Wait, FireDAC.Comp.UI;
+  FireDAC.Comp.BatchMove.Text, FireDAC.FMXUI.Wait, FireDAC.Comp.UI,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
+  FireDAC.DApt;
 
 type
   TdmIris = class(TDataModule)
     FDBatchMove1: TFDBatchMove;
     IrisCSVReader: TFDBatchMoveTextReader;
     IrisDSWriter: TFDBatchMoveDataSetWriter;
-    IrisTable: TFDMemTable;
+    IrisMemTable: TFDMemTable;
     IrisConnection: TFDConnection;
     FDLocalSQL1: TFDLocalSQL;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    procedure DataModuleCreate(Sender: TObject);
+    IrisTable: TFDQuery;
+    procedure FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
+      AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
   private
     { Private declarations }
   public
@@ -36,9 +40,13 @@ implementation
 
 {$R *.dfm}
 
-procedure TdmIris.DataModuleCreate(Sender: TObject);
+procedure TdmIris.FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
+  AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
 begin
+  IrisCSVReader.FileName := 'D:\DelphiBDD\DatosCSV\' + AName + '.csv';
   FDBatchMove1.Execute;
+  ADataSet := IrisMemTable;
+  AOwned := True;
 end;
 
 end.
