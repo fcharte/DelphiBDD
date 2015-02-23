@@ -22,6 +22,9 @@ type
     LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
     Edit1: TEdit;
     Button1: TButton;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    ToolBar1: TToolBar;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
