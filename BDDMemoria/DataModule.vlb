@@ -10,6 +10,12 @@ Coordinates=0,0,142,33
 [FDLocalSQL1]
 Coordinates=0,0,81,33
 
+[FDQuery1]
+Coordinates=92,1,63,51
+
+[]
+Coordinates=0,0,73,51
+
 [RastroTable]
 Coordinates=0,0,73,51
 

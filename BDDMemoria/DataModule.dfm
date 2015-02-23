@@ -6,11 +6,14 @@ object dmMemoria: TdmMemoria
   object FDConnection1: TFDConnection
     Params.Strings = (
       'DriverID=SQLite')
+    Connected = True
     LoginPrompt = False
     Left = 56
     Top = 40
   end
   object FDLocalSQL1: TFDLocalSQL
+    Connection = FDConnection1
+    Active = True
     Left = 56
     Top = 112
   end
@@ -23,6 +26,11 @@ object dmMemoria: TdmMemoria
     Left = 424
     Top = 104
   end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 168
+    Top = 56
+  end
   object RastroTable: TFDMemTable
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
@@ -31,7 +39,7 @@ object dmMemoria: TdmMemoria
     UpdateOptions.AssignedValues = [uvCheckRequired]
     UpdateOptions.CheckRequired = False
     AutoCommitUpdates = False
-    Left = 48
+    Left = 56
     Top = 200
   end
 end

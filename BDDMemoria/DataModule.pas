@@ -8,7 +8,8 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite,
   FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.FMXUI.Wait,
   FireDAC.Comp.UI, FireDAC.Comp.Client, FireDAC.Phys.SQLiteVDataSet, Data.DB,
-  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.Comp.DataSet;
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.Comp.DataSet,
+  FireDAC.DApt;
 
 type
   TdmMemoria = class(TDataModule)
@@ -16,6 +17,7 @@ type
     FDLocalSQL1: TFDLocalSQL;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
+    FDQuery1: TFDQuery;
     RastroTable: TFDMemTable;
     procedure DataModuleCreate(Sender: TObject);
   private
@@ -50,6 +52,8 @@ begin
     AppendRecord([IncMinute(Now, 120), '(37.769031, -3.807063)', 923, 'Castillo']);
 
     FDLocalSQL1.DataSets.Add(RastroTable, '', 'Rastro');
+
+    Open;
   end;
 end;
 
