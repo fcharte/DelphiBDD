@@ -9,7 +9,7 @@ uses
   FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Comp.Client,
   FireDAC.Phys.SQLiteVDataSet, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.BatchMove.DataSet, FireDAC.Comp.BatchMove,
-  FireDAC.Comp.BatchMove.Text;
+  FireDAC.Comp.BatchMove.Text, FireDAC.FMXUI.Wait, FireDAC.Comp.UI;
 
 type
   TdmIris = class(TDataModule)
@@ -19,6 +19,8 @@ type
     IrisTable: TFDMemTable;
     IrisConnection: TFDConnection;
     FDLocalSQL1: TFDLocalSQL;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,5 +35,10 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TdmIris.DataModuleCreate(Sender: TObject);
+begin
+  FDBatchMove1.Execute;
+end;
 
 end.

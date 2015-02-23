@@ -1,5 +1,6 @@
 object dmIris: TdmIris
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 272
   Width = 412
   object FDBatchMove1: TFDBatchMove
@@ -42,5 +43,10 @@ object dmIris: TdmIris
     DataSets = <>
     Left = 176
     Top = 40
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 312
+    Top = 56
   end
 end

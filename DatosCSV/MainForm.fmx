@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form6'
+  Caption = 'Datos Iris (CSV)'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
