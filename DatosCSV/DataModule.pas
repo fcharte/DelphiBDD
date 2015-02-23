@@ -47,6 +47,7 @@ procedure TdmIris.FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
   AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
 begin
   try
+    IrisMemTable.Close;
     IrisCSVReader.FileName := 'D:\DelphiBDD\DatosCSV\' + AName + '.csv';
     FDBatchMove1.Execute;
     ADataSet := IrisMemTable;
