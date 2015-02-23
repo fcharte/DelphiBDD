@@ -37,7 +37,9 @@ object dmIris: TdmIris
   object IrisConnection: TFDConnection
     Params.Strings = (
       'DriverID=SQLite')
+    ResourceOptions.AssignedValues = [rvDirectExecute, rvAutoConnect]
     Connected = True
+    LoginPrompt = False
     Left = 56
     Top = 40
   end
@@ -50,8 +52,8 @@ object dmIris: TdmIris
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 312
-    Top = 56
+    Left = 320
+    Top = 40
   end
   object IrisTable: TFDQuery
     Connection = IrisConnection
@@ -59,5 +61,9 @@ object dmIris: TdmIris
       'SELECT * FROM iris')
     Left = 56
     Top = 120
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 320
+    Top = 112
   end
 end

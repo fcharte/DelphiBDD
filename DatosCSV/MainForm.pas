@@ -7,17 +7,19 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   System.Rtti, Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
-  Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid;
+  Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid,
+  FMX.Controls.Presentation, FMX.Edit;
 
 type
   TfrmMain = class(TForm)
     ToolBar1: TToolBar;
-    CheckBox1: TCheckBox;
     Grid1: TGrid;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
-    procedure CheckBox1Change(Sender: TObject);
+    Button1: TButton;
+    edQuery: TEdit;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,9 +35,15 @@ implementation
 
 uses DataModule;
 
-procedure TfrmMain.CheckBox1Change(Sender: TObject);
+procedure TfrmMain.Button1Click(Sender: TObject);
 begin
-  dmIris.IrisTable.Active := CheckBox1.IsChecked;
+  with dmIris.IrisTable do
+  begin
+    Close;
+    SQL.Clear;
+    SQL.Add(edQuery.Text);
+    Open;
+  end;
 end;
 
 end.

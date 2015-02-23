@@ -23,6 +23,7 @@ type
     FDLocalSQL1: TFDLocalSQL;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     IrisTable: TFDQuery;
+    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
     procedure FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
       AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
   private
@@ -40,13 +41,19 @@ implementation
 
 {$R *.dfm}
 
+uses FMX.Dialogs;
+
 procedure TdmIris.FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
   AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
 begin
-  IrisCSVReader.FileName := 'D:\DelphiBDD\DatosCSV\' + AName + '.csv';
-  FDBatchMove1.Execute;
-  ADataSet := IrisMemTable;
-  AOwned := True;
+  try
+    IrisCSVReader.FileName := 'D:\DelphiBDD\DatosCSV\' + AName + '.csv';
+    FDBatchMove1.Execute;
+    ADataSet := IrisMemTable;
+    AOwned := True;  
+  except on E: Exception do
+    ShowMessage(E.Message);
+  end;
 end;
 
 end.

@@ -1,9 +1,6 @@
 ﻿[ToolBar1]
 Coordinates=0,0,58,33
 
-[CheckBox1]
-Coordinates=77,1,70,51
-
 [dmIris.IrisTable]
 Coordinates=166,1,92,69
 Visible=False
@@ -12,7 +9,7 @@ Visible=False
 Coordinates=166,71,113,51
 
 []
-Coordinates=97,90,60,33
+Coordinates=77,1,70,51
 
 [Grid1]
 Coordinates=28,52,41,51
@@ -22,4 +19,10 @@ Coordinates=166,1,92,69
 
 [BindingsList1]
 Coordinates=77,71,82,33
+
+[Button1]
+Coordinates=77,1,53,51
+
+[edQuery]
+Coordinates=168,141,56,51
 
