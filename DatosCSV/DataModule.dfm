@@ -9,8 +9,8 @@ object dmIris: TdmIris
     LogFileAction = laAppend
     LogFileName = 'Data.log'
     Analyze = [taDelimSep, taHeader, taFields]
-    Left = 192
-    Top = 120
+    Left = 176
+    Top = 112
   end
   object IrisCSVReader: TFDBatchMoveTextReader
     DataDef.Fields = <>

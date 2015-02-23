@@ -22,7 +22,7 @@ object frmMain: TfrmMain
     end
     object edQuery: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 2
+      TabOrder = 1
       Text = 'SELECT * FROM iris'
       Position.X = 16.000000000000000000
       Position.Y = 8.000000000000000000
@@ -49,8 +49,8 @@ object frmMain: TfrmMain
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 20
-    Top = 5
+    Left = 420
+    Top = 221
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
