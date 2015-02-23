@@ -59,8 +59,10 @@ begin
     Open;
   end;
 
-  FDConnection1.ExecSQL('CREATE TABLE Lugares (codigo INT PRIMARY KEY, nombre TEXT)');
+  FDConnection1.ExecSQL('CREATE TABLE Lugares (Codigo INT PRIMARY KEY, Nombre TEXT)');
   FDConnection1.ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
+
+  FDConnection1.ExecSQL('CREATE VIEW LugaresRastro AS SELECT nombre, Altitud, Comentario FROM Rastro, Lugares WHERE Rastro.Lugar=Lugares.Codigo');
 
   FDSQLiteBackup1.DatabaseObj := FDConnection1.CliObj;
   FDSQLiteBackup1.DestDatabase := 'D:\DatosRastro.sdb';

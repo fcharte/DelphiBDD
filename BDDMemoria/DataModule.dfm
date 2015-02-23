@@ -46,8 +46,8 @@ object dmMemoria: TdmMemoria
     Connection = FDConnection1
     UpdateOptions.UpdateTableName = 'Rastro'
     TableName = 'Rastro'
-    Left = 160
-    Top = 200
+    Left = 256
+    Top = 48
   end
   object FDSQLiteBackup1: TFDSQLiteBackup
     DriverLink = FDPhysSQLiteDriverLink1
