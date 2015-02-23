@@ -20,6 +20,7 @@ type
     FDQuery1: TFDQuery;
     RastroTable: TFDMemTable;
     FDTable1: TFDTable;
+    FDSQLiteBackup1: TFDSQLiteBackup;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -60,6 +61,10 @@ begin
 
   FDConnection1.ExecSQL('CREATE TABLE Lugares (codigo INT PRIMARY KEY, nombre TEXT)');
   FDConnection1.ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
+
+  FDSQLiteBackup1.DatabaseObj := FDConnection1.CliObj;
+  FDSQLiteBackup1.DestDatabase := 'D:\DatosRastro.sdb';
+  FDSQLiteBackup1.Backup;
 end;
 
 end.

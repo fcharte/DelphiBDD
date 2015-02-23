@@ -49,4 +49,11 @@ object dmMemoria: TdmMemoria
     Left = 160
     Top = 200
   end
+  object FDSQLiteBackup1: TFDSQLiteBackup
+    DriverLink = FDPhysSQLiteDriverLink1
+    Catalog = 'MAIN'
+    DestCatalog = 'MAIN'
+    Left = 408
+    Top = 224
+  end
 end
