@@ -64,11 +64,13 @@ begin
     Open;
   end;
 
-  RastroTable.Open;
-  RastroTable.AppendRecord([1, Now,'(37.779594, -3.784906)', 574, 'Salida']);
-
-  FDConnection1.ExecSQL('CREATE TABLE Lugares (Codigo INT PRIMARY KEY, Nombre TEXT)');
-  FDConnection1.ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
+  with FDConnection1 do
+  begin
+    ExecSQL('CREATE TABLE Lugares (Codigo INT PRIMARY KEY, Nombre TEXT)');
+    ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
+    ExecSQL('INSERT INTO Lugares VALUES (2, "Los Villares")');
+    ExecSQL('INSERT INTO Lugares VALUES (3, "Torredelcampo")');
+  end;
 
   FDConnection1.ExecSQL('CREATE VIEW LugaresRastro AS SELECT nombre, Altitud, Comentario FROM Rastro, Lugares WHERE Rastro.Lugar=Lugares.Codigo');
 
