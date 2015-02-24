@@ -56,7 +56,11 @@ object dmMemoria: TdmMemoria
         DataType = ftString
         Size = 50
       end>
-    IndexDefs = <>
+    IndexDefs = <
+      item
+        Name = 'RastroTableLugarIndex'
+        Fields = 'Lugar'
+      end>
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
     FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
