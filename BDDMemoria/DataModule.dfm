@@ -32,15 +32,61 @@ object dmMemoria: TdmMemoria
     Top = 56
   end
   object RastroTable: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'Lugar'
+        DataType = ftInteger
+      end
+      item
+        Name = 'TimeStamp'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'Coords'
+        DataType = ftString
+        Size = 18
+      end
+      item
+        Name = 'Altitud'
+        DataType = ftFloat
+      end
+      item
+        Name = 'Comentario'
+        DataType = ftString
+        Size = 50
+      end>
+    IndexDefs = <>
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
+    FormatOptions.MaxBcdPrecision = 2147483647
+    FormatOptions.MaxBcdScale = 2147483647
     ResourceOptions.AssignedValues = [rvSilentMode]
     ResourceOptions.SilentMode = True
     UpdateOptions.AssignedValues = [uvCheckRequired]
     UpdateOptions.CheckRequired = False
     AutoCommitUpdates = False
+    StoreDefs = True
     Left = 56
     Top = 200
+    object RastroTableLugar: TIntegerField
+      FieldName = 'Lugar'
+    end
+    object RastroTableTimeStamp: TDateTimeField
+      FieldName = 'TimeStamp'
+    end
+    object RastroTableCoords: TStringField
+      FieldName = 'Coords'
+      Size = 18
+    end
+    object RastroTableAltitud: TFloatField
+      FieldName = 'Altitud'
+    end
+    object RastroTableComentario: TStringField
+      FieldName = 'Comentario'
+      Size = 50
+    end
   end
   object FDTable1: TFDTable
     Connection = FDConnection1

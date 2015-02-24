@@ -21,6 +21,11 @@ type
     RastroTable: TFDMemTable;
     FDTable1: TFDTable;
     FDSQLiteBackup1: TFDSQLiteBackup;
+    RastroTableLugar: TIntegerField;
+    RastroTableTimeStamp: TDateTimeField;
+    RastroTableCoords: TStringField;
+    RastroTableAltitud: TFloatField;
+    RastroTableComentario: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -58,6 +63,9 @@ begin
 
     Open;
   end;
+
+  RastroTable.Open;
+  RastroTable.AppendRecord([1, Now,'(37.779594, -3.784906)', 574, 'Salida']);
 
   FDConnection1.ExecSQL('CREATE TABLE Lugares (Codigo INT PRIMARY KEY, Nombre TEXT)');
   FDConnection1.ExecSQL('INSERT INTO Lugares VALUES (1, "Jaén")');
