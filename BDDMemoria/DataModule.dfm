@@ -14,6 +14,9 @@ object dmMemoria: TdmMemoria
   object FDLocalSQL1: TFDLocalSQL
     Connection = FDConnection1
     Active = True
+    DataSets = <
+      item
+      end>
     Left = 56
     Top = 112
   end

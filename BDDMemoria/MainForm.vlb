@@ -2,32 +2,32 @@
 Coordinates=60,53,55,33
 
 [Grid1]
-Coordinates=0,0,41,51
+Coordinates=30,10,41,51
 
 [BindSourceDB1]
-Coordinates=349,71,108,87
+Coordinates=230,20,108,87
 
 [NavigatorBindSourceDB1]
-Coordinates=171,1,140,51
+Coordinates=30,80,140,51
 
 [BindingsList1]
 Coordinates=171,71,82,33
 
 [dmMemoria.FDQuery1]
-Coordinates=42,89,111,69
+Coordinates=360,20,111,69
 Visible=False
 
 [Grid2]
-Coordinates=217,71,41,51
+Coordinates=510,40,41,51
 
 [BindSourceDB2]
-Coordinates=42,89,111,69
+Coordinates=360,20,111,69
 
 [Edit1]
-Coordinates=217,141,40,51
+Coordinates=400,270,40,51
 
 [Button1]
-Coordinates=198,196,53,51
+Coordinates=280,270,53,51
 
 [dmMemoria.]
 Visible=False
@@ -38,15 +38,15 @@ Coordinates=349,1,134,51
 Visible=False
 
 [dmMemoria.FDTable1]
-Coordinates=349,71,108,87
+Coordinates=230,20,108,87
 Visible=False
 
 [Panel1]
-Coordinates=60,1,47,33
+Coordinates=70,270,47,33
 
 [Panel2]
-Coordinates=60,53,47,33
+Coordinates=130,270,47,33
 
 [ToolBar1]
-Coordinates=139,196,58,33
+Coordinates=200,270,58,33
 

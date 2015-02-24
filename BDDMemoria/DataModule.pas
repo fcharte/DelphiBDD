@@ -72,11 +72,19 @@ begin
     ExecSQL('INSERT INTO Lugares VALUES (3, "Torredelcampo")');
   end;
 
-  FDConnection1.ExecSQL('CREATE VIEW LugaresRastro AS SELECT nombre, Altitud, Comentario FROM Rastro, Lugares WHERE Rastro.Lugar=Lugares.Codigo');
+  FDConnection1.ExecSQL(
+    'CREATE VIEW LugaresRastro AS ' +
+    ' SELECT Nombre, Altitud, Comentario ' +
+    ' FROM Rastro R ' +
+    ' INNER JOIN Lugares L ' +
+    '   ON R.Lugar=L.Codigo');
 
-  FDSQLiteBackup1.DatabaseObj := FDConnection1.CliObj;
-  FDSQLiteBackup1.DestDatabase := 'D:\DatosRastro.sdb';
-  FDSQLiteBackup1.Backup;
+  with FDSQLiteBackup1 do
+  begin
+    DatabaseObj := FDConnection1.CliObj;
+    DestDatabase := 'D:\DatosRastro.sdb';
+    Backup;
+  end;
 end;
 
 end.
