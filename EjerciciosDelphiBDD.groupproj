@@ -33,6 +33,9 @@
         <Projects Include="BDDMemoria\BDDMemoria.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="UnicodeBDD\UnicodeBDD.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -131,14 +134,23 @@
     <Target Name="BDDMemoria:Make">
         <MSBuild Projects="BDDMemoria\BDDMemoria.dproj" Targets="Make"/>
     </Target>
+    <Target Name="UnicodeBDD">
+        <MSBuild Projects="UnicodeBDD\UnicodeBDD.dproj"/>
+    </Target>
+    <Target Name="UnicodeBDD:Clean">
+        <MSBuild Projects="UnicodeBDD\UnicodeBDD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UnicodeBDD:Make">
+        <MSBuild Projects="UnicodeBDD\UnicodeBDD.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
