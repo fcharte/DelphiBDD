@@ -1,34 +1,670 @@
 japanese,english
-収益,しゅうえき yield; profit
-従業員,じゅうぎょういん employee
-収支,しゅうし balance
-収集,しゅうしゅうする collect
-就職,しゅうしょくする get employed
-終身雇用,しゅうしんこよう lifetime employment
-修正,しゅうせいする correct
-収入,しゅうにゅう income
-集約,しゅうやくする put together
-従来,じゅうらい up to now; before
-修理,しゅうりする repair
-主観的,しゅかんてき subjective
-縮小,しゅくしょうする reduce
-主催,しゅさいする host
-取材,しゅざいする cover
-主体的,しゅたいてき proactive
-手段,しゅだん means
-受注,じゅちゅうする receive an order
-主張,しゅちょうする assert; insist
-出向,しゅっこうする go on loan to another company
-出資,しゅっし invest
-出社,しゅっしゃする come to the office
-出張,しゅっちょうする go on a business trip
-出店,しゅってんする open stores; open an outlet
-出品,しゅっぴんする exhibit
-主任,しゅにん chief
-趣味,しゅみ taste
-主要,しゅよう major
-需要,じゅよう demand
-順調,じゅんちょう go well
-照会,しょうかいする to make reference to
-昇級,しょうきゅうする get a raise
-新任,しんにん newly-appointed
+役員会,Board of Trustees
+総長選考会議,Presidential Selection Committee
+経営協議会,Administrative Council　
+教育研究評議会,Education and Research Council
+部局長会議,Council of Deans and Directors
+事務協議会,Council for Administrative Staff
+学術研究機構会議,Research Council
+附属病院連携機構会議,Osaka University Hospital Council
+ハラスメント相談室,Counseling Office (Harassment Related Matters)
+情報推進機構,Office for Information and Communications Technology Services
+キャンパスライフ支援センター,Support Center for Campus Life
+障害学生支援ユニット,Student Disability Services
+学生生活支援ユニット,Student Counseling and Consultation Services
+キャリア支援ユニット,Career Development Services
+ファシリティ・マネジメント室,Facility Management Office
+安全衛生管理部,Department of Safety and Hygiene
+環境・エネルギー管理部,Department of Environment and Energy Management
+総長室,Office of the President
+法務室,Office of the General Counsel
+評価・情報分析室,Office for Institutional Research and Evaluation
+大阪大学アーカイブズ,Osaka University Archives
+男女共同参画推進オフィス,Gender Equality Promotion Office
+クリエイティブユニット,Creative Unit
+基金室,Office for Osaka University Funds
+卒業生室,Alumni Office
+大型教育研究プロジェクト支援室,Support Office for Large-Scale Education and Research Projects
+キャンパスデザイン室,Campus Design Laboratory
+ハウジングオフィス,Housing Office
+附属図書館,University Libraries
+総合図書館,Main Library
+生命科学図書館,Life Sciences Library
+理工学図書館,Science and Engineering Library　
+外国学図書館,International Studies Library
+学部,Schools/Faculty
+文学部,School of Letters
+人間科学部,School of Human Sciences
+外国語学部,School of Foreign Studies
+法学部,School of Law
+経済学部,School of Economics
+理学部,School of Science
+医学部,Faculty of Medicine
+歯学部,School of Dentistry
+薬学部,School of Pharmaceutical Sciences　
+工学部,School of Engineering
+基礎工学部,School of Engineering Science
+大学院,Graduate Schools
+大学院文学研究科,Graduate School of Letters
+大学院人間科学研究科,Graduate School of Human Sciences
+大学院法学研究科,Graduate School of Law and Politics
+大学院経済学研究科,Graduate School of Economics
+大学院理学研究科,Graduate School of Science
+大学院医学系研究科,Graduate School of Medicine
+大学院歯学研究科,Graduate School of Dentistry
+大学院薬学研究科,Graduate School of Pharmaceutical Sciences
+大学院工学研究科,Graduate School of Engineering
+大学院基礎工学研究科,Graduate School of Engineering Science
+大学院言語文化研究科,Graduate School of Language and Culture
+大学院国際公共政策研究科,Osaka School of International Public Policy
+大学院情報科学研究科,Graduate School of Information Science and Technology
+大学院生命機能研究科,Graduate School of Frontier Biosciences
+大学院高等司法研究科,Osaka University Law School
+"大阪大学・金沢大学・浜松医科大学・千葉大学・福井大学
+連合小児発達学研究科","United Graduate School of Child Development, Osaka University, Kanazawa University, Hamamatsu University School of Medicine, Chiba University and University of Fukui"
+附置研究所,Research Institutes
+微生物病研究所,Research Institute for Microbial Diseases　　
+産業科学研究所,The Institute of Scientific and Industrial Research
+蛋白質研究所,Institute for Protein Research
+社会経済研究所,Institute of Social and Economic Research
+接合科学研究所,Joining and Welding Research Institute
+学内共同教育研究施設,Joint-Use Facilities
+低温センター,Low Temperature Center
+超高圧電子顕微鏡センター,Research Center for Ultra-High Voltage Electron Microscopy
+ラジオアイソトープ総合センター,Radioisotope Research Center
+環境安全研究管理センター,Research Center for Environmental Preservation
+国際教育交流センター,Center for International Education and Exchange
+生物工学国際交流センター,International Center for Biotechnology
+太陽エネルギー化学研究センター ,Research Center for Solar Energy Chemistry
+総合学術博物館,The Museum of Osaka University
+保健センター,Health Care Center
+臨床医工学融合研究教育センター,The Center for Advanced Medical Engineering and Informatics
+コミュニケーションデザイン･センター,Center for the Study of Communication-Design
+金融・保険教育研究センター,Center for the Study of Finance and Insurance
+科学機器リノベーション・工作支援センター,"Center for Scientific Instrument Renovation and Manufacturing Support
+
+"
+グローバルコラボレーションセンター,Global Collaboration Center
+日本語日本文化教育センター,Center for Japanese Language and Culture
+環境イノベーションデザインセンター,Center for Environmental Innovation Design for Sustainability
+ナノサイエンスデザイン教育研究センター,Institute for NanoScience Design
+知的財産センター,Intellectual Property Center
+全国共同利用施設,National Joint-Use Facilities
+核物理研究センター,Research Center for Nuclear Physics
+サイバーメディアセンター,Cybermedia Center
+レーザーエネルギー学研究センター,Institute of Laser Engineering
+世界トップレベル国際研究拠点形成促進プログラム,World Premier International Research Center (WPI) Initiative
+免疫学フロンティア研究センター,Immunology Frontier Research Center
+附属教育研究施設等,Facilities Attached to Schools and Research Institutes
+動物実験施設(医) ,Institute of Experimental Animal Sciences
+歯科技工士学校(歯),Dental Technology Institute　
+比較行動実験施設(院人),Ethological Studies Laboratory
+法政実務連携センター(院法),Center for Legal and Political Practice
+構造熱科学研究センター(院理),Research Center for Structural Thermodynamics
+基礎理学プロジェクト研究センター(院理) ,Project Research Center for Fundamental Sciences
+先端強磁場科学研究センター（院理）,Center for Advanced High Magnetic Field Science
+共同研究実習センター(院医),Center for Medical Research and Education
+ツインリサーチセンター(院医),Center for Twin Research
+PET分子イメージングセンター(院医),PET Molecular Imaging Center
+最先端医療融合イノベーションセンター（院医）,Center of Medical Innovation and Translational Research
+口腔科学フロンティアセンター(院歯),Center for Frontier Oral Science
+薬用植物園(院薬) ,Experimental Institute for Medicinal Plants　
+実践薬学教育研究センター（院薬）,Center for Advanced Education and Research in Pharmaceutical Sciences
+創薬センター(院薬),Drug Innovation Center
+超精密科学研究センター(院工) ,Research Center for Ultra-Precision Science and Technology
+アトミックデザイン研究センター(院工) ,Center for Atomic and Molecular Technologies (CAMT)
+フロンティア研究センター(院工) ,Frontier Research Center
+サスティナビリティデザインオンサイト研究センター(院工) ,On-site Research Center for Sustainability Design
+高度人材育成センター(院工) ,Continuing Professional Development Center
+構造・機能先進材料デザイン教育研究センター(院工) ,Education and Research Center for Advanced Structural and Functional Materials Design
+極限科学センター（院基）,Center for Science and Technology under Extreme Conditions
+未来研究推進センター（院基）,Center for Promotion of Advanced Interdisciplinary Research
+子どものこころの分子統御機構研究センター(連小),Molecular Research  Center for Children's Mental Development
+感染動物実験施設(微) ,Animal Resource Center for Infectious Diseases
+感染症ＤＮＡチップ開発センター(微) ,DNA-chip Development Center for Infectious Diseases
+遺伝情報実験センター(微）,Genome Information Research Center
+難治感染症対策研究センター(微) ,Research Center for Infectious Disease Control
+感染症国際研究センター(微) ,International Research Center for Infectious Diseases
+生体応答遺伝子解析センター(微) ,Center for Genetic Analysis of Biological Responses
+産業科学ナノテクノロジーセンター(産) ,Nanoscience and Nanotechnology Center
+総合解析センター(産) ,Comprehensive Analysis Center
+量子ビーム科学研究施設(産) ,Research Laboratory for Quantum Beam Science
+産業科学連携教育推進センター(産) ,Center for Collaborative Research Education and Training
+国際共同研究センター(産) ,International Collaborative Research Center
+蛋白質解析先端研究センター(蛋),Research Center for State-of-the-art Functional Protein Analysis
+行動経済学研究センター(社)　,Research Center for Behavioral Economics
+スマートプロセス研究センター(接)　,Smart Processing Research Center
+,
+附属病院 ,University Hospitals
+医学部附属病院 ,Osaka University Hospital
+歯学部附属病院,Osaka University Dental Hospital
+海外拠点本部,Supervisory Office for Overseas Centers
+北米センター,"North American Center for Academic Initiatives
+"
+ASEANセンター,ASEAN Center for Academic Initiatives
+欧州センター,European Center for Academic Initiatives
+東アジアセンター,"East Asian Center for Academic Initiatives
+"
+その他 ,
+融合研究拠点,Institute for Advanced Interdisciplinary Research
+未来戦略機構,Institute for Academic Initiatives
+戦略企画室,Strategic Planning Office
+全学教育推進機構,Center for Education in Liberal Arts and Sciences
+産学連携本部,Office for University-Industry Collaboration
+教育学習支援センター,Teaching and Learning Support Center
+21世紀懐徳堂,Kaitokudo for the 21st Century
+適塾記念センター,Tekijuku Commemoration Center
+寄附講座,Endowed Chair
+共同研究講座,Joint Research Chair
+協働研究所,Research Alliance Laboratories
+バイオ関連多目的研究施設,Open Laboratories for Advanced Bioscience and Biotechnology
+中之島センター,Osaka University Nakanoshima Center
+インターナショナル・カレッジ,International College
+脳情報通信融合研究センター,Center for Information and Neural Networks
+サポートオフィス,Support Office for International Students and Scholars
+大阪大学会館,Osaka University Hall
+湯川記念室,Osaka University Yukawa Memorial
+待兼山修学館,Machikaneyama Museum
+センター・オブ・イノベーション（COI）研究推進機構,Organization for COI Research
+COI企画推進室,COI Planning Office
+未来戦略光科学連携センター,Harima Center for Photon Science
+本部事務機構,Administration Bureau
+各部（事務部）、オフィス,Department (Administration Department)
+各課（室）,Division (Office)
+各係 ,Section
+広報・社学連携オフィス,Department of Publicity and University-Community Collaboration
+広報課,Public Relations Division
+社学連携課,University-Community Division　
+総務企画部,Department of General Affairs and Planning
+総務課,General Affairs Division
+文書管理室,Document Management Office
+人事課,Personnel Division
+国際交流課,International Affairs Division
+ハラスメント対策事務室,Administrative Office for Harassment Countermeasures
+多様な人材活用推進支援室,Support Office for Diversity Promotion in Human Resources
+研究推進部,Department of Research Promotion
+研究推進課,Research Promotion Division
+産学連携課,University-Industry Collaboration Division
+大型教育研究プロジェクト支援事務室,Administrative Office for Large-Scale Education and Research Projects
+COI事業支援事務室,Administrative Office for COI Research
+財務部,Department of Finance
+財務課,Finance Division
+資金管理課,Accounting Division
+資産決算課,Property and Account Settlement Division
+吹田調達センター室,Suita Procurement Center
+豊中調達センター室,Toyonaka Procurement Center
+基金事務室,Administrative Office for Osaka University Funds
+情報推進部,Department of Information and Communications Technology Services
+情報企画課,Information and Communications Technology Services Planning Division
+情報基盤課,Information and Communications Technology Services Infrastructure Division
+教育推進部,Department of Education Development
+教育企画課,Education Planning Division
+学生・キャリア支援課,Campus Life and Career Support Division
+入試課,Admission Division
+学生交流推進課,International Student Affairs Division
+学生センター,Student Center
+吹田学生センター,Suita Student Center
+豊中学生センター,Toyonaka Student Center
+箕面学生センター,Minoh Student Center
+施設部,Department of Facilities
+企画課,Facilities Planning Division
+管理計画課,Facilities Management and Planning Division
+整備課,Facilities Design and Improvement Division
+監査室,Audit Office
+不正使用防止計画推進室,Office for the Proper Usage of Research Grants
+環境・エネルギー管理課,Environment and Energy Management Division
+ハウジング課,Housing Division
+未来戦略支援事務室,Office for Academic Initiatives
+その他,
+庶務,General Affairs
+会計,Accounting
+教務,Educational Affairs
+総長室,President's Office
+理事室,Executive Vice President's Office
+監事室,Auditors' Office
+来賓室,Guest Room
+会議室,Conference Room
+入札室,Tendering Office 
+休養室,Staff Room
+談話室,Meeting Room
+役員会議室,Trustees' Conference Room　
+業務改善等支援チーム,Operational Reform Support Team
+総長、学長,President
+理事、理事・副学長,Executive Vice President
+副学長,Vice President
+監事,Auditor
+役員,Trustee　
+理事補佐,Advisor to the Executive Vice President/
+有識者,Eminent person
+評議員,Member of University Council
+総長補佐,Advisor to the President/ Presidential Aide
+学部長、研究科長,Dean
+研究科長補佐,Advisor to the Dean
+副学部長、副研究科長,Associate Dean
+附属図書館長、附置研究所長、学内共同教育研究施設長,Director
+附属図書館副館長,Vice Director
+附属教育研究施設長、附属病院長、全国共同利用施設長,Director
+機構長（*未来戦略機構に限る）,Executive Director
+機構長、本部長、拠点長、部門長,Director
+副センター長、副機構長,Vice Director
+ガイダンス室長,"Chief, Student Guidance Room "
+海外拠点本部,Supervisory Office for Overseas Centers
+センター長,"Regional Director
+)"
+副センター長,Deputy Director
+現地職員,Assistant to Director
+総合研究調整役,Integrative Research Coordinator
+委員長,Chair（person)
+（例）国際交流委員長,Chair（person) of the International Affairs Committee
+教職員,Osaka University Staff
+任期付教職員,Osaka University Limited Term Staff
+常勤職員,Full-time Employee
+非常勤職員,Part-time Employee
+非常勤職員（定時勤務職員）,Temporary Full-time Staff
+非常勤職員（短時間勤務職員）,Temporary Part-time Staff
+非常勤職員（定時教育研究等職員）,Temporary Full-time Education and Research Staff
+非常勤職員（短時間教育研究等職員）,Temporary Part-time Education and Research Staff
+非常勤講師,Part-time Lecturer
+非常勤研究員,Part-time Researcher
+名誉教授,（単）Professor Emeritus　（複）Professors Emeriti
+特別栄誉教授,Distinguished Honorary Professor
+特別教授,Distinguished Professor
+教員,Academic Staff
+教授,Professor
+准教授,Associate Professor
+講師,Associate Professor
+助教,Assistant Professor
+助手,Assistant
+寄附講座教授,Endowed Chair Professor
+特任教授(常勤）（非常勤）,Specially Appointed Professor
+特任研究員,Specially Appointed Researcher/Specially Appointed Fellow
+事務職員,Administrative Staff
+部長（事務部長）、オフィス長,Director
+次長,Vice Director
+主幹,Executive Assistant
+課長（事務長、室長）,Head
+課長補佐 (室長補佐、事務長補佐）,Assistant Head
+専門員,Senior Specialist
+専門職員,Specialist
+係長,Chief
+主任,Deputy Chief
+係員,Administrative Employee / Administrative Personnel
+技術職員,Technical Staff
+図書職員,Librarian
+技能職員,Technician
+労務職員,Laborer
+教務職員,Educational Support Staff
+医員(医師）（歯科医師）,Resident/medical doctor
+医員（研修医）(研修歯科医）,Junior­Resident
+外国人教師,Visiting Lecturer
+外国人招へい教員,Visiting Instructor
+外国人研究員,Visiting Research Scholar
+外国人研究者,Visiting Scholar
+外国人特別研究員（日本学術振興会）,JSPS Postdoctoral Fellowship for Foreign Researcher
+外国人著名研究者（日本学術振興会）,JSPS Special Guest Professor
+外国人招へい研究者（日本学術振興会）,JSPS Research Fellow
+外国人招へい研究員,Research Fellow
+中国政府派遣研究員,Chinese Government-sponsored Researcher
+大阪大学招へい教授,Osaka University Guest Professor
+外国人受託研修員,Japan International Cooperation Agency Trainee
+客員教授,Visiting Professor
+客員准教授,Visiting Associate Professor
+共同研究員,Joint Research Collaborator
+受託研究員,Contract Researcher
+ＳＴＡ,Senior Teaching Assistant
+ＪＴＡ,Junior Teaching Assistant
+ＴＡ,Teaching Assistant
+ＲＡ,Research Assistant/ Research Associate
+研究支援者,Research Collaborator (GASR-funded)
+招へい教員,Visiting Academic Staff
+招へい研究員,Visiting Fellow/Visiting Researcher
+招へい教授,Guest Professor
+招へい准教授,Guest Associate Professor
+教授会,Faculty Meeting
+委員会,Committee
+（例）国際交流委員会,International Affairs Committee
+論文審査委員会,Dissertation Committee
+大学院‥‥研究科委員会,Faculty Meeting of the Graduate School of…
+代議員会,Delegate Assembly
+委員,Committee Member
+議題,agenda/ program
+議事録,minutes
+起案,draft
+決裁,approval/ decision
+学内規程,Campus Regulations
+公文書,official documents
+公印,official seal
+大学改革,university reform
+自己点検・評価,self-evaluation
+大学評価,Accreditation (evaluation of universities)
+通知文書,notice
+文書,documents/ papers/ record
+回覧する,circulate a memo
+人事異動,personnel change
+採用する,employ
+配置換する,change positions
+昇任する,promote
+兼業,outside assignment
+兼務,supplementary assignment
+退職（定年）,retire (retirement age)
+出張（外国出張）,business trip (overseas business trip)
+研修（海外研修）,training (overseas training)
+渡航先,destination
+勤務時間,working hours
+休憩時間,break
+年次有給休暇,annual leave/annual paid leave (paid vacation)
+特別休暇,special leave
+出勤簿,attendance record
+人事記録,personnel record
+身分証明書,identification = I.D.
+給与（基本給、給料日）,"salary (basic salary, payday)"
+基本給決定,salary decision
+昇給,pay rise/ raise
+賞与,bonus
+給与明細,salary slip
+手取額,net salary
+手当,allowance
+通勤手当,commuting allowance
+住居手当,housing allowance
+扶養手当,dependent allowance
+超過勤務手当,overtime allowance
+期末手当,end of term bonus
+業績手当,accomplishment-based bonus
+特別昇給,special raise
+雇用契約,employment contract
+契約更新,contact renewal
+招へい状,invitation letter/ letter of invitation
+履歴書,curriculum vitae (C.V.)/ resume
+グローバル化推進教授招へいプログラム,International Faculty Member Invitation Program
+大阪大学総長顕彰,Osaka University Presidential Awards for Outstanding Achievement
+大阪大学総長奨励賞,Osaka University Presidential Awards for Outstanding Contribution
+大阪大学総長による表彰,Presidential Awards for Excellence
+会計年度,fiscal year
+予算（平成21年度予算）,budget (the budget for the fiscal year 2009-2010)
+国家予算,national budget
+予算制度,budget system
+概算要求,budget request
+本予算（当初予算）,principal budget (original budget)
+補正予算,supplementary budget
+暫定予算,provisional budget
+一般会計予算,general budget/ general account budget
+運営費交付金,Management Expenses Grant
+総長裁量経費,(President's) Discretionary Fund
+予算案,draft budget
+予算編成,budget drafting
+予算の査定,budget assessment
+予算の削減,budget reduction
+予算の増加,budget increase
+決算,closing accounts
+収入,income
+支出,outgo
+財務諸表,financial statement
+損益計算書,statement of profit and loss
+貸借対照表,balance sheet
+契約,contract
+旅費,travel expenses
+航空賃,airfare
+鉄道賃,train fare
+日当・宿泊料,daily allowance (per diem)・hotel charges［expenses］
+招へい（赴任）旅費,travel expenses (moving expenses)
+帰国旅費,repatriation expenses
+使用料,rental fee
+請求書,bill/ invoice
+見積書,estimate
+納品書,delivery notice
+明細書,detailed statement
+領収書,receipt
+仕様書,specification
+請求額,amount due
+領収額,amount received
+所得税,income tax
+住民税,resident tax
+年金,pension
+退職共済年金,Retirement Mutual Aid Pension
+老齢基礎年金,Basic Pension for Senior Citizens
+健康保険,health insurance
+文部科学省共済組合,"Ministry of Education, Culture, Sports, Science and Technology  Mutual Society of Health Insurance"
+組合員,"member of Ministry of Education, Culture, Sports, Science and Technology Mutual Society of Health Insurance"
+共済掛け金,insurance premium
+扶養家族（配偶者）,dependent (spouse)
+未来基金,Osaka University Foundation for the Future
+教育制度,education system
+学年,academic year
+学科（学部）,Department
+講座 (学部),Course
+専攻 (大学院),Department/Field of specialization
+講座 (大学院) ,Course
+学科目 ,Subjects
+部門,Division
+授業科目,subject
+必修科目,required subjects
+選択科目,elective subjects
+共通教育系科目,general education subjects
+専門教育系科目,major subjects
+教職教育科目,subjects for teaching credential
+国際交流科目,international exchange subjects
+学年暦,academic calendar
+学期,semester
+前期,first semester
+後期,second semester
+単位,credit
+履修方法,registration procedure
+授業,class
+講義 ,lecture
+集中講義,intensive course
+特別（特殊）講義,special lecture
+演習、実験、実習,"（例）seminar, laboratory work, practical training, etc."
+在学年数,years enrolled
+卒業要件,requirements for graduation (of the Undergraduate Course)
+卒業年限,years required for completion of course of study
+修了要件,requirements for completion (of the Graduate Course)
+卒業論文,bachelor's thesis
+修士論文,master's thesis
+博士論文,doctoral dissertation (thesis)
+学士の学位,bachelor's degree
+修士の学位,master's degree
+博士の学位,doctor's degree (Ph.D.)
+学位,degree
+正規課程,regular (degree) program
+学部,undergraduate program
+大学院,graduate program
+非正規課程,non-degree program
+修士課程、前期課程,master course
+博士課程、後期課程,doctor course
+学部学生,undergraduate student
+大学院学生,graduate student
+正規学生,regular student/ full-time student/ matriculated student
+非正規学生,non-regular student
+留学生,international student
+国費外国人留学生,Japanese Government Scholarship Student
+外国政府派遣留学生,foreign government-sponsored student
+私費外国人留学生,unsponsored international students
+中国医学研修生,Chinese Medical Research Fellow
+研究生,research student/ non-degree research student
+聴講生,auditor
+科目等履修生、選科生,Credited Auditor
+特別聴講学生,special auditor
+特別研究学生,special research student
+短期留学生,short-term exchange student
+入学,admission
+入学資格,qualification for admission
+入学試験,entrance examination
+大学入試センター試験,the first stage entrance examination given by the National Center for University Entrance Examinations
+個別学力検査等,the second stage entrance examination given by each university
+外国人特別入試,special entrance examination for non-Japanese applicants
+日本留学試験,Examination for Japanese University Admission for International  Students(EJU)
+筆記試験,written examination
+口頭試験,oral examination
+入学検定料,application fee/ entrance examination fee
+入学料,enrollment fee
+授業料,tuition fee
+免除,exemption
+奨学金,Scholarships and Loans
+入学式,Entrance Ceremony
+卒業式/大学院学位記授与式/卒業式・大学院学位記授与式,Graduation Ceremony
+博士課程教育リーディングプログラム,Program for Leading Graduate Schools
+超域イノベーション博士課程プログラム,Cross-Boundary Innovation Program
+生体統御ネットワーク医学教育プログラム,Interdisciplinary Program for Biomedical Sciences
+インタラクティブ物質科学・カデットプログラム,Interactive Materials Science Cadet Program
+ヒューマンウェアイノベーション博士課程プログラム,Humanware Innovation Program
+未来共生イノベーター博士課程プログラム,Doctoral Program for Multicultural Innovation
+創薬基盤科学研究部門,Division of Innovative Research for Drug Development
+認知脳システム学研究部門,Division of Cognitive Neuroscience Robotics
+光量子科学研究部門,Division of Photon Science and Technology
+大阪大学短期留学特別プログラム(OUSSEP),Osaka University Short-term Student Exchange Program
+大学院等高度副プログラム,Graduate Program for Advanced Interdisciplinary Studies
+大学院科目等履修生高度プログラム,Advanced Programs for Credited Auditors
+大学院副専攻プログラム,Graduate Minor Program
+知のジムナスティックス(高度教養プログラム),Intellectual gymnastics (Advanced programs in liberal arts and sciences)
+指導教員,supervisor
+成績,evaluation grade = grade
+*以下の評語は平成18年度以前のもの,
+優、良、可、不可,excellent / good / fair / fail
+証明書（学生証）,certificate (student I.D.)
+（学位の）修了証,Degree Certificate
+（一般的な）修了証,Certificate of Completion
+卒業,graduation
+卒業者,graduate
+共通教育賞,Osaka University Award for Outstanding Contributions to General Education
+退学,withdrawal
+退学する,withdraw
+除籍,removal from register
+除籍する,remove from register
+放学,expulsion
+放学する,expel
+宿舎,dormitory/hall of residence
+大阪大学国際交流会館,Osaka University International House
+大阪大学国際交流会館吹田分館,"Osaka University International House, Suita"
+大阪大学吹田留学生会館,Osaka University Suita International Student Dormitory
+大阪大学箕面留学生会館,Osaka University Minoh International Student Dormitory
+大阪大学新稲国際寮,Osaka University Niina International Dormitory
+大阪大学清明寮,Osaka University Seimei Dormitory
+大阪大学春日丘ハウス,Osaka University Kasugaoka House
+大阪大学津雲台国際学生宿舎,Osaka University Tsukumodai International Student Dormitory
+文部科学省,"Ministry of Education, Culture, Sports, Science and Technology (MEXT)"
+国立大学法人,National University Corporation
+科学技術・学術審議会,Council for Science and Technology
+ユネスコバイオテクノロジー国際研修講座,UNESCO Postgraduate Inter-University Course in Biotechnology
+在外研究員制度,Program for Overseas Research
+国際研究集会派遣制度,Program for International Research Conference
+大学間学術交流協定 ,Inter-University (International) Academic Exchange Agreement
+部局間学術交流協定,Inter-Faculty (International) Academic Exchange Agreement
+大学間協定 ,Inter-university Exchange Agreement
+部局間協定,Faculty-level Exchange Agreement
+学術行政,academic administration
+学術予算,academic budget
+学術研究,academic research
+研究協力,research cooperation
+研究助成,research aid
+受託研究員制度,commissioned researcher system
+奨学寄附金,donations for research
+受託研究,commissioned research/ contract research
+企業等との共同研究,joint research with the private sector
+共同研究 ,joint research/ collaborative research
+産学官連携,university-industry-government collaboration
+臨床研究,clinical research
+科学研究費補助金,grants­in­aid for scientific research
+特別推進研究,Specially Promoted Research
+特定領域研究,Scientific Research in Priority Areas
+基盤研究,Fundamental Research
+萌芽的研究,Exploratory Research
+若手研究,Grant­in­aid for Young Scientists
+奨励研究,Encouragement of Scientists
+特別研究促進費,grant­in­aid for special purposes
+研究成果公開発表,publication of research results
+学術定期刊行物,academic periodicals
+学術図書,academic literature
+データベース,databases
+特定奨励費,Specially Designated Research Promotion Fund
+特別研究員奨励費,Grant-in-Aid for JSPS Fellows
+学術創成研究費,Creative Scientific Research  Fund
+学術研究特別支援事業,New Research Initiatives in Humanities and Social Sciences
+未来開拓学術研究推進事業,Research for the Future Program
+世界的研究教育拠点の形成のための重点的支援,Targeted Support for Creating World-level Research and Education Bases
+グローバルCOEプログラム,Global COE Program
+特別研究員制度,Research Fellowships for Young Scientists
+海外特別研究員制度,Postdoctoral Fellowships for Research Abroad
+外国人特別研究員制度（日本学術振興会）,JSPS Postdoctoral Fellowships for Foreign Researcher
+"外国人特別研究員制度（欧米・短期）（日本
+学術振興会）",JSPS Postdoctoral Fellowship Program (Short-term) for North American and European Researchers
+サマー・プログラム（日本学術振興会）,JSPS Summer Program
+外国人招へい研究者（日本学術振興会）,JSPS Invitation Fellowships for Research in Japan
+外国人著名研究者（日本学術振興会）,JSPS Award for Eminent Scientists
+国際研究集会（日本学術振興会）,JSPS International Scientific Meetings in Japan
+研究者国際交流センター（日本学術振興会）,JSPS Fellows Plaza
+学術システム研究センター,Research Center for Science System
+国際生物学賞,International Prize for Biology
+海外研究連絡センター,Overseas Liaison Office
+産学連携等研究費,Research Fund for Co-operation between Industry and Academia
+教育基本法,Fundamental Law of Education
+学校教育法,School Education Law
+国立学校設置法,National School Establishment Law
+大学設置基準,Standards for the Establishment of Universities
+大学院設置基準,Standards for the Establishment of Graduate Schools
+国家公務員法,National Public Service Personnel Law
+教育公務員特例法,Law for Special Regulations Concerning Educational Public Service Personnel
+一般職の職員の給与等に関する法律,"Law Concerning Remuneration, Working Hours and Leaves of National Public Employees in Regular Service"
+労働基準法,Labor Standards Law
+大学教員等の給与等に関する法律,Law Concerning Term of Office for University Teachers
+国連児童基金,United Nations Children’s Fund (UNICEF)
+国連教育科学文化機関,"United Nations Educational, Scientific and Cultural Organization (UNESCO)"
+世界知的所有権機関,World Intellectual Property Organization (WIPO)
+経済協力開発機構,Organization for Economic Cooperation and Development (OECD)
+東南アジア文部大臣機構,Southeast Asian Ministers of Education Organization (SEAMEO)
+アジア・太平洋経済協力会議,Asia-Pacific Economic Cooperation Conference (APEC)
+国際ﾋｭｰﾏﾝ･ﾌﾛﾝﾃｨｱ･ｻｲｴﾝｽﾌﾟﾛｸﾞﾗﾑ推進機構,The International Human Frontier Science Program Organization (HFSPO)
+国際科学技術センター,International Science and Technology Center (ISTC)
+日米教育委員会,The Japan-United States Educational Commission (JUSEC)
+環太平洋大学協会,Association of Pacific Rim Universities (APRU)
+アジア太平洋大学交流機構,University Mobility in Asia and the Pacific (UMAP)
+東アジア研究型大学協会,Association of East Asian Research Universities (AEARU)
+拠点大学方式による東南アジア諸国との学術交流,The Core University Systems and the Southeast Asian Academic Exchange Program
+総合科学技術会議,Council for Science and Technology Policy
+大学共同利用機関,Inter-University Research Institute
+全国共同利用・共同研究拠点,Joint Usage / Joint Research Center
+独立行政法人日本学生支援機構,Japan Student Services Organization (JASSO)
+独立行政法人日本学術振興会,Japan Society for the Promotion of Science (JSPS)
+日本学術会議,Science Council of Japan
+独立行政法人科学技術振興機構,Japan Science and Technology Agency (JST)
+国際協力銀行,Japan Bank for International Cooperation (JBIC)
+独立行政法人国際協力機構,Japan International Cooperation Agency (JICA)
+独立行政法人国際交流基金,Japan Foundation
+政府開発援助,official development assistance (ODA)
+国際連合大学,The United Nations University (UNU)
+国際大学連合,International Association of Universities (IAU)
+学校教育,school education
+通信教育,correspondence course
+職業教育,vocational education
+社会教育,social education
+リフレッシュ教育,refresh education/ refresh course
+特殊教育,special education
+生涯学習　　　　　　　,lifelong learning　　　　　　
+治験,Clinical Trials
+一般管理費,General Management Expenses
+科学技術振興調整費,Special Coordination Funds for Promoting Science and Technology
+科学技術振興費,Science and Technology Promotion Expenditure
+非常勤研究員経費,Part-time Researcher Budget/Expenses
+ティーチング・アシスタント経費,Teaching Assistant Budget/Expenses
+法人化対応経費,Budget/Expenses Involved in Changing to National University Corporation Status
+教育研究等重点推進経費,Budget/Expenses for Promoting Priority Education and Research
+全学強化経費,Budget/Expenses for University Enhancement
+全学維持経費,Budget/Expenses for Maintaining University Education and Research
+間接経費,Indirect Research Budget/Expenses
+特別経費,Special Budget/Expenses
+法人本部等経費,Corporate Headquarters Budget/Expenses
+事務局運営経費,Budget/Expenses for Management of Administration Bureau
+非常勤職員手当,Allowance for Part-time Employees
+大学基盤推進経費,Budget/Expenses for Promoting University Infrastructure
+湯川記念室運営費,Budget/Expenses for Management of Osaka University Yukawa Memorial
+病院運営経費,Budget/Expenses for Management of University Hospital
+産学官連携推進活動経費,"Budget/Expenses for Promoting University, Industry, and Government Collaboration"
+厚生労働科学研究費補助金,Health and Labor Sciences Research Grants
+産業技術研究助成事業費助成金,Grants for Industrial Technology Research
+環境技術開発等推進費補助金,Grants for Promoting the Development of Environmental Technology
+産学官連携ｲﾉﾍﾞｰｼｮﾝ創出事業費補助金,Grants for Industry-Academia-Government Cooperation to Create Innovation
+大学改革推進等補助金（大学改革推進経費）,Grants for Promoting University Reform ( Budget/Expenses for Promoting University Reform)
+新興・再興感染症研究拠点形成委託費,Fund for Founding Research Centers for Emerging and Reemerging Infectious Diseases
+最先端学術情報基盤（CSI）構築推進事業委託費,Fund for Creation of a State-of-the-Art Academic-Information Infrastructure (CSI)
+研究拠点形成費等補助金（若手研究者養成費）,Grants for Creating Research and Education Bases (for Fostering Young Researchers)
+研究拠点形成費等補助金（研究拠点形成費）,Grants for Creating Research and Education Bases (for the Formation of Research Centers)
+学生教育研究災害傷害保険,Personal Accident Insurance for Student Pursuing Education and Research
