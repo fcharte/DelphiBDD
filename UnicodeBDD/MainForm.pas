@@ -1,4 +1,4 @@
-unit MainForm;
+﻿unit MainForm;
 
 interface
 
@@ -25,7 +25,14 @@ implementation
 {$R *.fmx}
 
 procedure TForm6.FormCreate(Sender: TObject);
+var
+  収益: Integer;
 begin
+  収益 := 1254;
+
+  ShowMessage('収益 = ' + IntToStr(収益));
+
+
   Memo1.Lines.LoadFromFile('Vocab.csv', TEncoding.UTF8);
 end;
 
