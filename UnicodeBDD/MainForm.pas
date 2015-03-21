@@ -27,7 +27,10 @@ implementation
 procedure TForm6.FormCreate(Sender: TObject);
 var
   収益: Integer;
+  ideog: Char;
 begin
+  ideog := '収';
+
   収益 := 1254;
 
   ShowMessage('収益 = ' + IntToStr(収益));
