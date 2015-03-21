@@ -45,9 +45,9 @@ begin
   edAnsiString.Text := cadAnsi;
 
   longUnicode.Text := IntToStr(length(cadUnicode));
-  bytesUnicode.Text := IntToStr(Length(cadUnicode) * sizeof(Char));
+  bytesUnicode.Text := IntToStr(StringElementSize(cadUnicode) * Length(cadUnicode));
   longAnsi.Text := IntToStr(length(cadAnsi));
-  bytesAnsi.Text := IntToStr(Length(cadAnsi) * sizeof(AnsiChar));
+  bytesAnsi.Text := IntToStr(Length(cadAnsi) * StringElementSize(cadAnsi));
 end;
 
 procedure TForm1.edAnsiStringChange(Sender: TObject);
