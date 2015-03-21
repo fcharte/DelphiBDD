@@ -30,21 +30,24 @@ object Form1: TForm1
   end
   object edUnicodeString: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 3
+    TabOrder = 2
+    Text = #21454#30410
     Position.X = 24.000000000000000000
     Position.Y = 64.000000000000000000
     Size.Width = 241.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
+    OnChange = edUnicodeStringChange
   end
   object edAnsiString: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 4
+    TabOrder = 3
     Position.X = 312.000000000000000000
     Position.Y = 64.000000000000000000
     Size.Width = 289.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
+    OnChange = edAnsiStringChange
   end
   object Label3: TLabel
     AutoSize = True
@@ -88,28 +91,28 @@ object Form1: TForm1
   end
   object longUnicode: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 9
+    TabOrder = 8
     ReadOnly = True
     Position.X = 120.000000000000000000
     Position.Y = 112.000000000000000000
   end
   object longAnsi: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 10
+    TabOrder = 9
     ReadOnly = True
     Position.X = 392.000000000000000000
     Position.Y = 112.000000000000000000
   end
   object bytesUnicode: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 11
+    TabOrder = 10
     ReadOnly = True
     Position.X = 120.000000000000000000
     Position.Y = 160.000000000000000000
   end
-  object bytesString: TEdit
+  object bytesAnsi: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 12
+    TabOrder = 11
     ReadOnly = True
     Position.X = 392.000000000000000000
     Position.Y = 160.000000000000000000

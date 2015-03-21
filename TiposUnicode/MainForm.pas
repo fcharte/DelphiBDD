@@ -20,11 +20,16 @@ type
     longUnicode: TEdit;
     longAnsi: TEdit;
     bytesUnicode: TEdit;
-    bytesString: TEdit;
+    bytesAnsi: TEdit;
+    procedure edAnsiStringChange(Sender: TObject);
+    procedure edUnicodeStringChange(Sender: TObject);
   private
     { Private declarations }
+    cadAnsi: AnsiString;
+    cadUnicode: String;
   public
     { Public declarations }
+    procedure UpdateGUI;
   end;
 
 var
@@ -33,5 +38,28 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TForm1.UpdateGUI;
+begin
+  edUnicodeString.Text := cadUnicode;
+  edAnsiString.Text := cadAnsi;
+
+  longUnicode.Text := IntToStr(length(cadUnicode));
+  bytesUnicode.Text := IntToStr(Length(cadUnicode) * sizeof(Char));
+  longAnsi.Text := IntToStr(length(cadAnsi));
+  bytesAnsi.Text := IntToStr(Length(cadAnsi) * sizeof(AnsiChar));
+end;
+
+procedure TForm1.edAnsiStringChange(Sender: TObject);
+begin
+  cadAnsi := edAnsiString.Text;
+  UpdateGUI;
+end;
+
+procedure TForm1.edUnicodeStringChange(Sender: TObject);
+begin
+  cadUnicode := edUnicodeString.Text;
+  UpdateGUI;
+end;
 
 end.
