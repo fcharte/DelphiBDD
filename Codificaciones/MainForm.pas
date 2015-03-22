@@ -28,11 +28,20 @@ procedure TForm7.FormCreate(Sender: TObject);
 var
   ansiJap: JapString;
   uniJap: String;
+
+  AnsiJapones, Unicode: TEncoding;
 begin
   uniJap := '収益';
   ansiJap := uniJap;
 
   ShowMessage('uniJap: ' + uniJap + #13#10 + 'ansiJap: ' + ansiJap);
+
+  AnsiJapones := TEncoding.GetEncoding(50220);
+  Unicode := TEncoding.Unicode;
+
+  ShowMessage(AnsiJapones.GetString(
+    TEncoding.Convert(Unicode, AnsiJapones, Unicode.GetBytes(uniJap))));
+
 end;
 
 end.
