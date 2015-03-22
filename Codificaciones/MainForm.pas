@@ -39,9 +39,14 @@ begin
   AnsiJapones := TEncoding.GetEncoding(50220);
   Unicode := TEncoding.Unicode;
 
-  ShowMessage(AnsiJapones.GetString(
-    TEncoding.Convert(Unicode, AnsiJapones, Unicode.GetBytes(uniJap))));
+  ansiJap := AnsiJapones.GetString(
+    TEncoding.Convert(Unicode, AnsiJapones, Unicode.GetBytes(uniJap)));
 
+  ShowMessage(ansiJap + ' (ANSI) -> ' +
+              IntToStr(AnsiJapones.GetByteCount(ansiJap))
+              + ' bytes' + #13#10 +
+              uniJap + ' (Unicode)-> ' +
+              IntToStr(Unicode.GetByteCount(uniJap)) + ' bytes');
 end;
 
 end.
