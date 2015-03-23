@@ -13,15 +13,18 @@ type
     ToolBar1: TToolBar;
     btnAbrir: TButton;
     btnGuardar: TButton;
-    Memo1: TMemo;
     UTF16: TRadioButton;
     UTF8: TRadioButton;
     ANSI: TRadioButton;
     BOM: TCheckBox;
+    Memo1: TMemo;
     procedure btnAbrirClick(Sender: TObject);
+    procedure ANSIChange(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     fileName: TFileName;
+    codActual: TEncoding;
     function getEncoding: TEncoding;
 
   public
@@ -44,6 +47,22 @@ begin
        else result := TEncoding.ANSI;
 end;
 
+procedure TfrmMain.ANSIChange(Sender: TObject);
+var
+  codNueva: TEncoding;
+begin
+  codNueva := getEncoding;
+
+  if codActual <> codNueva then
+  begin
+    Memo1.Text := codNueva.GetString(
+      TEncoding.Convert(codActual, codNueva,
+        codActual.GetBytes(Memo1.Text)));
+
+  codActual := codNueva;
+  end;
+end;
+
 procedure TfrmMain.btnAbrirClick(Sender: TObject);
 begin
   if OpenDialog1.Execute then
@@ -51,6 +70,11 @@ begin
     fileName := OpenDialog1.FileName;
     Memo1.Lines.LoadFromFile(fileName, getEncoding);
   end;
+end;
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+  codActual := getEncoding;
 end;
 
 end.
