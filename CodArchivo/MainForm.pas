@@ -24,8 +24,10 @@ type
   private
     { Private declarations }
     fileName: TFileName;
+    contenido: TBytes;
     codActual: TEncoding;
     function getEncoding: TEncoding;
+    procedure setEncoding(encoding: TEncoding);
 
   public
     { Public declarations }
@@ -47,6 +49,13 @@ begin
        else result := TEncoding.ANSI;
 end;
 
+procedure TfrmMain.setEncoding(encoding: TEncoding);
+begin
+  UTF16.IsChecked := encoding = TEncoding.Unicode;
+  UTF8.IsChecked := encoding = TEncoding.UTF8;
+  ANSI.IsChecked := encoding = TEncoding.ANSI;
+end;
+
 procedure TfrmMain.ANSIChange(Sender: TObject);
 var
   codNueva: TEncoding;
@@ -64,11 +73,23 @@ begin
 end;
 
 procedure TfrmMain.btnAbrirClick(Sender: TObject);
+var
+  archivo: TFileStream;
+  longPreambulo: Integer;
 begin
   if OpenDialog1.Execute then
   begin
     fileName := OpenDialog1.FileName;
-    Memo1.Lines.LoadFromFile(fileName, getEncoding);
+    archivo := TFileStream.Create(fileName, fmOpenRead);
+    SetLength(contenido, archivo.Size);
+    archivo.ReadBuffer(Pointer(contenido)^, Length(contenido));
+    codActual := nil;
+    longPreambulo := TEncoding.GetBufferEncoding(contenido, codActual);
+
+    BOM.IsChecked := longPreambulo >  0;
+
+    Memo1.Text := codActual.GetString(contenido);
+    setEncoding(codActual);
   end;
 end;
 
