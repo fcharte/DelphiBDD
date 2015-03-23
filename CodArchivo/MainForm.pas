@@ -18,8 +18,12 @@ type
     UTF8: TRadioButton;
     ANSI: TRadioButton;
     BOM: TCheckBox;
+    procedure btnAbrirClick(Sender: TObject);
   private
     { Private declarations }
+    fileName: TFileName;
+    function getEncoding: TEncoding;
+
   public
     { Public declarations }
   end;
@@ -30,5 +34,23 @@ var
 implementation
 
 {$R *.fmx}
+
+function TfrmMain.getEncoding;
+begin
+  if UTF16.IsChecked then
+    result := TEncoding.Unicode
+  else if UTF8.IsChecked then
+       result := TEncoding.UTF8
+       else result := TEncoding.ANSI;
+end;
+
+procedure TfrmMain.btnAbrirClick(Sender: TObject);
+begin
+  if OpenDialog1.Execute then
+  begin
+    fileName := OpenDialog1.FileName;
+    Memo1.Lines.LoadFromFile(fileName, getEncoding);
+  end;
+end;
 
 end.
