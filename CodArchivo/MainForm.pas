@@ -62,14 +62,8 @@ var
 begin
   codNueva := getEncoding;
 
-  if codActual <> codNueva then
-  begin
-    Memo1.Text := codNueva.GetString(
-      TEncoding.Convert(codActual, codNueva,
-        codActual.GetBytes(Memo1.Text)));
-
-  codActual := codNueva;
-  end;
+  Memo1.Text := codNueva.GetString(
+      TEncoding.Convert(codActual, codNueva, contenido));
 end;
 
 procedure TfrmMain.btnAbrirClick(Sender: TObject);
