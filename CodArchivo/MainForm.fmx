@@ -26,6 +26,7 @@ object frmMain: TfrmMain
       Position.Y = 8.000000000000000000
       TabOrder = 1
       Text = 'Guardar'
+      OnClick = btnGuardarClick
     end
     object UTF16: TRadioButton
       Position.X = 224.000000000000000000
@@ -78,6 +79,10 @@ object frmMain: TfrmMain
   end
   object OpenDialog1: TOpenDialog
     Left = 408
+    Top = 136
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 512
     Top = 136
   end
 end

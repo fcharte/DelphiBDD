@@ -18,14 +18,16 @@ type
     ANSI: TRadioButton;
     BOM: TCheckBox;
     Memo1: TMemo;
+    SaveDialog1: TSaveDialog;
     procedure btnAbrirClick(Sender: TObject);
     procedure ANSIChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnGuardarClick(Sender: TObject);
   private
     { Private declarations }
-    fileName: TFileName;
     contenido: TBytes;
     codActual: TEncoding;
+    longPreambulo: Integer;
     function getEncoding: TEncoding;
     procedure setEncoding(encoding: TEncoding);
 
@@ -69,14 +71,13 @@ end;
 procedure TfrmMain.btnAbrirClick(Sender: TObject);
 var
   archivo: TFileStream;
-  longPreambulo: Integer;
 begin
   if OpenDialog1.Execute then
   begin
-    fileName := OpenDialog1.FileName;
-    archivo := TFileStream.Create(fileName, fmOpenRead);
+    archivo := TFileStream.Create(OpenDialog1.FileName, fmOpenRead);
     SetLength(contenido, archivo.Size);
     archivo.ReadBuffer(Pointer(contenido)^, Length(contenido));
+    archivo.Free;
     codActual := nil;
     longPreambulo := TEncoding.GetBufferEncoding(contenido, codActual);
 
@@ -84,6 +85,29 @@ begin
 
     Memo1.Text := codActual.GetString(contenido);
     setEncoding(codActual);
+  end;
+end;
+
+procedure TfrmMain.btnGuardarClick(Sender: TObject);
+var
+  archivo: TFileStream;
+  codNueva: TEncoding;
+  preambulo, contArchivo: TBytes;
+  despContenido: Integer;
+begin
+  if SaveDialog1.Execute then
+  begin
+    codNueva := getEncoding;
+    archivo := TFileStream.Create(SaveDialog1.FileName, fmCreate);
+    if BOM.IsChecked then
+    begin
+      preambulo := codNueva.GetPreamble;
+      archivo.Write(preambulo[0], Length(preambulo));
+    end;
+    contArchivo := TEncoding.Convert(codActual, codNueva, contenido,
+       longPreambulo, Length(contenido) - longPreambulo);
+    archivo.Write(contArchivo[0], Length(contArchivo));
+    archivo.Free;
   end;
 end;
 

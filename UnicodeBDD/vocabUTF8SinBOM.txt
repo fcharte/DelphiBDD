@@ -1,0 +1,34 @@
+﻿japanese,english
+収益,しゅうえき yield; profit
+従業員,じゅうぎょういん employee
+収支,しゅうし balance
+収集,しゅうしゅうする collect
+就職,しゅうしょくする get employed
+終身雇用,しゅうしんこよう lifetime employment
+修正,しゅうせいする correct
+収入,しゅうにゅう income
+集約,しゅうやくする put together
+従来,じゅうらい up to now; before
+修理,しゅうりする repair
+主観的,しゅかんてき subjective
+縮小,しゅくしょうする reduce
+主催,しゅさいする host
+取材,しゅざいする cover
+主体的,しゅたいてき proactive
+手段,しゅだん means
+受注,じゅちゅうする receive an order
+主張,しゅちょうする assert; insist
+出向,しゅっこうする go on loan to another company
+出資,しゅっし invest
+出社,しゅっしゃする come to the office
+出張,しゅっちょうする go on a business trip
+出店,しゅってんする open stores; open an outlet
+出品,しゅっぴんする exhibit
+主任,しゅにん chief
+趣味,しゅみ taste
+主要,しゅよう major
+需要,じゅよう demand
+順調,じゅんちょう go well
+照会,しょうかいする to make reference to
+昇級,しょうきゅうする get a raise
+新任,しんにん newly-appointed
