@@ -1,4 +1,4 @@
-﻿japanese,english
+japanese,english
 収益,しゅうえき yield; profit
 従業員,じゅうぎょういん employee
 収支,しゅうし balance

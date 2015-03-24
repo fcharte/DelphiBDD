@@ -9,8 +9,7 @@ uses
 
 type
   TForm6 = class(TForm)
-    Memo1: TMemo;
-    procedure FormCreate(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -24,19 +23,5 @@ implementation
 
 {$R *.fmx}
 
-procedure TForm6.FormCreate(Sender: TObject);
-var
-  収益: Integer;
-  ideog: Char;
-begin
-  ideog := '収';
-
-  収益 := 1254;
-
-  ShowMessage('収益 = ' + IntToStr(収益));
-
-
-  Memo1.Lines.LoadFromFile('Vocab.csv', TEncoding.UTF8);
-end;
 
 end.
