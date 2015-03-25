@@ -3,10 +3,12 @@ unit DataModule;
 interface
 
 uses
-  System.SysUtils, System.Classes;
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Comp.BatchMove,
+  FireDAC.Comp.BatchMove.Text;
 
 type
   TdmUnicode = class(TDataModule)
+    CSVReader: TFDBatchMoveTextReader;
   private
     { Private declarations }
   public
