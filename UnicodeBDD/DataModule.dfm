@@ -74,4 +74,18 @@ object dmUnicode: TdmUnicode
     Left = 344
     Top = 112
   end
+  object FDConnection2: TFDConnection
+    Left = 360
+    Top = 264
+  end
+  object FDDataMove1: TFDDataMove
+    TextDataDef.Fields = <>
+    TextFileName = 'Data.txt'
+    Mappings = <>
+    LogFileName = 'Data.log'
+    SourceKind = skText
+    Destination = FDMemTable1
+    Left = 120
+    Top = 264
+  end
 end

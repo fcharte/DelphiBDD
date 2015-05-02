@@ -25,3 +25,9 @@ Coordinates=10,71,90,33
 [FDPhysSQLiteDriverLink1]
 Coordinates=186,1,142,33
 
+[FDConnection2]
+Coordinates=186,1,90,33
+
+[FDDataMove1]
+Coordinates=92,80,82,33
+

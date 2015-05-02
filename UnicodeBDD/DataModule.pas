@@ -10,7 +10,7 @@ uses
   FireDAC.Comp.Client, FireDAC.UI.Intf, FireDAC.FMXUI.Wait, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite,
   FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.DApt,
-  FireDAC.Phys.SQLiteVDataSet, FireDAC.Comp.UI;
+  FireDAC.Phys.SQLiteVDataSet, FireDAC.Comp.UI, FireDAC.Comp.DataMove;
 
 type
   TdmUnicode = class(TDataModule)
@@ -23,6 +23,8 @@ type
     FDLocalSQL1: TFDLocalSQL;
     FDQuery1: TFDQuery;
     FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
+    FDConnection2: TFDConnection;
+    FDDataMove1: TFDDataMove;
     procedure FDLocalSQL1GetDataSet(ASender: TObject; const ASchemaName,
       AName: string; var ADataSet: TDataSet; var AOwned: Boolean);
   private
