@@ -1,4 +1,4 @@
-japanese,english
+﻿japanese,english
 役員会,Board of Trustees
 総長選考会議,Presidential Selection Committee
 経営協議会,Administrative Council　
@@ -60,8 +60,6 @@ japanese,english
 大学院情報科学研究科,Graduate School of Information Science and Technology
 大学院生命機能研究科,Graduate School of Frontier Biosciences
 大学院高等司法研究科,Osaka University Law School
-"大阪大学・金沢大学・浜松医科大学・千葉大学・福井大学
-連合小児発達学研究科","United Graduate School of Child Development, Osaka University, Kanazawa University, Hamamatsu University School of Medicine, Chiba University and University of Fukui"
 附置研究所,Research Institutes
 微生物病研究所,Research Institute for Microbial Diseases　　
 産業科学研究所,The Institute of Scientific and Industrial Research
@@ -134,18 +132,16 @@ PET分子イメージングセンター(院医),PET Molecular Imaging Center
 蛋白質解析先端研究センター(蛋),Research Center for State-of-the-art Functional Protein Analysis
 行動経済学研究センター(社)　,Research Center for Behavioral Economics
 スマートプロセス研究センター(接)　,Smart Processing Research Center
-,
 附属病院 ,University Hospitals
 医学部附属病院 ,Osaka University Hospital
 歯学部附属病院,Osaka University Dental Hospital
 海外拠点本部,Supervisory Office for Overseas Centers
-北米センター,"North American Center for Academic Initiatives
-"
+北米センター,North American Center for Academic Initiatives
+
 ASEANセンター,ASEAN Center for Academic Initiatives
 欧州センター,European Center for Academic Initiatives
-東アジアセンター,"East Asian Center for Academic Initiatives
-"
-その他 ,
+東アジアセンター,East Asian Center for Academic Initiatives
+
 融合研究拠点,Institute for Advanced Interdisciplinary Research
 未来戦略機構,Institute for Academic Initiatives
 戦略企画室,Strategic Planning Office
@@ -215,7 +211,6 @@ COI事業支援事務室,Administrative Office for COI Research
 環境・エネルギー管理課,Environment and Energy Management Division
 ハウジング課,Housing Division
 未来戦略支援事務室,Office for Academic Initiatives
-その他,
 庶務,General Affairs
 会計,Accounting
 教務,Educational Affairs
@@ -247,10 +242,10 @@ COI事業支援事務室,Administrative Office for COI Research
 機構長（*未来戦略機構に限る）,Executive Director
 機構長、本部長、拠点長、部門長,Director
 副センター長、副機構長,Vice Director
-ガイダンス室長,"Chief, Student Guidance Room "
+ガイダンス室長,Chief Student Guidance Room
 海外拠点本部,Supervisory Office for Overseas Centers
-センター長,"Regional Director
-)"
+センター長,Regional Director
+
 副センター長,Deputy Director
 現地職員,Assistant to Director
 総合研究調整役,Integrative Research Coordinator
@@ -357,7 +352,7 @@ COI事業支援事務室,Administrative Office for COI Research
 出勤簿,attendance record
 人事記録,personnel record
 身分証明書,identification = I.D.
-給与（基本給、給料日）,"salary (basic salary, payday)"
+給与（基本給、給料日）,salary (basic salary payday)
 基本給決定,salary decision
 昇給,pay rise/ raise
 賞与,bonus
@@ -423,8 +418,6 @@ COI事業支援事務室,Administrative Office for COI Research
 退職共済年金,Retirement Mutual Aid Pension
 老齢基礎年金,Basic Pension for Senior Citizens
 健康保険,health insurance
-文部科学省共済組合,"Ministry of Education, Culture, Sports, Science and Technology  Mutual Society of Health Insurance"
-組合員,"member of Ministry of Education, Culture, Sports, Science and Technology Mutual Society of Health Insurance"
 共済掛け金,insurance premium
 扶養家族（配偶者）,dependent (spouse)
 未来基金,Osaka University Foundation for the Future
@@ -453,7 +446,6 @@ COI事業支援事務室,Administrative Office for COI Research
 講義 ,lecture
 集中講義,intensive course
 特別（特殊）講義,special lecture
-演習、実験、実習,"（例）seminar, laboratory work, practical training, etc."
 在学年数,years enrolled
 卒業要件,requirements for graduation (of the Undergraduate Course)
 卒業年限,years required for completion of course of study
@@ -534,14 +526,13 @@ COI事業支援事務室,Administrative Office for COI Research
 放学する,expel
 宿舎,dormitory/hall of residence
 大阪大学国際交流会館,Osaka University International House
-大阪大学国際交流会館吹田分館,"Osaka University International House, Suita"
+大阪大学国際交流会館吹田分館,Osaka University International House Suita
 大阪大学吹田留学生会館,Osaka University Suita International Student Dormitory
 大阪大学箕面留学生会館,Osaka University Minoh International Student Dormitory
 大阪大学新稲国際寮,Osaka University Niina International Dormitory
 大阪大学清明寮,Osaka University Seimei Dormitory
 大阪大学春日丘ハウス,Osaka University Kasugaoka House
 大阪大学津雲台国際学生宿舎,Osaka University Tsukumodai International Student Dormitory
-文部科学省,"Ministry of Education, Culture, Sports, Science and Technology (MEXT)"
 国立大学法人,National University Corporation
 科学技術・学術審議会,Council for Science and Technology
 ユネスコバイオテクノロジー国際研修講座,UNESCO Postgraduate Inter-University Course in Biotechnology
@@ -585,8 +576,8 @@ COI事業支援事務室,Administrative Office for COI Research
 特別研究員制度,Research Fellowships for Young Scientists
 海外特別研究員制度,Postdoctoral Fellowships for Research Abroad
 外国人特別研究員制度（日本学術振興会）,JSPS Postdoctoral Fellowships for Foreign Researcher
-"外国人特別研究員制度（欧米・短期）（日本
-学術振興会）",JSPS Postdoctoral Fellowship Program (Short-term) for North American and European Researchers
+外国人特別研究員制度（欧米・短期）（日本
+学術振興会）,JSPS Postdoctoral Fellowship Program (Short-term) for North American and European Researchers
 サマー・プログラム（日本学術振興会）,JSPS Summer Program
 外国人招へい研究者（日本学術振興会）,JSPS Invitation Fellowships for Research in Japan
 外国人著名研究者（日本学術振興会）,JSPS Award for Eminent Scientists
@@ -603,11 +594,10 @@ COI事業支援事務室,Administrative Office for COI Research
 大学院設置基準,Standards for the Establishment of Graduate Schools
 国家公務員法,National Public Service Personnel Law
 教育公務員特例法,Law for Special Regulations Concerning Educational Public Service Personnel
-一般職の職員の給与等に関する法律,"Law Concerning Remuneration, Working Hours and Leaves of National Public Employees in Regular Service"
 労働基準法,Labor Standards Law
 大学教員等の給与等に関する法律,Law Concerning Term of Office for University Teachers
 国連児童基金,United Nations Children’s Fund (UNICEF)
-国連教育科学文化機関,"United Nations Educational, Scientific and Cultural Organization (UNESCO)"
+国連教育科学文化機関,United Nations Educational Scientific and Cultural Organization (UNESCO)
 世界知的所有権機関,World Intellectual Property Organization (WIPO)
 経済協力開発機構,Organization for Economic Cooperation and Development (OECD)
 東南アジア文部大臣機構,Southeast Asian Ministers of Education Organization (SEAMEO)
@@ -657,7 +647,6 @@ COI事業支援事務室,Administrative Office for COI Research
 大学基盤推進経費,Budget/Expenses for Promoting University Infrastructure
 湯川記念室運営費,Budget/Expenses for Management of Osaka University Yukawa Memorial
 病院運営経費,Budget/Expenses for Management of University Hospital
-産学官連携推進活動経費,"Budget/Expenses for Promoting University, Industry, and Government Collaboration"
 厚生労働科学研究費補助金,Health and Labor Sciences Research Grants
 産業技術研究助成事業費助成金,Grants for Industrial Technology Research
 環境技術開発等推進費補助金,Grants for Promoting the Development of Environmental Technology
