@@ -1,11 +1,39 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form8'
+  Caption = 'Conexiones'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object ListBox1: TListBox
+    Align = Left
+    Size.Width = 281.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBox1Change
+    Viewport.Width = 277.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object ListBox2: TListBox
+    Align = Client
+    Size.Width = 359.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 355.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
 end
