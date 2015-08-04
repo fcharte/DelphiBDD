@@ -31,6 +31,7 @@ uses DataModule, FireDAC.Comp.Client;
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   FDManager.GetConnectionDefNames(ListBox1.Items);
+
 end;
 
 procedure TfrmMain.ListBox1Change(Sender: TObject);
