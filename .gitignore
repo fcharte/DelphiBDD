@@ -44,3 +44,5 @@ $RECYCLE.BIN/
 *.lnk
 *.o
 *.vsr
+AdventureWorks2012_log.ldf
+AdventureWorks2012_Data.mdf

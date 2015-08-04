@@ -48,6 +48,9 @@
         <Projects Include="CSConnection\CSConnection.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CSOffline\CSOffline.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -191,14 +194,23 @@
     <Target Name="CSConnection:Make">
         <MSBuild Projects="CSConnection\CSConnection.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CSOffline">
+        <MSBuild Projects="CSOffline\CSOffline.dproj"/>
+    </Target>
+    <Target Name="CSOffline:Clean">
+        <MSBuild Projects="CSOffline\CSOffline.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CSOffline:Make">
+        <MSBuild Projects="CSOffline\CSOffline.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection;CSOffline"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean;CSOffline:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make;CSOffline:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
