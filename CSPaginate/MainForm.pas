@@ -20,6 +20,8 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    edFilasSaltar: TEdit;
+    Label2: TLabel;
     procedure FormShow(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -66,6 +68,7 @@ begin
 
     Button1.Enabled := UltimaFila <> 0;
     Button2.Enabled := RecordCount >= StrToInt(edNumFilas.Text);
+    edFilasSaltar.Text := IntToStr(UltimaFila);
   end;
 end;
 

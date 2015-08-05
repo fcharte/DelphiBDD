@@ -17,20 +17,21 @@ object frmMain: TfrmMain
     TabOrder = 0
     object Label1: TLabel
       AutoSize = True
-      Position.X = 8.000000000000000000
-      Position.Y = 24.000000000000000000
-      Size.Width = 88.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 51.000000000000000000
       Size.Height = 16.000000000000000000
       Size.PlatformDefault = False
       TextSettings.WordWrap = False
-      Text = 'N'#250'mero de filas'
+      Text = 'RecsMax'
     end
     object edNumFilas: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 1
+      TabOrder = 2
       Text = '15'
+      TextSettings.HorzAlign = Trailing
       Position.X = 104.000000000000000000
-      Position.Y = 20.000000000000000000
+      Position.Y = 4.000000000000000000
     end
     object Button1: TButton
       Enabled = False
@@ -39,7 +40,7 @@ object frmMain: TfrmMain
       Size.Width = 137.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 3
+      TabOrder = 4
       Text = '<< P'#225'gina anterior'
       OnClick = Button1Click
     end
@@ -49,9 +50,28 @@ object frmMain: TfrmMain
       Size.Width = 137.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
+      TabOrder = 3
       Text = 'P'#225'gina siguiente >>'
       OnClick = Button2Click
+    end
+    object edFilasSaltar: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      ReadOnly = True
+      Text = '0'
+      TextSettings.HorzAlign = Trailing
+      Position.X = 104.000000000000000000
+      Position.Y = 28.000000000000000000
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Position.X = 48.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'RecsSkip'
     end
   end
   object Grid1: TGrid
