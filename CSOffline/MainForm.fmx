@@ -63,7 +63,25 @@ object frmMain: TfrmMain
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       GridControl = Grid1
-      Columns = <>
+      Columns = <
+        item
+          MemberName = 'ProductCategoryID'
+          ReadOnly = True
+          Width = 120
+        end
+        item
+          MemberName = 'Name'
+          Width = 120
+        end
+        item
+          MemberName = 'rowguid'
+          Width = 180
+        end
+        item
+          MemberName = 'ModifiedDate'
+          Width = 120
+          ColumnStyle = 'DateColumn'
+        end>
     end
   end
   object Timer1: TTimer
