@@ -11,10 +11,8 @@ object dmPaginate: TdmPaginate
     Top = 51
   end
   object SalesorderheaderQuery: TFDQuery
-    Active = True
     Connection = AdventureworksConnection
     FetchOptions.AssignedValues = [evMode]
-    FetchOptions.Mode = fmManual
     SQL.Strings = (
       'SELECT SalesOrderId, OrderDate, CustomerID, TotalDue'
       'FROM Sales.SalesOrderHeader')
