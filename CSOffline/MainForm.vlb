@@ -38,3 +38,6 @@ Coordinates=53,80,70,51
 [CheckBox2]
 Coordinates=340,1,70,51
 
+[CheckBox3]
+Coordinates=340,71,70,51
+

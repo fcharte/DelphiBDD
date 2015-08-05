@@ -7,6 +7,7 @@ object dmEmployee: TdmEmployee
     Params.Strings = (
       'ConnectionDef=AdventureWorks'
       'MonitorBy=Remote')
+    Connected = True
     LoginPrompt = False
     Left = 126
     Top = 129
@@ -17,6 +18,8 @@ object dmEmployee: TdmEmployee
     Top = 128
   end
   object ProductcategoryTable: TFDQuery
+    Active = True
+    Filter = 'name LIKE '#39'C%'#39
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')

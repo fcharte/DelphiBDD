@@ -29,6 +29,13 @@ object frmMain: TfrmMain
       Text = 'Offline'
       OnChange = CheckBox2Change
     end
+    object CheckBox3: TCheckBox
+      Position.X = 456.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'Filtered'
+      OnChange = CheckBox3Change
+    end
   end
   object Grid1: TGrid
     Align = Client
@@ -36,7 +43,7 @@ object frmMain: TfrmMain
     Size.Height = 423.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 0
+    RowCount = 4
     RowHeight = 21.000000000000000000
     Viewport.Width = 636.000000000000000000
     Viewport.Height = 398.000000000000000000

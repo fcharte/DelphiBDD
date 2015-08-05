@@ -18,8 +18,10 @@ type
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
     procedure CheckBox1Change(Sender: TObject);
     procedure CheckBox2Change(Sender: TObject);
+    procedure CheckBox3Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,6 +51,11 @@ end;
 procedure TfrmMain.CheckBox2Change(Sender: TObject);
 begin
   dmEmployee.AdventureworksConnection.Offlined := CheckBox2.IsChecked;
+end;
+
+procedure TfrmMain.CheckBox3Change(Sender: TObject);
+begin
+  dmEmployee.ProductcategoryTable.Filtered := CheckBox3.IsChecked;
 end;
 
 end.
