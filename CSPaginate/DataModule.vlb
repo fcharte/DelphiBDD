@@ -4,3 +4,6 @@ Coordinates=150,1,151,33
 [SalesorderheaderQuery]
 Coordinates=10,10,131,123
 
+[FDGUIxWaitCursor1]
+Coordinates=160,1,113,33
+

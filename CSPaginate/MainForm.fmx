@@ -1,12 +1,13 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form8'
+  Caption = 'Paginaci'#243'n manual'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object Panel1: TPanel
     Align = Top
@@ -27,6 +28,7 @@ object frmMain: TfrmMain
     object edNumFilas: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 1
+      Text = '15'
       Position.X = 104.000000000000000000
       Position.Y = 20.000000000000000000
     end

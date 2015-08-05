@@ -21,4 +21,9 @@ object dmPaginate: TdmPaginate
     Left = 120
     Top = 128
   end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 280
+    Top = 128
+  end
 end
