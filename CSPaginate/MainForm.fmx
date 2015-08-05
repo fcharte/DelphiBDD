@@ -2,8 +2,8 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Paginaci'#243'n manual'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 396
+  ClientWidth = 599
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,7 +11,7 @@ object frmMain: TfrmMain
   DesignerMasterStyle = 0
   object Panel1: TPanel
     Align = Top
-    Size.Width = 640.000000000000000000
+    Size.Width = 599.000000000000000000
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -76,14 +76,14 @@ object frmMain: TfrmMain
   end
   object Grid1: TGrid
     Align = Client
-    Size.Width = 640.000000000000000000
-    Size.Height = 423.000000000000000000
+    Size.Width = 599.000000000000000000
+    Size.Height = 339.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     RowCount = 0
     RowHeight = 21.000000000000000000
-    Viewport.Width = 636.000000000000000000
-    Viewport.Height = 398.000000000000000000
+    Viewport.Width = 595.000000000000000000
+    Viewport.Height = 314.000000000000000000
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmPaginate.SalesorderheaderQuery

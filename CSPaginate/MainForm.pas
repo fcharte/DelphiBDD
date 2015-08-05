@@ -42,6 +42,13 @@ implementation
 
 uses DataModule;
 
+procedure TfrmMain.FormShow(Sender: TObject);
+begin
+  dmPaginate.SalesorderheaderQuery.Open;
+  UltimaFila := 0;
+  Fetch;
+end;
+
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
   UltimaFila := UltimaFila - StrToInt(edNumFilas.Text);
@@ -72,11 +79,5 @@ begin
   end;
 end;
 
-procedure TfrmMain.FormShow(Sender: TObject);
-begin
-  dmPaginate.SalesorderheaderQuery.Open;
-  UltimaFila := 0;
-  Fetch;
-end;
 
 end.
