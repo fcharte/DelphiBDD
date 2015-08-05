@@ -51,8 +51,8 @@ object frmMain: TfrmMain
   object BindSourceDB1: TBindSourceDB
     DataSet = dmEmployee.ProductcategoryTable
     ScopeMappings = <>
-    Left = 304
-    Top = 224
+    Left = 184
+    Top = 312
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -65,5 +65,10 @@ object frmMain: TfrmMain
       GridControl = Grid1
       Columns = <>
     end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 232
   end
 end

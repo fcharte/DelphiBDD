@@ -19,9 +19,11 @@ type
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
+    Timer1: TTimer;
     procedure CheckBox1Change(Sender: TObject);
     procedure CheckBox2Change(Sender: TObject);
     procedure CheckBox3Change(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,6 +58,16 @@ end;
 procedure TfrmMain.CheckBox3Change(Sender: TObject);
 begin
   dmEmployee.ProductcategoryTable.Filtered := CheckBox3.IsChecked;
+end;
+
+procedure TfrmMain.Timer1Timer(Sender: TObject);
+begin
+  with dmEmployee do
+  begin
+   CheckBox1.IsChecked := AdventureworksConnection.Connected;
+   CheckBox2.IsChecked := AdventureworksConnection.Offlined;
+   CheckBox3.IsChecked := ProductcategoryTable.Filtered;
+  end;
 end;
 
 end.
