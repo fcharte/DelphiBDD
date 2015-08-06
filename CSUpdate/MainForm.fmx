@@ -1,11 +1,22 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form8'
-  ClientHeight = 480
-  ClientWidth = 640
+  Caption = 'Actualizar datos'
+  ClientHeight = 340
+  ClientWidth = 549
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object Grid1: TGrid
+    Align = Client
+    Size.Width = 549.000000000000000000
+    Size.Height = 340.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 100
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 545.000000000000000000
+    Viewport.Height = 315.000000000000000000
+  end
 end

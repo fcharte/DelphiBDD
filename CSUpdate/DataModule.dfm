@@ -11,11 +11,17 @@ object dmUpdateOptions: TdmUpdateOptions
     Top = 24
   end
   object ProductcategoryTable: TFDQuery
+    Active = True
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT Name'
       'FROM Production.ProductCategory')
     Left = 110
     Top = 80
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 104
+    Top = 152
   end
 end

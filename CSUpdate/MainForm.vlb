@@ -1,0 +1,10 @@
+﻿[Grid1]
+Coordinates=10,10,41,51
+Visible=True
+
+[]
+Coordinates=70,1,82,33
+
+[MyDataModule.CustomerTable]
+Coordinates=244,11,164,159
+
