@@ -14,9 +14,27 @@ object frmMain: TfrmMain
     Size.Height = 340.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    RowCount = 100
+    RowCount = 4
     RowHeight = 21.000000000000000000
     Viewport.Width = 545.000000000000000000
     Viewport.Height = 315.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmUpdateOptions.ProductcategoryTable
+    ScopeMappings = <>
+    Left = 312
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 148
+    Top = 197
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
   end
 end

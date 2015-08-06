@@ -4,7 +4,8 @@ object dmUpdateOptions: TdmUpdateOptions
   Width = 402
   object AdventureworksConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=AdventureWorks')
+      'ConnectionDef=AdventureWorks'
+      'MonitorBy=Remote')
     Connected = True
     LoginPrompt = False
     Left = 110
@@ -14,7 +15,7 @@ object dmUpdateOptions: TdmUpdateOptions
     Active = True
     Connection = AdventureworksConnection
     SQL.Strings = (
-      'SELECT Name'
+      'SELECT ProductCategoryId, Name'
       'FROM Production.ProductCategory')
     Left = 110
     Top = 80
@@ -23,5 +24,10 @@ object dmUpdateOptions: TdmUpdateOptions
     Provider = 'FMX'
     Left = 104
     Top = 152
+  end
+  object FDMoniRemoteClientLink1: TFDMoniRemoteClientLink
+    Tracing = True
+    Left = 296
+    Top = 24
   end
 end

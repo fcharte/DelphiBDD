@@ -1,9 +1,12 @@
 ﻿[ProductcategoryTable]
-Coordinates=10,10,123,69
+Coordinates=10,10,123,87
 
 [AdventureworksConnection]
 Coordinates=142,1,151,33
 
 [FDGUIxWaitCursor1]
 Coordinates=152,1,113,33
+
+[FDMoniRemoteClientLink1]
+Coordinates=152,1,145,33
 
