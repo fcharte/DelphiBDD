@@ -14,6 +14,8 @@ object dmUpdateOptions: TdmUpdateOptions
   object ProductcategoryTable: TFDQuery
     Active = True
     Connection = AdventureworksConnection
+    UpdateOptions.AssignedValues = [uvUpdateMode]
+    UpdateOptions.UpdateMode = upWhereChanged
     SQL.Strings = (
       'SELECT ProductCategoryId, Name'
       'FROM Production.ProductCategory')
