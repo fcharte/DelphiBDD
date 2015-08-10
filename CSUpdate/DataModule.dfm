@@ -12,11 +12,13 @@ object dmUpdateOptions: TdmUpdateOptions
     Top = 24
   end
   object ProductcategoryTable: TFDQuery
+    Active = True
     Connection = AdventureworksConnection
     UpdateOptions.AssignedValues = [uvUpdateMode]
     UpdateOptions.UpdateMode = upWhereChanged
     UpdateOptions.UpdateTableName = 'AdventureWorks.Production.ProductCategory'
     UpdateOptions.KeyFields = 'ProductCategoryID'
+    UpdateObject = FDUpdateSQL1
     SQL.Strings = (
       'SELECT Category.ProductCategoryID, Category.Name, '
       '       SubCategory.ProductSubCategoryID, SubCategory.Name'
@@ -61,5 +63,31 @@ object dmUpdateOptions: TdmUpdateOptions
     Tracing = True
     Left = 296
     Top = 24
+  end
+  object FDUpdateSQL1: TFDUpdateSQL
+    Connection = AdventureworksConnection
+    InsertSQL.Strings = (
+      'INSERT INTO ADVENTUREWORKS.Production.ProductCategory'
+      '(Name)'
+      'VALUES (:NEW_Name);'
+      'SELECT SCOPE_IDENTITY() AS ProductCategoryID')
+    ModifySQL.Strings = (
+      'UPDATE ADVENTUREWORKS.Production.ProductCategory'
+      'SET Name = :NEW_Name'
+      'WHERE ProductCategoryID = :OLD_ProductCategoryID;'
+      'SELECT ProductCategoryID'
+      'FROM ADVENTUREWORKS.Production.ProductCategory'
+      'WHERE ProductCategoryID = :NEW_ProductCategoryID')
+    DeleteSQL.Strings = (
+      'DELETE FROM ADVENTUREWORKS.Production.ProductCategory'
+      'WHERE ProductCategoryID = :OLD_ProductCategoryID')
+    FetchRowSQL.Strings = (
+      
+        'SELECT SCOPE_IDENTITY() AS ProductCategoryID, Name, rowguid, Mod' +
+        'ifiedDate'
+      'FROM ADVENTUREWORKS.Production.ProductCategory'
+      'WHERE ProductCategoryID = :ProductCategoryID')
+    Left = 296
+    Top = 104
   end
 end

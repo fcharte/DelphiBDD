@@ -21,6 +21,7 @@ type
     ProductcategoryTableName: TWideStringField;
     ProductcategoryTableName_1: TWideStringField;
     ProductcategoryTableProductSubCategoryID: TFDAutoIncField;
+    FDUpdateSQL1: TFDUpdateSQL;
   private
     { Private declarations }
   public
