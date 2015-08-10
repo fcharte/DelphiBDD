@@ -1,5 +1,5 @@
 ﻿[ProductcategoryTable]
-Coordinates=10,10,123,87
+Coordinates=10,10,123,123
 
 [AdventureworksConnection]
 Coordinates=142,1,151,33
@@ -9,4 +9,19 @@ Coordinates=152,1,113,33
 
 [FDMoniRemoteClientLink1]
 Coordinates=152,1,145,33
+
+[]
+Coordinates=405,1,216,33
+
+[ProductcategoryTableProductCategoryID]
+Coordinates=152,1,216,33
+
+[ProductcategoryTableName]
+Coordinates=152,53,151,33
+
+[ProductcategoryTableName_1]
+Coordinates=387,1,162,33
+
+[ProductcategoryTableProductSubCategoryID]
+Coordinates=152,1,236,33
 

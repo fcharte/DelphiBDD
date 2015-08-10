@@ -12,15 +12,45 @@ object dmUpdateOptions: TdmUpdateOptions
     Top = 24
   end
   object ProductcategoryTable: TFDQuery
-    Active = True
     Connection = AdventureworksConnection
     UpdateOptions.AssignedValues = [uvUpdateMode]
     UpdateOptions.UpdateMode = upWhereChanged
+    UpdateOptions.UpdateTableName = 'AdventureWorks.Production.ProductCategory'
+    UpdateOptions.KeyFields = 'ProductCategoryID'
     SQL.Strings = (
-      'SELECT ProductCategoryId, Name'
-      'FROM Production.ProductCategory')
+      'SELECT Category.ProductCategoryID, Category.Name, '
+      '       SubCategory.ProductSubCategoryID, SubCategory.Name'
+      'FROM Production.ProductSubcategory As SubCategory'
+      'INNER JOIN Production.ProductCategory As Category'
+      'ON SubCategory.ProductCategoryID = Category.ProductCategoryID'
+      '')
     Left = 110
     Top = 80
+    object ProductcategoryTableProductCategoryID: TFDAutoIncField
+      FieldName = 'ProductCategoryID'
+      Origin = 'ProductCategoryID'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object ProductcategoryTableName: TWideStringField
+      FieldName = 'Name'
+      Origin = 'Name'
+      Required = True
+      Size = 50
+    end
+    object ProductcategoryTableName_1: TWideStringField
+      DisplayLabel = 'SubCategory'
+      FieldName = 'Name_1'
+      Origin = 'Name'
+      ReadOnly = True
+      Required = True
+      Size = 50
+    end
+    object ProductcategoryTableProductSubCategoryID: TFDAutoIncField
+      FieldName = 'ProductSubCategoryID'
+      Origin = 'ProductSubCategoryID'
+      ReadOnly = True
+    end
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'

@@ -17,6 +17,10 @@ type
     ProductcategoryTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDMoniRemoteClientLink1: TFDMoniRemoteClientLink;
+    ProductcategoryTableProductCategoryID: TFDAutoIncField;
+    ProductcategoryTableName: TWideStringField;
+    ProductcategoryTableName_1: TWideStringField;
+    ProductcategoryTableProductSubCategoryID: TFDAutoIncField;
   private
     { Private declarations }
   public
