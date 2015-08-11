@@ -1,18 +1,18 @@
 object dmScript: TdmScript
   OldCreateOrder = False
-  Height = 235
-  Width = 360
+  Height = 299
+  Width = 374
   object AdventureworksConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=AdventureWorks')
     Connected = True
     LoginPrompt = False
-    Left = 154
+    Left = 58
     Top = 26
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 280
+    Left = 56
     Top = 88
   end
   object FDScript1: TFDScript
@@ -45,8 +45,8 @@ object dmScript: TdmScript
     ResourceOptions.AssignedValues = [rvMacroCreate, rvMacroExpand, rvDirectExecute, rvPersistent]
     ResourceOptions.MacroCreate = False
     ResourceOptions.DirectExecute = True
-    Left = 112
-    Top = 136
+    Left = 56
+    Top = 160
   end
   object FDGUIxScriptDialog1: TFDGUIxScriptDialog
     Provider = 'FMX'
