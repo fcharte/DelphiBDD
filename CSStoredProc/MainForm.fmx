@@ -8,4 +8,33 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object Grid1: TGrid
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 289
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 455.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmStoredProc.UspgetmanageremployeesProc
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
 end
