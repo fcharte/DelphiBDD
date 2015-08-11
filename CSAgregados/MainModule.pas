@@ -9,13 +9,17 @@ uses
   FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
   FireDAC.Phys, FireDAC.Phys.MSSQL, FireDAC.Phys.MSSQLDef, FireDAC.FMXUI.Wait,
   FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.Comp.UI;
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.Comp.UI, System.Rtti,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid, System.Bindings.Outputs,
+  Fmx.Bind.Editors, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
+  FMX.Layouts, FMX.Grid;
 
 type
   TfrmMain = class(TForm)
-    AdventureworksConnection: TFDConnection;
-    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    FDQuery1: TFDQuery;
+    Grid1: TGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
   private
     { Private declarations }
   public
@@ -28,5 +32,7 @@ var
 implementation
 
 {$R *.fmx}
+
+uses DataModule;
 
 end.
