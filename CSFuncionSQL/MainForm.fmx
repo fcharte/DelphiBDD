@@ -1,11 +1,60 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form8'
+  Caption = 'Funci'#243'n SQL'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 64.000000000000000000
+      Position.Y = 16.000000000000000000
+    end
+    object Button1: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Consultar'
+      OnClick = Button1Click
+    end
+  end
+  object Grid1: TGrid
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 423.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 3
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 398.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmFuncionSQL.FDQuery1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 108
+    Top = 245
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
 end

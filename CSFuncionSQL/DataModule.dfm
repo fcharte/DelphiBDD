@@ -16,6 +16,7 @@ object dmFuncionSQL: TdmFuncionSQL
     Top = 104
   end
   object FDQuery1: TFDQuery
+    Active = True
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT *'
