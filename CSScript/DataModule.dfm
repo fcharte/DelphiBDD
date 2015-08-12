@@ -51,7 +51,7 @@ object dmScript: TdmScript
   object FDGUIxScriptDialog1: TFDGUIxScriptDialog
     Provider = 'FMX'
     Options = [ssCallstack, ssConsole]
-    Left = 264
+    Left = 152
     Top = 160
   end
 end
