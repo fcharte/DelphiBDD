@@ -4,10 +4,17 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid, System.Bindings.Outputs,
+  Fmx.Bind.Editors, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
+  FMX.Layouts, FMX.Grid;
 
 type
-  TForm8 = class(TForm)
+  TfrmMain = class(TForm)
+    Grid1: TGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
   private
     { Private declarations }
   public
@@ -15,10 +22,12 @@ type
   end;
 
 var
-  Form8: TForm8;
+  frmMain: TfrmMain;
 
 implementation
 
 {$R *.fmx}
+
+uses DataModule;
 
 end.

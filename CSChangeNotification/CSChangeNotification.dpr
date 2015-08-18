@@ -3,14 +3,14 @@ program CSChangeNotification;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  MainForm in 'MainForm.pas' {Form8},
-  DataModule in 'DataModule.pas' {DataModule2: TDataModule};
+  MainForm in 'MainForm.pas' {frmMain},
+  DataModule in 'DataModule.pas' {dmChangeNotification: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm8, Form8);
-  Application.CreateForm(TDataModule2, DataModule2);
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TdmChangeNotification, dmChangeNotification);
   Application.Run;
 end.
