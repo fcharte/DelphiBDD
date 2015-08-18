@@ -1,0 +1,17 @@
+﻿[dmTransaction.ProductcategoryTable]
+Coordinates=0,0,199,33
+Visible=False
+
+[Grid1]
+Coordinates=218,1,41,51
+Visible=True
+
+[]
+Coordinates=218,71,82,33
+
+[BindSourceDB1]
+Coordinates=0,0,178,141
+
+[BindingsList1]
+Coordinates=197,71,82,33
+
