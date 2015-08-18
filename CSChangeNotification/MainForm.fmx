@@ -11,13 +11,23 @@ object frmMain: TfrmMain
   object Grid1: TGrid
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 455.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     RowCount = 4
     RowHeight = 21.000000000000000000
     Viewport.Width = 636.000000000000000000
-    Viewport.Height = 455.000000000000000000
+    Viewport.Height = 430.000000000000000000
+  end
+  object BindNavigator1: TBindNavigator
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmChangeNotification.ProductcategoryTable

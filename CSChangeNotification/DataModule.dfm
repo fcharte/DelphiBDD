@@ -13,6 +13,7 @@ object dmChangeNotification: TdmChangeNotification
   object ProductcategoryTable: TFDQuery
     Active = True
     ChangeAlerter = FDEventAlerter1
+    ChangeAlertName = 'ProductCategory'
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')
@@ -21,13 +22,19 @@ object dmChangeNotification: TdmChangeNotification
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 184
-    Top = 120
+    Left = 248
+    Top = 48
   end
   object FDEventAlerter1: TFDEventAlerter
     Active = True
     Connection = AdventureworksConnection
-    Options.Timeout = 1000
+    Names.Strings = (
+      'SERVICE=?'
+      'QUEUE=?'
+      
+        'CHANGE1=ProductCategory;SELECT * FROM AdventureWorks.Production.' +
+        'ProductCategory')
+    Options.Timeout = 5000
     OnAlert = FDEventAlerter1Alert
     OnTimeout = FDEventAlerter1Timeout
     Left = 80

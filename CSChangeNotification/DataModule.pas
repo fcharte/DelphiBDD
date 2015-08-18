@@ -32,7 +32,11 @@ implementation
 
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
+uses MainForm, FMX.Dialogs;
+
 {$R *.dfm}
+
+
 
 procedure TdmChangeNotification.FDEventAlerter1Alert(
   ASender: TFDCustomEventAlerter; const AEventName: string;
@@ -44,6 +48,7 @@ end;
 procedure TdmChangeNotification.FDEventAlerter1Timeout(Sender: TObject);
 begin
   ProductcategoryTable.Refresh;
+  frmMain.Grid1.RealignContent;
 end;
 
 end.

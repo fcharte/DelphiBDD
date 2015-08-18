@@ -6,8 +6,11 @@ Coordinates=60,1,235,33
 Visible=False
 
 [BindSourceDB1]
-Coordinates=60,1,211,141
+Coordinates=60,1,211,159
 
 [BindingsList1]
 Coordinates=290,1,82,33
+
+[BindNavigator1]
+Coordinates=290,1,90,51
 
