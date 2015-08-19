@@ -55,7 +55,7 @@ procedure TdmChangeNotification.FDEventAlerter1Alert(
   const AArgument: Variant);
 begin
   ProductcategoryTable.Refresh;
-  ShowMessage('Hay cambios');
+  frmMain.Grid1.RealignContent;
 end;
 
 procedure TdmChangeNotification.FDEventAlerter1Timeout(Sender: TObject);

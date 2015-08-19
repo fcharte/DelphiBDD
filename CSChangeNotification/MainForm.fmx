@@ -2,26 +2,26 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Notificaci'#243'n de cambios'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 459
+  ClientWidth = 604
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Grid1: TGrid
     Align = Client
-    Size.Width = 640.000000000000000000
-    Size.Height = 423.000000000000000000
+    Size.Width = 604.000000000000000000
+    Size.Height = 402.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     RowCount = 6
     RowHeight = 21.000000000000000000
-    Viewport.Width = 636.000000000000000000
-    Viewport.Height = 398.000000000000000000
+    Viewport.Width = 600.000000000000000000
+    Viewport.Height = 377.000000000000000000
   end
   object Panel1: TPanel
     Align = Top
-    Size.Width = 640.000000000000000000
+    Size.Width = 604.000000000000000000
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
