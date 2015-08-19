@@ -1,0 +1,17 @@
+﻿[Grid1]
+Coordinates=10,10,41,51
+Visible=True
+
+[]
+Coordinates=60,1,82,33
+
+[dmChangeNotification.ProductcategoryTable]
+Coordinates=70,1,235,33
+Visible=False
+
+[BindSourceDB1]
+Coordinates=70,1,211,141
+
+[BindingsList1]
+Coordinates=300,1,82,33
+
