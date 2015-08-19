@@ -11,23 +11,41 @@ object frmMain: TfrmMain
   object Grid1: TGrid
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 455.000000000000000000
+    Size.Height = 423.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    RowCount = 4
+    RowCount = 6
     RowHeight = 21.000000000000000000
     Viewport.Width = 636.000000000000000000
-    Viewport.Height = 430.000000000000000000
+    Viewport.Height = 398.000000000000000000
   end
-  object BindNavigator1: TBindNavigator
+  object Panel1: TPanel
     Align = Top
     Size.Width = 640.000000000000000000
-    Size.Height = 25.000000000000000000
+    Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 3
-    DataSource = BindSourceDB1
-    xRadius = 4.000000000000000000
-    yRadius = 4.000000000000000000
+    TabOrder = 5
+    object btnEditar: TButton
+      Position.X = 304.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Editar'
+      OnClick = btnEditarClick
+    end
+    object btnConfirmar: TButton
+      Position.X = 392.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Confirmar'
+      OnClick = btnConfirmarClick
+    end
+    object btnRechazar: TButton
+      Position.X = 480.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'Rechazar'
+      OnClick = btnRechazarClick
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmChangeNotification.ProductcategoryTable

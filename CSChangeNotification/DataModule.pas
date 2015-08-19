@@ -19,6 +19,8 @@ type
     procedure FDEventAlerter1Alert(ASender: TFDCustomEventAlerter;
       const AEventName: string; const AArgument: Variant);
     procedure FDEventAlerter1Timeout(Sender: TObject);
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,11 +40,22 @@ uses MainForm, FMX.Dialogs;
 
 
 
+procedure TdmChangeNotification.DataModuleCreate(Sender: TObject);
+begin
+  FDEventAlerter1.Register;
+end;
+
+procedure TdmChangeNotification.DataModuleDestroy(Sender: TObject);
+begin
+  FDEventAlerter1.Unregister;
+end;
+
 procedure TdmChangeNotification.FDEventAlerter1Alert(
   ASender: TFDCustomEventAlerter; const AEventName: string;
   const AArgument: Variant);
 begin
   ProductcategoryTable.Refresh;
+  ShowMessage('Hay cambios');
 end;
 
 procedure TdmChangeNotification.FDEventAlerter1Timeout(Sender: TObject);

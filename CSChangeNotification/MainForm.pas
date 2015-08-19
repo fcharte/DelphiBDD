@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid, System.Bindings.Outputs,
   Fmx.Bind.Editors, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
-  FMX.Layouts, FMX.Grid, Data.Bind.Controls, Fmx.Bind.Navigator;
+  FMX.Layouts, FMX.Grid, Data.Bind.Controls, Fmx.Bind.Navigator, FMX.StdCtrls,
+  FMX.Controls.Presentation;
 
 type
   TfrmMain = class(TForm)
@@ -15,7 +16,13 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
-    BindNavigator1: TBindNavigator;
+    Panel1: TPanel;
+    btnEditar: TButton;
+    btnConfirmar: TButton;
+    btnRechazar: TButton;
+    procedure btnEditarClick(Sender: TObject);
+    procedure btnConfirmarClick(Sender: TObject);
+    procedure btnRechazarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,5 +37,20 @@ implementation
 {$R *.fmx}
 
 uses DataModule;
+
+procedure TfrmMain.btnConfirmarClick(Sender: TObject);
+begin
+  dmChangeNotification.AdventureworksConnection.Commit;
+end;
+
+procedure TfrmMain.btnEditarClick(Sender: TObject);
+begin
+  dmChangeNotification.AdventureworksConnection.StartTransaction;
+end;
+
+procedure TfrmMain.btnRechazarClick(Sender: TObject);
+begin
+  dmChangeNotification.AdventureworksConnection.Rollback;
+end;
 
 end.
