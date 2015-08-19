@@ -3,15 +3,19 @@ Coordinates=10,10,41,51
 Visible=True
 
 []
-Coordinates=60,1,82,33
+Coordinates=339,1,91,36
 
 [dmChangeNotification.ProductcategoryTable]
 Coordinates=70,1,235,33
 Visible=False
 
 [BindSourceDB1]
-Coordinates=70,1,211,141
+Coordinates=75,1,190,123
+
+[dmChangeAlerter.ProductcategoryTable]
+Coordinates=75,1,212,33
+Visible=False
 
 [BindingsList1]
-Coordinates=300,1,82,33
+Coordinates=322,1,82,33
 

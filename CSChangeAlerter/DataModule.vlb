@@ -1,12 +1,15 @@
 ﻿[ProductcategoryTable]
-Coordinates=10,10,123,123
-
-[FDEventAlerter1]
-Coordinates=142,1,95,33
+Coordinates=10,10,123,105
 
 [FDGUIxWaitCursor1]
 Coordinates=142,53,113,33
 
 [AdventureworksConnection]
 Coordinates=256,1,151,33
+
+[]
+Coordinates=142,1,95,33
+
+[FDEventAlerter1]
+Coordinates=152,1,95,33
 

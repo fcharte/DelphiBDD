@@ -15,9 +15,10 @@ object dmChangeAlerter: TdmChangeAlerter
     ChangeAlerter = FDEventAlerter1
     Connection = AdventureworksConnection
     SQL.Strings = (
-      'SELECT * FROM AdventureWorks.Production.ProductCategory')
-    Left = 71
-    Top = 85
+      'SELECT ProductCategoryID, Name, ModifiedDate'
+      'FROM AdventureWorks.Production.ProductCategory')
+    Left = 79
+    Top = 101
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
@@ -27,7 +28,8 @@ object dmChangeAlerter: TdmChangeAlerter
   end
   object FDEventAlerter1: TFDEventAlerter
     Connection = AdventureworksConnection
-    Left = 144
-    Top = 208
+    Options.AutoRegister = True
+    Left = 80
+    Top = 184
   end
 end

@@ -20,7 +20,7 @@ object frmMain: TfrmMain
     Viewport.Height = 455.000000000000000000
   end
   object BindSourceDB1: TBindSourceDB
-    DataSet = dmChangeNotification.ProductcategoryTable
+    DataSet = dmChangeAlerter.ProductcategoryTable
     ScopeMappings = <>
     Left = 304
     Top = 224
