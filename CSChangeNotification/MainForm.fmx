@@ -33,6 +33,7 @@ object frmMain: TfrmMain
       OnClick = btnEditarClick
     end
     object btnConfirmar: TButton
+      Enabled = False
       Position.X = 392.000000000000000000
       Position.Y = 16.000000000000000000
       TabOrder = 1
@@ -40,6 +41,7 @@ object frmMain: TfrmMain
       OnClick = btnConfirmarClick
     end
     object btnRechazar: TButton
+      Enabled = False
       Position.X = 480.000000000000000000
       Position.Y = 16.000000000000000000
       TabOrder = 2

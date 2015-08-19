@@ -41,16 +41,25 @@ uses DataModule;
 procedure TfrmMain.btnConfirmarClick(Sender: TObject);
 begin
   dmChangeNotification.AdventureworksConnection.Commit;
+  btnEditar.Enabled := True;
+  btnConfirmar.Enabled := False;
+  btnRechazar.Enabled := False;
 end;
 
 procedure TfrmMain.btnEditarClick(Sender: TObject);
 begin
   dmChangeNotification.AdventureworksConnection.StartTransaction;
+  btnEditar.Enabled := False;
+  btnConfirmar.Enabled := True;
+  btnRechazar.Enabled := True;
 end;
 
 procedure TfrmMain.btnRechazarClick(Sender: TObject);
 begin
   dmChangeNotification.AdventureworksConnection.Rollback;
+  btnEditar.Enabled := True;
+  btnConfirmar.Enabled := False;
+  btnRechazar.Enabled := False;
 end;
 
 end.
