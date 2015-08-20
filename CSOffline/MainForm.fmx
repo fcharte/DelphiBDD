@@ -2,15 +2,15 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Trabajo offline'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 321
+  ClientWidth = 596
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Panel1: TPanel
     Align = Top
-    Size.Width = 640.000000000000000000
+    Size.Width = 596.000000000000000000
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -39,20 +39,25 @@ object frmMain: TfrmMain
   end
   object Grid1: TGrid
     Align = Client
-    Size.Width = 640.000000000000000000
-    Size.Height = 423.000000000000000000
+    Size.Width = 596.000000000000000000
+    Size.Height = 264.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 4
+    RowCount = 6
     RowHeight = 21.000000000000000000
-    Viewport.Width = 636.000000000000000000
-    Viewport.Height = 398.000000000000000000
+    Viewport.Width = 592.000000000000000000
+    Viewport.Height = 239.000000000000000000
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 232
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmEmployee.ProductcategoryTable
     ScopeMappings = <>
-    Left = 184
-    Top = 312
+    Left = 64
+    Top = 232
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -83,10 +88,5 @@ object frmMain: TfrmMain
           ColumnStyle = 'DateColumn'
         end>
     end
-  end
-  object Timer1: TTimer
-    OnTimer = Timer1Timer
-    Left = 312
-    Top = 232
   end
 end
