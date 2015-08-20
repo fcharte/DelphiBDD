@@ -21,9 +21,11 @@ type
     btnCancelUpdates: TButton;
     Timer1: TTimer;
     BindNavigator1: TBindNavigator;
+    cbShowChanges: TCheckBox;
     procedure btnApplyUpdatesClick(Sender: TObject);
     procedure btnCancelUpdatesClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
+    procedure cbShowChangesChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +39,7 @@ implementation
 
 {$R *.fmx}
 
-uses DataModule;
+uses DataModule, FireDAC.Comp.DataSet;
 
 procedure TfrmMain.btnApplyUpdatesClick(Sender: TObject);
 var
@@ -51,6 +53,15 @@ end;
 procedure TfrmMain.btnCancelUpdatesClick(Sender: TObject);
 begin
   dmCachedUpdates.ProductcategoryTable.CancelUpdates;
+end;
+
+procedure TfrmMain.cbShowChangesChange(Sender: TObject);
+begin
+  with dmCachedUpdates.ProductcategoryTable do
+    if cbShowChanges.IsChecked then
+      FilterChanges := [rtModified,rtInserted,rtDeleted]
+    else
+      FilterChanges := [rtModified,rtInserted,rtUnmodified];
 end;
 
 procedure TfrmMain.Timer1Timer(Sender: TObject);

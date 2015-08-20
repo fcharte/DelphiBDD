@@ -47,6 +47,16 @@ object frmMain: TfrmMain
       Text = 'CancelUpdates'
       OnClick = btnCancelUpdatesClick
     end
+    object cbShowChanges: TCheckBox
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Mostrar modificados'
+      OnChange = cbShowChangesChange
+    end
   end
   object BindNavigator1: TBindNavigator
     Align = Bottom

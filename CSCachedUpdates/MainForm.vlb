@@ -26,3 +26,6 @@ Coordinates=296,141,48,33
 [BindNavigator1]
 Coordinates=277,141,90,51
 
+[cbShowChanges]
+Coordinates=198,179,97,51
+
