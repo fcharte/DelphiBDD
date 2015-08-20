@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid, System.Bindings.Outputs,
   Fmx.Bind.Editors, FMX.StdCtrls, FMX.Controls.Presentation,
-  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid;
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid,
+  Data.Bind.Controls, Fmx.Bind.Navigator;
 
 type
   TfrmMain = class(TForm)
@@ -19,6 +20,7 @@ type
     btnApplyUpdates: TButton;
     btnCancelUpdates: TButton;
     Timer1: TTimer;
+    BindNavigator1: TBindNavigator;
     procedure btnApplyUpdatesClick(Sender: TObject);
     procedure btnCancelUpdatesClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -56,9 +58,17 @@ begin
   with dmCachedUpdates.ProductcategoryTable, btnApplyUpdates do
   begin
     if UpdatesPending then
-      Text := 'ApplyUpdates (' + IntToStr(ChangeCount) + ')'
+    begin
+      Text := 'ApplyUpdates (' + IntToStr(ChangeCount) + ')';
+      Enabled := True;
+      btnCancelUpdates.Enabled := True;
+    end
     else
+    begin
       Text := 'ApplyUpdates';
+      Enabled := False;
+      btnCancelUpdates.Enabled := False;
+    end;
   end;
 end;
 

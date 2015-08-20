@@ -11,13 +11,13 @@ object frmMain: TfrmMain
   object Grid1: TGrid
     Align = Client
     Size.Width = 598.000000000000000000
-    Size.Height = 322.000000000000000000
+    Size.Height = 297.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     RowCount = 6
     RowHeight = 21.000000000000000000
     Viewport.Width = 594.000000000000000000
-    Viewport.Height = 297.000000000000000000
+    Viewport.Height = 272.000000000000000000
   end
   object Panel1: TPanel
     Align = Top
@@ -26,6 +26,7 @@ object frmMain: TfrmMain
     Size.PlatformDefault = False
     TabOrder = 3
     object btnApplyUpdates: TButton
+      Enabled = False
       Position.X = 264.000000000000000000
       Position.Y = 16.000000000000000000
       Size.Width = 113.000000000000000000
@@ -36,6 +37,7 @@ object frmMain: TfrmMain
       OnClick = btnApplyUpdatesClick
     end
     object btnCancelUpdates: TButton
+      Enabled = False
       Position.X = 392.000000000000000000
       Position.Y = 16.000000000000000000
       Size.Width = 105.000000000000000000
@@ -45,6 +47,17 @@ object frmMain: TfrmMain
       Text = 'CancelUpdates'
       OnClick = btnCancelUpdatesClick
     end
+  end
+  object BindNavigator1: TBindNavigator
+    Align = Bottom
+    Position.Y = 346.000000000000000000
+    Size.Width = 598.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmCachedUpdates.ProductcategoryTable
