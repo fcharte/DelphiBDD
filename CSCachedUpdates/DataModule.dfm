@@ -14,6 +14,8 @@ object dmCachedUpdates: TdmCachedUpdates
     Active = True
     CachedUpdates = True
     Connection = AdventureworksConnection
+    UpdateOptions.AssignedValues = [uvUpdateMode]
+    UpdateOptions.UpdateMode = upWhereChanged
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')
     Left = 111

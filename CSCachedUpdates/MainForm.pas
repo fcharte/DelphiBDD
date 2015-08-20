@@ -36,8 +36,12 @@ implementation
 uses DataModule;
 
 procedure TfrmMain.btnApplyUpdatesClick(Sender: TObject);
+var
+  nErrors: Integer;
 begin
-  dmCachedUpdates.ProductcategoryTable.ApplyUpdates;
+  nErrors := dmCachedUpdates.ProductcategoryTable.ApplyUpdates;
+  if nErrors <> 0 then
+    ShowMessage(IntToStr(nErrors) + ' errores');
 end;
 
 procedure TfrmMain.btnCancelUpdatesClick(Sender: TObject);
