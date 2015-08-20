@@ -18,8 +18,10 @@ type
     Panel1: TPanel;
     btnApplyUpdates: TButton;
     btnCancelUpdates: TButton;
+    Timer1: TTimer;
     procedure btnApplyUpdatesClick(Sender: TObject);
     procedure btnCancelUpdatesClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,6 +49,17 @@ end;
 procedure TfrmMain.btnCancelUpdatesClick(Sender: TObject);
 begin
   dmCachedUpdates.ProductcategoryTable.CancelUpdates;
+end;
+
+procedure TfrmMain.Timer1Timer(Sender: TObject);
+begin
+  with dmCachedUpdates.ProductcategoryTable, btnApplyUpdates do
+  begin
+    if UpdatesPending then
+      Text := 'ApplyUpdates (' + IntToStr(ChangeCount) + ')'
+    else
+      Text := 'ApplyUpdates';
+  end;
 end;
 
 end.

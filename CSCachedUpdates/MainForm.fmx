@@ -64,4 +64,9 @@ object frmMain: TfrmMain
       Columns = <>
     end
   end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 416
+    Top = 216
+  end
 end

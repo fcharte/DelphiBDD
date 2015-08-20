@@ -20,3 +20,6 @@ Coordinates=296,1,99,51
 [btnCancelUpdates]
 Coordinates=296,71,104,51
 
+[Timer1]
+Coordinates=296,141,48,33
+
