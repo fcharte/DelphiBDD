@@ -1,24 +1,29 @@
 object dmReconcile: TdmReconcile
   OldCreateOrder = False
-  Height = 210
-  Width = 340
+  Height = 270
+  Width = 472
   object AdventureworksConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=AdventureWorks')
+    Connected = True
     LoginPrompt = False
-    Left = 106
-    Top = 81
+    Left = 111
+    Top = 51
   end
   object ProductcategoryTable: TFDQuery
+    Active = True
+    CachedUpdates = True
     Connection = AdventureworksConnection
+    UpdateOptions.AssignedValues = [uvUpdateMode]
+    UpdateOptions.UpdateMode = upWhereChanged
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')
-    Left = 106
-    Top = 129
+    Left = 111
+    Top = 123
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
-    Provider = 'Forms'
-    Left = 232
-    Top = 136
+    Provider = 'FMX'
+    Left = 288
+    Top = 48
   end
 end
