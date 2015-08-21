@@ -40,12 +40,12 @@ object frmReconcile: TfrmReconcile
     StyledSettings = [Family, Size, FontColor]
     Position.X = 224.000000000000000000
     Position.Y = 56.000000000000000000
-    Size.Width = 51.000000000000000000
+    Size.Width = 65.000000000000000000
     Size.Height = 16.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Style = [fsBold]
     TextSettings.WordWrap = False
-    Text = 'Mensaje'
+    Text = 'lblMensaje'
   end
   object Label3: TLabel
     AutoSize = True
@@ -86,6 +86,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 10
     ReadOnly = True
+    Text = 'edIDOriginal'
     Position.X = 96.000000000000000000
     Position.Y = 144.000000000000000000
     Size.Width = 137.000000000000000000
@@ -96,6 +97,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 13
     ReadOnly = True
+    Text = 'edIDActual'
     Position.X = 272.000000000000000000
     Position.Y = 144.000000000000000000
     Size.Width = 153.000000000000000000
@@ -106,6 +108,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 14
     ReadOnly = True
+    Text = 'edIDNuevo'
     Position.X = 456.000000000000000000
     Position.Y = 144.000000000000000000
     Size.Width = 145.000000000000000000
@@ -116,6 +119,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 12
     ReadOnly = True
+    Text = 'edNameActual'
     Position.X = 272.000000000000000000
     Position.Y = 192.000000000000000000
     Size.Width = 153.000000000000000000
@@ -126,6 +130,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 9
     ReadOnly = True
+    Text = 'edNameOriginal'
     Position.X = 96.000000000000000000
     Position.Y = 192.000000000000000000
     Size.Width = 137.000000000000000000
@@ -136,6 +141,7 @@ object frmReconcile: TfrmReconcile
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 11
     ReadOnly = True
+    Text = 'edNameNuevo'
     Position.X = 456.000000000000000000
     Position.Y = 192.000000000000000000
     Size.Width = 145.000000000000000000

@@ -46,8 +46,8 @@ begin
   with dmReconcile.ProductcategoryTable do
   begin
     ApplyUpdates;
-    Reconcile;
-    CommitUpdates;
+    if Reconcile then
+      CommitUpdates;
   end;
 end;
 
