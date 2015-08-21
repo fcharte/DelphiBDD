@@ -1,31 +1,31 @@
 ﻿[Grid1]
-Coordinates=0,0,41,51
+Coordinates=10,20,41,51
 
 [dmCachedUpdates.ProductcategoryTable]
 Coordinates=60,1,219,33
 Visible=False
 
 [BindSourceDB1]
-Coordinates=60,1,198,159
+Coordinates=180,0,198,159
 
 [BindingsList1]
 Coordinates=277,1,82,33
 
 [Panel1]
-Coordinates=11,70,47,33
+Coordinates=790,0,47,33
 
 [btnApplyUpdates]
-Coordinates=296,1,99,51
+Coordinates=620,10,99,51
 
 [btnCancelUpdates]
-Coordinates=296,71,104,51
+Coordinates=730,90,104,51
 
 [Timer1]
 Coordinates=296,141,48,33
 
 [BindNavigator1]
-Coordinates=277,141,90,51
+Coordinates=0,110,90,51
 
 [cbShowChanges]
-Coordinates=198,179,97,51
+Coordinates=670,200,97,51
 
