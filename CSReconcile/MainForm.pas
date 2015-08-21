@@ -42,12 +42,11 @@ implementation
 uses DataModule, FireDAC.Comp.DataSet;
 
 procedure TfrmMain.btnApplyUpdatesClick(Sender: TObject);
-var
-  nErrors: Integer;
 begin
   with dmReconcile.ProductcategoryTable do
   begin
     ApplyUpdates;
+    Reconcile;
     CommitUpdates;
   end;
 end;

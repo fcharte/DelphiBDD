@@ -15,6 +15,9 @@ type
     AdventureworksConnection: TFDConnection;
     ProductcategoryTable: TFDQuery;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    procedure ProductcategoryTableReconcileError(DataSet: TFDDataSet;
+      E: EFDException; UpdateKind: TFDDatSRowState;
+      var Action: TFDDAptReconcileAction);
   private
     { Private declarations }
   public
@@ -29,5 +32,14 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+uses FMX.Dialogs, ReconcileForm;
+
+procedure TdmReconcile.ProductcategoryTableReconcileError(DataSet: TFDDataSet;
+  E: EFDException; UpdateKind: TFDDatSRowState;
+  var Action: TFDDAptReconcileAction);
+begin
+  Action := frmReconcile.ReconcileForm(DataSet, E, UpdateKind);
+end;
 
 end.

@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form8'
+  Caption = 'Resoluci'#243'n de conflictos'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320

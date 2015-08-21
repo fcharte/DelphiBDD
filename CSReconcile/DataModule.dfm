@@ -13,6 +13,7 @@ object dmReconcile: TdmReconcile
   object ProductcategoryTable: TFDQuery
     Active = True
     CachedUpdates = True
+    OnReconcileError = ProductcategoryTableReconcileError
     Connection = AdventureworksConnection
     UpdateOptions.AssignedValues = [uvUpdateMode]
     UpdateOptions.UpdateMode = upWhereChanged
