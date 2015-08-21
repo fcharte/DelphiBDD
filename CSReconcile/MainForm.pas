@@ -45,9 +45,11 @@ procedure TfrmMain.btnApplyUpdatesClick(Sender: TObject);
 var
   nErrors: Integer;
 begin
-  nErrors := dmReconcile.ProductcategoryTable.ApplyUpdates;
-  if nErrors <> 0 then
-    ShowMessage(IntToStr(nErrors) + ' errores');
+  with dmReconcile.ProductcategoryTable do
+  begin
+    ApplyUpdates;
+    CommitUpdates;
+  end;
 end;
 
 procedure TfrmMain.btnCancelUpdatesClick(Sender: TObject);
