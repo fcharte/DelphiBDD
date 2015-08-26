@@ -15,6 +15,11 @@ type
     FDConnection1: TFDConnection;
     FDPhysIBDriverLink1: TFDPhysIBDriverLink;
     FDIBSecurity1: TFDIBSecurity;
+    FDIBBackup1: TFDIBBackup;
+    FDIBRestore1: TFDIBRestore;
+    FDIBValidate1: TFDIBValidate;
+    FDIBConfig1: TFDIBConfig;
+    FDIBSDump1: TFDIBSDump;
   private
     { Private declarations }
   public

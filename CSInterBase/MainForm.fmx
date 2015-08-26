@@ -2,8 +2,8 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Form8'
-  ClientHeight = 252
-  ClientWidth = 459
+  ClientHeight = 374
+  ClientWidth = 630
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -29,7 +29,27 @@ object frmMain: TfrmMain
   end
   object FDIBSecurity1: TFDIBSecurity
     DriverLink = FDPhysIBDriverLink1
-    Left = 232
-    Top = 48
+    Left = 464
+    Top = 264
+  end
+  object FDIBBackup1: TFDIBBackup
+    Left = 72
+    Top = 256
+  end
+  object FDIBRestore1: TFDIBRestore
+    Left = 168
+    Top = 264
+  end
+  object FDIBValidate1: TFDIBValidate
+    Left = 288
+    Top = 280
+  end
+  object FDIBConfig1: TFDIBConfig
+    Left = 376
+    Top = 264
+  end
+  object FDIBSDump1: TFDIBSDump
+    Left = 544
+    Top = 272
   end
 end
