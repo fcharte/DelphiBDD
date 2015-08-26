@@ -2,22 +2,34 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Form8'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 252
+  ClientWidth = 459
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'DriverID=IB'
       'User_Name=sysdba'
-      'Password=masterkey')
-    Left = 112
-    Top = 88
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Database=biblioteca.ib'
+      'Server=127.0.0.1'
+      'DriverID=IB'
+      'Port=3050'
+      'OSAuthent=No'
+      'CharacterSet=UTF8')
+    Left = 80
+    Top = 144
   end
   object FDPhysIBDriverLink1: TFDPhysIBDriverLink
-    Left = 280
-    Top = 88
+    VendorLib = 'C:\DelphiBDD\CSInterBase\gds32.dll'
+    Left = 72
+    Top = 48
+  end
+  object FDIBSecurity1: TFDIBSecurity
+    DriverLink = FDPhysIBDriverLink1
+    Left = 232
+    Top = 48
   end
 end
