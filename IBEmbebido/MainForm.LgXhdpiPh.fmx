@@ -1,0 +1,56 @@
+inherited frmMain_LgXhdpiPh: TfrmMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited TabItem1: TTabItem
+      inherited ListViewDEPARTMENT: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 647.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited Label2: TLabel
+          Size.Width = 131.000000000000000000
+          Size.Height = 22.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      inherited ListViewEMPLOYEE: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 647.000000000000000000
+      end
+      inherited ToolBar1: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 200.000000000000000000
+          Size.Height = 22.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      inherited ToolBar3: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited Label3: TLabel
+          Size.Width = 79.000000000000000000
+          Size.Height = 22.000000000000000000
+        end
+      end
+      inherited ListViewSALARYHISTORY: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 647.000000000000000000
+      end
+    end
+  end
+  inherited BindSourceDepartment: TBindSourceDB
+    Left = 184
+    Top = 464
+  end
+  inherited BindSourceSalaryHistory: TBindSourceDB
+    Left = 184
+    Top = 408
+  end
+end

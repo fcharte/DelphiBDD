@@ -4,7 +4,7 @@ object dmEmployee: TdmEmployee
   Width = 470
   object EmployeeConnection: TFDConnection
     Params.Strings = (
-      'Database=localhost:D:\DelphiBDD\IBEmbebido\EMPLOYEE.GDB'
+      'Database=C:\DelphiBDD\IBEmbebido\EMPLOYEE.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'DriverID=IBLite')
@@ -16,6 +16,7 @@ object dmEmployee: TdmEmployee
   end
   object DepartmentTable: TFDQuery
     Active = True
+    ConstraintsEnabled = True
     Connection = EmployeeConnection
     SQL.Strings = (
       'SELECT * FROM DEPARTMENT')
@@ -23,7 +24,7 @@ object dmEmployee: TdmEmployee
     Top = 86
   end
   object EmployeeTable: TFDQuery
-    Active = True
+    ConstraintsEnabled = True
     MasterSource = dsDepartment
     MasterFields = 'DEPT_NO'
     DetailFields = 'DEPT_NO'
@@ -55,7 +56,7 @@ object dmEmployee: TdmEmployee
     Top = 14
   end
   object SalaryHistoryTable: TFDQuery
-    Active = True
+    ConstraintsEnabled = True
     MasterSource = dsEmployee
     MasterFields = 'EMP_NO'
     DetailFields = 'EMP_NO'

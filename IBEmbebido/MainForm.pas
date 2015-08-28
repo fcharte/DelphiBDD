@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.ListView.Types, Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, FMX.TabControl,
-  Data.Bind.Components, FMX.ListView, Data.Bind.DBScope, FMX.StdCtrls;
+  Data.Bind.Components, FMX.ListView, Data.Bind.DBScope, FMX.StdCtrls,
+  FMX.Controls.Presentation;
 
 type
   TfrmMain = class(TForm)
@@ -53,6 +54,11 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.NmXhdpiPh.fmx ANDROID}
+{$R *.Windows.fmx MSWINDOWS}
+{$R *.iPhone55in.fmx IOS}
+{$R *.iPad.fmx IOS}
 
 uses DataModuleEmployee;
 

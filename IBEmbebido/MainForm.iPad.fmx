@@ -1,0 +1,57 @@
+inherited frmMain_iPad: TfrmMain_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 768.000000000000000000
+    Size.Height = 1004.000000000000000000
+    inherited TabItem1: TTabItem
+      inherited ListViewDEPARTMENT: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 960.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 768.000000000000000000
+        Size.Height = 44.000000000000000000
+        inherited Label2: TLabel
+          Size.Width = 121.000000000000000000
+          Size.Height = 23.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      inherited ListViewEMPLOYEE: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 960.000000000000000000
+      end
+      inherited ToolBar1: TToolBar
+        Size.Width = 768.000000000000000000
+        Size.Height = 44.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 187.000000000000000000
+          Size.Height = 23.000000000000000000
+        end
+        inherited Button1: TButton
+          Size.Height = 44.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      inherited ToolBar3: TToolBar
+        Size.Width = 768.000000000000000000
+        Size.Height = 44.000000000000000000
+        inherited Label3: TLabel
+          Size.Width = 73.000000000000000000
+          Size.Height = 23.000000000000000000
+        end
+        inherited Button2: TButton
+          Size.Height = 44.000000000000000000
+        end
+      end
+      inherited ListViewSALARYHISTORY: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 960.000000000000000000
+      end
+    end
+  end
+end
