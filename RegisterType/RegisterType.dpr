@@ -35,5 +35,17 @@ begin
 
   collection[0].name := 'Atari 400';
   collection[0].year := 1979;
+  collection[0].manufacturer := 'Atari';
+  collection[0].bits := bo8;
+  collection[0].RAM := 48;
+
+  with collection[0] do
+  begin
+    name := 'Atari 400';
+    year := 1979;
+    manufacturer := 'Atari';
+    bits := bo8;
+    RAM := 48;
+  end;
 
 end.
