@@ -23,6 +23,17 @@ type
     itWorks      : Boolean;
   end;
 
+var
+  aComputer: TComputer;
+  collection: array of TComputer;
+  numComputers: Integer;
+
 begin
+  // Establecer el número de ordenadores en la colección
+  numComputers := 75;
+  SetLength(collection, numComputers);
+
+  collection[0].name := 'Atari 400';
+  collection[0].year := 1979;
 
 end.
