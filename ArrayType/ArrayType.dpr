@@ -19,6 +19,8 @@ var
   res1: array[1..10] of String;
   res2: array[1..10,1..3] of Integer;
   magazine: array[TPubYear, TMonth, 1..500] of TContent;
+  numIssues, numPages: Integer;
+  collection: array of array of TContent;
 
 begin
   res1[1] := '256x192x16';
@@ -31,4 +33,12 @@ begin
 
   SetLength(res, 7);
   res[0] := '256x192x16';
+
+  numIssues := 48;
+  numPages := 64;
+
+  SetLength(collection, numIssues, numPages);
+
+  collection[0, 0] := TContent.Analysis;
+
 end.
