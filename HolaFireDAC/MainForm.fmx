@@ -18,6 +18,7 @@ object Form2: TForm2
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
+    OnEnter = ListView1Enter
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.FDTableEntradas

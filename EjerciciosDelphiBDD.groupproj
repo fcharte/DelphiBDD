@@ -96,6 +96,9 @@
         <Projects Include="EnumeratedType\EnumeratedType.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="SubrangeType\SubrangeType.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -383,14 +386,23 @@
     <Target Name="EnumeratedType:Make">
         <MSBuild Projects="EnumeratedType\EnumeratedType.dproj" Targets="Make"/>
     </Target>
+    <Target Name="SubrangeType">
+        <MSBuild Projects="SubrangeType\SubrangeType.dproj"/>
+    </Target>
+    <Target Name="SubrangeType:Clean">
+        <MSBuild Projects="SubrangeType\SubrangeType.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SubrangeType:Make">
+        <MSBuild Projects="SubrangeType\SubrangeType.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection;CSOffline;CSSeleccion;CSPaginate;CSUpdate;Agregados;CSFuncionSQL;CSStoredProc;CSScript;CSTransaction;CSChangeNotification;CSChangeAlerter;CSCachedUpdates;CSReconcile;CSCentralizedCachedUpdates;CSInterBase;EnumeratedType"/>
+        <CallTarget Targets="HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection;CSOffline;CSSeleccion;CSPaginate;CSUpdate;Agregados;CSFuncionSQL;CSStoredProc;CSScript;CSTransaction;CSChangeNotification;CSChangeAlerter;CSCachedUpdates;CSReconcile;CSCentralizedCachedUpdates;CSInterBase;EnumeratedType;SubrangeType"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean;CSOffline:Clean;CSSeleccion:Clean;CSPaginate:Clean;CSUpdate:Clean;Agregados:Clean;CSFuncionSQL:Clean;CSStoredProc:Clean;CSScript:Clean;CSTransaction:Clean;CSChangeNotification:Clean;CSChangeAlerter:Clean;CSCachedUpdates:Clean;CSReconcile:Clean;CSCentralizedCachedUpdates:Clean;CSInterBase:Clean;EnumeratedType:Clean"/>
+        <CallTarget Targets="HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean;CSOffline:Clean;CSSeleccion:Clean;CSPaginate:Clean;CSUpdate:Clean;Agregados:Clean;CSFuncionSQL:Clean;CSStoredProc:Clean;CSScript:Clean;CSTransaction:Clean;CSChangeNotification:Clean;CSChangeAlerter:Clean;CSCachedUpdates:Clean;CSReconcile:Clean;CSCentralizedCachedUpdates:Clean;CSInterBase:Clean;EnumeratedType:Clean;SubrangeType:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make;CSOffline:Make;CSSeleccion:Make;CSPaginate:Make;CSUpdate:Make;Agregados:Make;CSFuncionSQL:Make;CSStoredProc:Make;CSScript:Make;CSTransaction:Make;CSChangeNotification:Make;CSChangeAlerter:Make;CSCachedUpdates:Make;CSReconcile:Make;CSCentralizedCachedUpdates:Make;CSInterBase:Make;EnumeratedType:Make"/>
+        <CallTarget Targets="HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make;CSOffline:Make;CSSeleccion:Make;CSPaginate:Make;CSUpdate:Make;Agregados:Make;CSFuncionSQL:Make;CSStoredProc:Make;CSScript:Make;CSTransaction:Make;CSChangeNotification:Make;CSChangeAlerter:Make;CSCachedUpdates:Make;CSReconcile:Make;CSCentralizedCachedUpdates:Make;CSInterBase:Make;EnumeratedType:Make;SubrangeType:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -19,6 +19,7 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkFillControlToField1: TLinkFillControlToField;
+    procedure ListView1Enter(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,5 +34,10 @@ implementation
 {$R *.fmx}
 
 uses MainDataModule;
+
+procedure TForm2.ListView1Enter(Sender: TObject);
+begin
+  ListView1.Align := TAlignLayout.Client;
+end;
 
 end.
