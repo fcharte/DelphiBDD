@@ -12,6 +12,14 @@ begin
   H := H + C1*C1 + C2*C2;
 end;
 
+procedure setRes(resolutions: array of String);
+var
+  aResolution: String;
+
+begin
+  for aResolution in resolutions do
+    // Hacer algo con la variable aResolution
+end;
 
 var
   H: Real;
@@ -19,8 +27,10 @@ var
 begin
   H := 0.0;
   hypotenuse(3.2, 4.1, H);
-  hypotenuse(1.8, 5.7, H)
+  hypotenuse(1.8, 5.7, H) ;
 
   // H contiene la suma de las dos hipotenusas
+
+  setRes(['12x15', '15x32'])
 
 end.
