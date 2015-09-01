@@ -23,6 +23,7 @@ type
   end;
 
 implementation
+uses System.SysUtils;
 
 class constructor TCollection.Create;
 begin
@@ -43,6 +44,12 @@ begin
   if refInstance <> nil then
      raise Exception.Create(
       'No se pueden crear más objetos de esta clase');
+end;
+
+
+class function TCollection.getInstance: TCollection;
+begin
+  result := refInstance;
 end;
 
 end.
