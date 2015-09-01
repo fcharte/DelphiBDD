@@ -3,7 +3,8 @@ program MicroClassicProject;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  MainForm in 'MainForm.pas' {Form8};
+  MainForm in 'MainForm.pas' {Form8},
+  Collectible in 'Collectible.pas';
 
 {$R *.res}
 

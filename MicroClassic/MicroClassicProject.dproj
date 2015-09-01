@@ -273,6 +273,7 @@
             <Form>Form8</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="Collectible.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
