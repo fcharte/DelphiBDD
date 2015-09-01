@@ -49,4 +49,21 @@ begin
   nPictures := 0;
 end;
 
+{ Método para modificar la propiedad Name }
+procedure TCollectible.setName(name: String);
+begin
+  Fname := name;
+end;
+
+
+{ Facilitar el acceso a las imágenes del objeto }
+function TCollectible.getPicture(Index: Integer): TBitmap;
+begin
+  if Index < nPictures then
+    Result := Fpictures[Index]
+  else
+    Result := nil;
+end;
+
+
 end.
