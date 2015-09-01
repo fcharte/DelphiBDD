@@ -65,5 +65,21 @@ begin
     Result := nil;
 end;
 
+{ Añadir una nueva imagen a la lista de imágenes }
+procedure TCollectible.addPicture(picture: TBitmap);
+begin
+  if nPictures = Length(Fpictures) then
+    extendPictures;
+
+  Fpictures[nPictures] := picture;
+  inc(nPictures);
+end;
+
+{ Extender la matriz duplicando su tamaño }
+procedure TCollectible.extendPictures;
+begin
+  SetLength(Fpictures, Length(Fpictures) * 2);
+end;
+
 
 end.
