@@ -4,7 +4,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   MainForm in 'MainForm.pas' {Form8},
-  Collectible in 'Collectible.pas';
+  Collectible in 'Collectible.pas',
+  Computer in 'Computer.pas';
 
 {$R *.res}
 

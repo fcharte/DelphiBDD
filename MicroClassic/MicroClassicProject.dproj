@@ -274,6 +274,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Collectible.pas"/>
+        <DCCReference Include="Computer.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
