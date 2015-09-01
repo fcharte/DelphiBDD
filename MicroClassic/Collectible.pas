@@ -81,5 +81,9 @@ begin
   SetLength(Fpictures, Length(Fpictures) * 2);
 end;
 
+function TCollectible.hasPictures;
+begin
+  result := nPictures > 0;
+end;
 
 end.
