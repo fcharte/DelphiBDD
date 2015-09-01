@@ -24,4 +24,16 @@ type
 
 implementation
 
+class constructor TCollection.Create;
+begin
+  if refInstance = nil then
+    refInstance := TCollection.Create;
+end;
+
+class destructor TCollection.Destroy;
+begin
+  refInstance.Free;
+  refInstance := nil;
+end;
+
 end.
