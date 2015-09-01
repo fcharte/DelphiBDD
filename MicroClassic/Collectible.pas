@@ -38,4 +38,15 @@ property Picture[I: Integer] : TBitmap read getPicture;
 
 implementation
 
+const INI_NUM_PICTURES = 1;
+
+{ El constructor precisa el nombre del objeto, e
+  inicializa los miembros de datos esenciales }
+constructor TCollectible.Create(name: String);
+begin
+  setName(name);
+  SetLength(Fpictures, INI_NUM_PICTURES);
+  nPictures := 0;
+end;
+
 end.
