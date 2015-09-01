@@ -36,4 +36,13 @@ begin
   refInstance := nil;
 end;
 
+
+constructor TCollection.Create;
+begin
+  inherited;
+  if refInstance <> nil then
+     raise Exception.Create(
+      'No se pueden crear más objetos de esta clase');
+end;
+
 end.
