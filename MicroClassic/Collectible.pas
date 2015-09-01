@@ -17,6 +17,10 @@ TCollectible = class abstract
     Fdescription : String;
     Fpictures    : array of TBitmap;
     nPictures    : Integer;
+    { Métodos de uso interno }
+    procedure setName(name: String);
+    function  getPicture(Index: Integer): TBitmap;
+    procedure extendPictures;
 end;
 
 implementation
