@@ -29,4 +29,14 @@ type
 
 implementation
 
+constructor TComputer.Create(name: String);
+begin
+  inherited Create(name);
+
+  Fbits := bits8;
+  FRAM := 64;
+  FROM := 32;
+  Fworks := True;
+end;
+
 end.

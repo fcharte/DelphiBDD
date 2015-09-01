@@ -5,7 +5,8 @@ uses
   FMX.Forms,
   MainForm in 'MainForm.pas' {Form8},
   Collectible in 'Collectible.pas',
-  Computer in 'Computer.pas';
+  Computer in 'Computer.pas',
+  Collection in 'Collection.pas';
 
 {$R *.res}
 
