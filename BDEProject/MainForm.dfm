@@ -19,4 +19,8 @@ object Form9: TForm9
     Left = 320
     Top = 192
   end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 432
+    Top = 176
+  end
 end
