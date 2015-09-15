@@ -81,11 +81,10 @@ begin
     ));
   end;
 
-  WriteLn(cliente.ToString);
-
+  WriteLn('Representación JSON del TJSONObject' + #13#10#10 +
+    cliente.ToString + #13#10#10 + 'Pulsa <Intro>');
 
   ReadLn;
-
 
   cliente.Parse(BytesOf('{ "Cliente": ' +
      '{ "Nombre": "Francisco Charte", ' +
@@ -102,6 +101,10 @@ begin
      ' "Importe": 187.43 }]}}'
   ), 0);
 
+  WriteLn('Vía de la dirección: ' +
+    cliente.Values['Cliente'].GetValue<TJSONObject>('Direccion').Values['Via'].Value +
+    #13#10#10 + 'Pulsa <Intro>'
+  );
 
   ReadLn;
 end.
