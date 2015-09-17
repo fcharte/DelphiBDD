@@ -18,6 +18,7 @@ type
     { Private declarations }
   public
     { Public declarations }
+    function GetCategories(query: String): TDataset;
   end;
 
 implementation
@@ -26,6 +27,23 @@ implementation
 
 {$R *.dfm}
 
+
+{ TCategoriesMethods }
+
+
+{ TCategoriesMethods }
+
+function TCategoriesMethods.GetCategories(query: String): TDataset;
+begin
+  with ProductcategoryTable do begin
+    if Active then Close;
+    SQL.Clear;
+    SQL.Add(query);
+    Open;
+  end;
+
+  result := ProductcategoryTable;
+end;
 
 end.
 

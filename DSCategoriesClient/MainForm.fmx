@@ -1,0 +1,70 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form12'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    Position.X = 72.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 236.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 296.000000000000000000
+    Viewport.Height = 211.000000000000000000
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=DS')
+    Connected = True
+    LoginPrompt = False
+    Left = 72
+    Top = 80
+  end
+  object FDStoredProc1: TFDStoredProc
+    Connection = FDConnection1
+    StoredProcName = 'TCategoriesMethods.GetCategories'
+    Left = 184
+    Top = 320
+    ParamData = <
+      item
+        Name = 'query'
+        DataType = ftWideString
+        ParamType = ptInput
+        Size = 64
+        Value = 'SELECT * FROM Production.ProductCategory'
+      end
+      item
+        Position = 2
+        Name = 'ReturnValue'
+        DataType = ftBoolean
+        ParamType = ptResult
+        Value = True
+      end>
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDStoredProc1
+    ScopeMappings = <>
+    Left = 288
+    Top = 328
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end
