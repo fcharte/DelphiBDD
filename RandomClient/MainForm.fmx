@@ -15,6 +15,13 @@ object frmMain: TfrmMain
     Text = 'Button1'
     OnClick = Button1Click
   end
+  object Button2: TButton
+    Position.X = 408.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 5
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
   object RandomserviceConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=RandomService')

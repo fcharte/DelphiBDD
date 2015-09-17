@@ -19,7 +19,9 @@ type
     Button1: TButton;
     FDPhysDSDriverLink1: TFDPhysDSDriverLink;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,6 +35,8 @@ implementation
 
 {$R *.fmx}
 
+uses RandomClassesUnit, RandomModuleUnit;
+
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
   with NextrandProc do begin
@@ -42,6 +46,11 @@ begin
     ShowMessage(ParamByName('ReturnValue').AsString);
   end;
 
+end;
+
+procedure TfrmMain.Button2Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(RandomModule.RandomMethodsClient.NextRand(100, 115)));
 end;
 
 end.
