@@ -10,7 +10,8 @@ uses
   FireDAC.Phys, FireDAC.Phys.DS, FireDAC.Phys.DSDef, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FMX.Controls.Presentation,
   FMX.StdCtrls, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  IPPeerClient, FireDAC.Phys.TDBXBase, FireDAC.FMXUI.Wait, FireDAC.Comp.UI;
+  IPPeerClient, FireDAC.Phys.TDBXBase, FireDAC.FMXUI.Wait, FireDAC.Comp.UI,
+  FMX.Edit;
 
 type
   TfrmMain = class(TForm)
@@ -20,6 +21,16 @@ type
     FDPhysDSDriverLink1: TFDPhysDSDriverLink;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     Button2: TButton;
+    GroupBox1: TGroupBox;
+    edInferior: TEdit;
+    Label1: TLabel;
+    edSuperior: TEdit;
+    Label2: TLabel;
+    GroupBox2: TGroupBox;
+    edInferior2: TEdit;
+    Label3: TLabel;
+    edSuperior2: TEdit;
+    Label4: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private

@@ -2,25 +2,109 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Consumidor servicio RandomService'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 359
+  ClientWidth = 524
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Button1: TButton
-    Position.X = 280.000000000000000000
-    Position.Y = 232.000000000000000000
-    TabOrder = 2
-    Text = 'Button1'
-    OnClick = Button1Click
-  end
-  object Button2: TButton
-    Position.X = 408.000000000000000000
-    Position.Y = 232.000000000000000000
+  object GroupBox1: TGroupBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'FireDAC'
     TabOrder = 5
-    Text = 'Button2'
-    OnClick = Button2Click
+    object Button1: TButton
+      Position.X = 105.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Invocar'
+      OnClick = Button1Click
+    end
+    object edInferior: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = '1'
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'L'#237'mite inferior'
+    end
+    object edSuperior: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = '10'
+      Position.X = 112.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label2: TLabel
+      Position.X = 112.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'L'#237'mite superior'
+    end
+  end
+  object GroupBox2: TGroupBox
+    Position.X = 288.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'M'#243'dulo cliente'
+    TabOrder = 4
+    object edInferior2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = '25'
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label3: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'L'#237'mite inferior'
+    end
+    object edSuperior2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Text = '50'
+      Position.X = 112.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label4: TLabel
+      Position.X = 112.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'L'#237'mite superior'
+    end
+    object Button2: TButton
+      Position.X = 121.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Invocar'
+      OnClick = Button2Click
+    end
   end
   object RandomserviceConnection: TFDConnection
     Params.Strings = (
@@ -56,12 +140,12 @@ object frmMain: TfrmMain
       end>
   end
   object FDPhysDSDriverLink1: TFDPhysDSDriverLink
-    Left = 96
-    Top = 368
+    Left = 272
+    Top = 232
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 256
-    Top = 368
+    Left = 272
+    Top = 288
   end
 end
