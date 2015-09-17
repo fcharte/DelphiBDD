@@ -31,6 +31,10 @@ type
     Label3: TLabel;
     edSuperior2: TEdit;
     Label4: TLabel;
+    lblResultado: TLabel;
+    Label6: TLabel;
+    lblResultado2: TLabel;
+    Label7: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private
@@ -51,17 +55,18 @@ uses RandomClassesUnit, RandomModuleUnit;
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
   with NextrandProc do begin
-    ParamByName('FromN').Value := 25;
-    ParamByName('ToN').Value := 50;
+    ParamByName('FromN').Value := StrToInt(edInferior.Text);
+    ParamByName('ToN').Value := StrToInt(edSuperior.Text);
     ExecProc;
-    ShowMessage(ParamByName('ReturnValue').AsString);
+    lblResultado.Text := ParamByName('ReturnValue').AsString;
   end;
 
 end;
 
 procedure TfrmMain.Button2Click(Sender: TObject);
 begin
-  ShowMessage(IntToStr(RandomModule.RandomMethodsClient.NextRand(100, 115)));
+  lblResultado2.Text := IntToStr(RandomModule.RandomMethodsClient.NextRand(
+     StrToInt(edInferior2.Text), StrToInt(edSuperior2.Text)));
 end;
 
 end.
