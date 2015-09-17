@@ -3,7 +3,7 @@ object frmMain: TfrmMain
   Top = 0
   Caption = 'Consumidor servicio RandomService'
   ClientHeight = 359
-  ClientWidth = 524
+  ClientWidth = 297
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -157,14 +157,14 @@ object frmMain: TfrmMain
       'ConnectionDef=RandomService')
     Connected = True
     LoginPrompt = False
-    Left = 94
-    Top = 230
+    Left = 62
+    Top = 182
   end
   object NextrandProc: TFDStoredProc
     Connection = RandomserviceConnection
     StoredProcName = 'TRandomMethods.NextRand'
-    Left = 94
-    Top = 278
+    Left = 62
+    Top = 238
     ParamData = <
       item
         Name = 'FromN'
@@ -186,12 +186,12 @@ object frmMain: TfrmMain
       end>
   end
   object FDPhysDSDriverLink1: TFDPhysDSDriverLink
-    Left = 272
-    Top = 232
+    Left = 208
+    Top = 176
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 272
-    Top = 288
+    Left = 200
+    Top = 240
   end
 end
