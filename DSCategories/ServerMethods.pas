@@ -13,7 +13,7 @@ uses System.SysUtils, System.Classes, System.Json,
 type
   TCategoriesMethods = class(TDSServerModule)
     AdventureworksConnection: TFDConnection;
-    ProductcategoryTable: TFDQuery;
+    AdventureWorksTable: TFDQuery;
   private
     { Private declarations }
   public
@@ -35,14 +35,14 @@ implementation
 
 function TCategoriesMethods.GetCategories(query: String): TDataset;
 begin
-  with ProductcategoryTable do begin
+  with AdventureWorksTable do begin
     if Active then Close;
     SQL.Clear;
     SQL.Add(query);
     Open;
   end;
 
-  result := ProductcategoryTable;
+  result := AdventureWorksTable;
 end;
 
 end.

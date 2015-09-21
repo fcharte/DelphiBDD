@@ -11,16 +11,19 @@ uses
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, System.Rtti, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
-  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid;
+  IPPeerClient,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid,
+  FireDAC.FMXUI.Wait, FireDAC.Comp.UI;
 
 type
   TfrmMain = class(TForm)
-    FDConnection1: TFDConnection;
-    FDStoredProc1: TFDStoredProc;
     Grid1: TGrid;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    MyserviceConnection: TFDConnection;
+    GetcategoriesProc: TFDStoredProc;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
   private
     { Private declarations }
   public

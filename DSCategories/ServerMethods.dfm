@@ -6,14 +6,14 @@ object CategoriesMethods: TCategoriesMethods
     Params.Strings = (
       'ConnectionDef=AdventureWorks')
     LoginPrompt = False
-    Left = 58
+    Left = 74
     Top = 38
   end
-  object ProductcategoryTable: TFDQuery
+  object AdventureWorksTable: TFDQuery
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')
-    Left = 58
-    Top = 86
+    Left = 74
+    Top = 102
   end
 end
