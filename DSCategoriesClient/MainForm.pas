@@ -13,7 +13,7 @@ uses
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   IPPeerClient,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Grid,
-  FireDAC.FMXUI.Wait, FireDAC.Comp.UI;
+  FireDAC.FMXUI.Wait, FireDAC.Comp.UI, FMX.StdCtrls, FMX.Controls.Presentation;
 
 type
   TfrmMain = class(TForm)
@@ -24,6 +24,8 @@ type
     MyserviceConnection: TFDConnection;
     GetcategoriesProc: TFDStoredProc;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    Panel1: TPanel;
+    btnApplyChanges: TButton;
   private
     { Private declarations }
   public

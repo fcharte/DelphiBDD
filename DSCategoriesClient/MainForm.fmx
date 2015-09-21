@@ -2,34 +2,50 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Form12'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 332
+  ClientWidth = 568
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Grid1: TGrid
     Align = Client
-    Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 568.000000000000000000
+    Size.Height = 291.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     RowCount = 6
     RowHeight = 21.000000000000000000
-    Viewport.Width = 636.000000000000000000
-    Viewport.Height = 455.000000000000000000
+    Viewport.Width = 564.000000000000000000
+    Viewport.Height = 266.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 568.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object btnApplyChanges: TButton
+      Position.X = 232.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Aplicar cambios'
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = GetcategoriesProc
     ScopeMappings = <>
-    Left = 288
-    Top = 328
+    Left = 216
+    Top = 240
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 428
-    Top = 325
+    Left = 316
+    Top = 181
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
@@ -42,15 +58,15 @@ object frmMain: TfrmMain
       'ConnectionDef=MyService')
     Connected = True
     LoginPrompt = False
-    Left = 101
-    Top = 243
+    Left = 69
+    Top = 179
   end
   object GetcategoriesProc: TFDStoredProc
     Active = True
     Connection = MyserviceConnection
     StoredProcName = 'TCategoriesMethods.GetCategories'
-    Left = 101
-    Top = 315
+    Left = 69
+    Top = 235
     ParamData = <
       item
         Name = 'query'
@@ -69,7 +85,7 @@ object frmMain: TfrmMain
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
-    Left = 304
-    Top = 224
+    Left = 216
+    Top = 176
   end
 end

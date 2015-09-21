@@ -1,12 +1,12 @@
 ﻿[Grid1]
-Coordinates=132,10,41,51
+Coordinates=40,30,41,51
 Visible=True
 
 []
 Coordinates=131,133,90,33
 
 [BindSourceDB1]
-Coordinates=122,80,93,141
+Coordinates=150,30,93,141
 
 [BindingsList1]
 Coordinates=141,87,82,33
@@ -20,4 +20,10 @@ Coordinates=122,150,120,33
 
 [FDGUIxWaitCursor1]
 Coordinates=0,0,113,33
+
+[Panel1]
+Coordinates=100,12,47,33
+
+[btnApplyChanges]
+Coordinates=81,100,102,51
 
