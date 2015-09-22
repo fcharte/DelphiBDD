@@ -64,7 +64,9 @@ object frmMain: TfrmMain
   end
   object GetcategoriesProc: TFDStoredProc
     Active = True
+    CachedUpdates = True
     Connection = MyserviceConnection
+    UpdateOptions.UpdateTableName = 'Production.ProductCategory'
     StoredProcName = 'TCategoriesMethods.GetCategories'
     Left = 69
     Top = 235

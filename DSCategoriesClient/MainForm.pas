@@ -40,10 +40,12 @@ implementation
 
 {$R *.fmx}
 
+uses ClientClassesUnit1, ClientModuleUnit1;
+
 procedure TfrmMain.btnApplyChangesClick(Sender: TObject);
 begin
   GetcategoriesProc.FilterChanges := [rtModified, rtInserted, rtDeleted];
-  ApplychangesProc.Params['data'] := GetcategoriesProc.Delta;
+  ClientModule1.CategoriesMethodsClient.ApplyChanges(GetcategoriesProc);
 end;
 
 end.

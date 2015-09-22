@@ -19,7 +19,7 @@ type
   public
     { Public declarations }
     function GetCategories(query: String): TDataset;
-    function ApplyChanges(data: TDataSet): Integer;
+    function ApplyChanges(Delta: TDataSet): Integer;
   end;
 
 implementation
@@ -34,11 +34,15 @@ implementation
 
 { TCategoriesMethods }
 
-function TCategoriesMethods.ApplyChanges(Data: TDataSet): Integer;
+function TCategoriesMethods.ApplyChanges(Delta: TDataSet): Integer;
 begin
-  with AdventureWorksTable do begin
-    Data := (Data as TFDStoredProc).Delta;
-    result := ApplyUpdates;
+  with (Delta As TFDStoredProc) do
+  begin
+    Open;
+    AdventureWorksTable.Data := Delta;
+    AdventureWorksTable.Open;
+    result := AdventureWorksTable.ApplyUpdates;
+    AdventureWorksTable.Close;
   end;
 end;
 
