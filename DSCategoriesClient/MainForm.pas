@@ -26,6 +26,7 @@ type
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     Panel1: TPanel;
     btnApplyChanges: TButton;
+    procedure btnApplyChangesClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,5 +39,11 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TfrmMain.btnApplyChangesClick(Sender: TObject);
+begin
+  GetcategoriesProc.FilterChanges := [rtModified, rtInserted, rtDeleted];
+  ApplychangesProc.Params['data'] := GetcategoriesProc.Delta;
+end;
 
 end.

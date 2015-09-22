@@ -24,7 +24,7 @@ object frmMain: TfrmMain
     Size.Width = 568.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 7
+    TabOrder = 6
     object btnApplyChanges: TButton
       Position.X = 232.000000000000000000
       Position.Y = 8.000000000000000000
@@ -33,6 +33,7 @@ object frmMain: TfrmMain
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'Aplicar cambios'
+      OnClick = btnApplyChangesClick
     end
   end
   object BindSourceDB1: TBindSourceDB
