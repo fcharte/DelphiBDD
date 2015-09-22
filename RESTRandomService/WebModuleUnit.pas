@@ -50,12 +50,12 @@ implementation
 
 {$R *.dfm}
 
-uses ServerMethodsUnit1, Web.WebReq;
+uses ServerMethodsUnit, Web.WebReq;
 
 procedure TWebModule1.DSServerClass1GetClass(
   DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
 begin
-  PersistentClass := ServerMethodsUnit1.TServerMethods1;
+  PersistentClass := ServerMethodsUnit.TServerMethods1;
 end;
 
 procedure TWebModule1.ServerFunctionInvokerHTMLTag(Sender: TObject; Tag: TTag;
