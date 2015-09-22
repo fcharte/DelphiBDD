@@ -55,7 +55,7 @@ uses ServerMethodsUnit, Web.WebReq;
 procedure TWebModule1.DSServerClass1GetClass(
   DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
 begin
-  PersistentClass := ServerMethodsUnit.TServerMethods1;
+  PersistentClass := ServerMethodsUnit.TRandomMethods;
 end;
 
 procedure TWebModule1.ServerFunctionInvokerHTMLTag(Sender: TObject; Tag: TTag;

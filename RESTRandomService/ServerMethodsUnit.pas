@@ -6,7 +6,7 @@ uses System.SysUtils, System.Classes, Datasnap.DSServer, Datasnap.DSAuth;
 
 type
 {$METHODINFO ON}
-  TServerMethods1 = class(TComponent)
+  TRandomMethods = class(TComponent)
   private
     { Private declarations }
   public
@@ -19,7 +19,7 @@ implementation
 
 { TServerMethods1 }
 
-function TServerMethods1.NextRand(FromN, ToN: integer): integer;
+function TRandomMethods.NextRand(FromN, ToN: integer): integer;
 begin
   Result :=  Random(ToN-FromN) + FromN;
 end;
