@@ -141,6 +141,9 @@
         <Projects Include="DSCategoriesClient\DSCategoriesClient.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="RESTRandomService\RESTRandomService.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -563,14 +566,23 @@
     <Target Name="DSCategoriesClient:Make">
         <MSBuild Projects="DSCategoriesClient\DSCategoriesClient.dproj" Targets="Make"/>
     </Target>
+    <Target Name="RESTRandomService">
+        <MSBuild Projects="RESTRandomService\RESTRandomService.dproj"/>
+    </Target>
+    <Target Name="RESTRandomService:Clean">
+        <MSBuild Projects="RESTRandomService\RESTRandomService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RESTRandomService:Make">
+        <MSBuild Projects="RESTRandomService\RESTRandomService.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="MicroClassicProject;HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection;CSOffline;CSSeleccion;CSPaginate;CSUpdate;Agregados;CSFuncionSQL;CSStoredProc;CSScript;CSTransaction;CSChangeNotification;CSChangeAlerter;CSCachedUpdates;CSReconcile;CSCentralizedCachedUpdates;CSInterBase;EnumeratedType;SubrangeType;ArrayType;RegisterType;SetType;MethodParameters;AnonymousMethods;GenericTypes;AutoComplete;BDEProject;JSONDoc;RandomService;RandomClient;DSCategories;DSCategoriesClient"/>
+        <CallTarget Targets="MicroClassicProject;HolaFireDAC;HerramientasEntorno;GUIconVCL;GUIconFMX;VCLLiveBindings;MaestroDetalle;IBEmbebido;MSExcel;DatosCSV;BDDMemoria;UnicodeBDD;TiposUnicode;Codificaciones;CodArchivo;CSConnection;CSOffline;CSSeleccion;CSPaginate;CSUpdate;Agregados;CSFuncionSQL;CSStoredProc;CSScript;CSTransaction;CSChangeNotification;CSChangeAlerter;CSCachedUpdates;CSReconcile;CSCentralizedCachedUpdates;CSInterBase;EnumeratedType;SubrangeType;ArrayType;RegisterType;SetType;MethodParameters;AnonymousMethods;GenericTypes;AutoComplete;BDEProject;JSONDoc;RandomService;RandomClient;DSCategories;DSCategoriesClient;RESTRandomService"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="MicroClassicProject:Clean;HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean;CSOffline:Clean;CSSeleccion:Clean;CSPaginate:Clean;CSUpdate:Clean;Agregados:Clean;CSFuncionSQL:Clean;CSStoredProc:Clean;CSScript:Clean;CSTransaction:Clean;CSChangeNotification:Clean;CSChangeAlerter:Clean;CSCachedUpdates:Clean;CSReconcile:Clean;CSCentralizedCachedUpdates:Clean;CSInterBase:Clean;EnumeratedType:Clean;SubrangeType:Clean;ArrayType:Clean;RegisterType:Clean;SetType:Clean;MethodParameters:Clean;AnonymousMethods:Clean;GenericTypes:Clean;AutoComplete:Clean;BDEProject:Clean;JSONDoc:Clean;RandomService:Clean;RandomClient:Clean;DSCategories:Clean;DSCategoriesClient:Clean"/>
+        <CallTarget Targets="MicroClassicProject:Clean;HolaFireDAC:Clean;HerramientasEntorno:Clean;GUIconVCL:Clean;GUIconFMX:Clean;VCLLiveBindings:Clean;MaestroDetalle:Clean;IBEmbebido:Clean;MSExcel:Clean;DatosCSV:Clean;BDDMemoria:Clean;UnicodeBDD:Clean;TiposUnicode:Clean;Codificaciones:Clean;CodArchivo:Clean;CSConnection:Clean;CSOffline:Clean;CSSeleccion:Clean;CSPaginate:Clean;CSUpdate:Clean;Agregados:Clean;CSFuncionSQL:Clean;CSStoredProc:Clean;CSScript:Clean;CSTransaction:Clean;CSChangeNotification:Clean;CSChangeAlerter:Clean;CSCachedUpdates:Clean;CSReconcile:Clean;CSCentralizedCachedUpdates:Clean;CSInterBase:Clean;EnumeratedType:Clean;SubrangeType:Clean;ArrayType:Clean;RegisterType:Clean;SetType:Clean;MethodParameters:Clean;AnonymousMethods:Clean;GenericTypes:Clean;AutoComplete:Clean;BDEProject:Clean;JSONDoc:Clean;RandomService:Clean;RandomClient:Clean;DSCategories:Clean;DSCategoriesClient:Clean;RESTRandomService:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="MicroClassicProject:Make;HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make;CSOffline:Make;CSSeleccion:Make;CSPaginate:Make;CSUpdate:Make;Agregados:Make;CSFuncionSQL:Make;CSStoredProc:Make;CSScript:Make;CSTransaction:Make;CSChangeNotification:Make;CSChangeAlerter:Make;CSCachedUpdates:Make;CSReconcile:Make;CSCentralizedCachedUpdates:Make;CSInterBase:Make;EnumeratedType:Make;SubrangeType:Make;ArrayType:Make;RegisterType:Make;SetType:Make;MethodParameters:Make;AnonymousMethods:Make;GenericTypes:Make;AutoComplete:Make;BDEProject:Make;JSONDoc:Make;RandomService:Make;RandomClient:Make;DSCategories:Make;DSCategoriesClient:Make"/>
+        <CallTarget Targets="MicroClassicProject:Make;HolaFireDAC:Make;HerramientasEntorno:Make;GUIconVCL:Make;GUIconFMX:Make;VCLLiveBindings:Make;MaestroDetalle:Make;IBEmbebido:Make;MSExcel:Make;DatosCSV:Make;BDDMemoria:Make;UnicodeBDD:Make;TiposUnicode:Make;Codificaciones:Make;CodArchivo:Make;CSConnection:Make;CSOffline:Make;CSSeleccion:Make;CSPaginate:Make;CSUpdate:Make;Agregados:Make;CSFuncionSQL:Make;CSStoredProc:Make;CSScript:Make;CSTransaction:Make;CSChangeNotification:Make;CSChangeAlerter:Make;CSCachedUpdates:Make;CSReconcile:Make;CSCentralizedCachedUpdates:Make;CSInterBase:Make;EnumeratedType:Make;SubrangeType:Make;ArrayType:Make;RegisterType:Make;SetType:Make;MethodParameters:Make;AnonymousMethods:Make;GenericTypes:Make;AutoComplete:Make;BDEProject:Make;JSONDoc:Make;RandomService:Make;RandomClient:Make;DSCategories:Make;DSCategoriesClient:Make;RESTRandomService:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

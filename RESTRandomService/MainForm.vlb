@@ -1,0 +1,15 @@
+﻿[ButtonStart]
+Coordinates=66,10,70,51
+
+[EditPort]
+Coordinates=146,10,54,51
+
+[ButtonStop]
+Coordinates=210,10,70,51
+
+[Label1]
+Coordinates=10,10,46,51
+
+[ButtonOpenBrowser]
+Coordinates=10,71,115,51
+
