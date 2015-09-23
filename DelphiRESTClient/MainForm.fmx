@@ -8,4 +8,56 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object RESTRand: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://localhost:8080/datasnap/rest/TRandomMethods/Rand/10/50'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 72
+    Top = 104
+  end
+  object RESTRandRequest: TRESTRequest
+    Client = RESTRand
+    Params = <>
+    Response = RESTRandResponse
+    SynchronizedEvents = False
+    Left = 160
+    Top = 104
+  end
+  object RESTRandResponse: TRESTResponse
+    Left = 288
+    Top = 104
+  end
+  object RESTSeed: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://localhost:8080/datasnap/rest/TRandomMethods/Rand'
+    ContentType = 'application/x-www-form-urlencoded'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 72
+    Top = 192
+  end
+  object RESTSeedRequest: TRESTRequest
+    Client = RESTSeed
+    Method = rmPOST
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        name = 'seed'
+        Value = '5'
+      end>
+    Response = RESTSeedResponse
+    SynchronizedEvents = False
+    Left = 168
+    Top = 192
+  end
+  object RESTSeedResponse: TRESTResponse
+    ContentType = 'text/html'
+    Left = 280
+    Top = 192
+  end
 end
