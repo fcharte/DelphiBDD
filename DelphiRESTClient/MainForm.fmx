@@ -8,11 +8,31 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object btnRand: TButton
+    Position.X = 48.000000000000000000
+    Position.Y = 264.000000000000000000
+    TabOrder = 6
+    Text = 'Rand'
+    OnClick = btnRandClick
+  end
+  object lblRand: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 296.000000000000000000
+    Text = 'lblRand'
+  end
   object RESTRand: TRESTClient
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'UTF-8, *;q=0.8'
-    BaseURL = 'http://localhost:8080/datasnap/rest/TRandomMethods/Rand/10/50'
-    Params = <>
+    BaseURL = 'http://localhost:8080/datasnap/rest/TRandomMethods'
+    Params = <
+      item
+        name = 'FromN'
+        Value = '50'
+      end
+      item
+        name = 'ToN'
+        Value = '100'
+      end>
     HandleRedirects = True
     RaiseExceptionOn500 = False
     Left = 72
@@ -20,13 +40,27 @@ object frmMain: TfrmMain
   end
   object RESTRandRequest: TRESTRequest
     Client = RESTRand
-    Params = <>
+    Params = <
+      item
+        Kind = pkURLSEGMENT
+        name = 'FromN'
+        Options = [poAutoCreated]
+        Value = '50'
+      end
+      item
+        Kind = pkURLSEGMENT
+        name = 'ToN'
+        Options = [poAutoCreated]
+        Value = '100'
+      end>
+    Resource = 'Rand/{FromN}/{ToN}'
     Response = RESTRandResponse
     SynchronizedEvents = False
     Left = 160
     Top = 104
   end
   object RESTRandResponse: TRESTResponse
+    ContentType = 'text/html'
     Left = 288
     Top = 104
   end
