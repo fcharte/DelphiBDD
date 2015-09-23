@@ -29,5 +29,36 @@
         <h1>Haga clic en el servicio a invocar</h1>
       </div>
     </div>
+    <script>
+      $('#RandGET').click(function() {
+        var min = $("#MinValue").val();
+        var max = $("#MaxValue").val();
+
+        $.ajax({
+          type: "GET",
+          url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + min + "/" + max,
+          success: function(data) {
+            alert(JSON.parse(data).result);
+          }
+        });
+       });
+
+      $('#RandPOST').click(function() {
+        var seedValue = $("#SeedValue").val();
+        var form = new FormData();
+        form.append('seed', seedValue);
+
+        $.ajax({
+          type: "POST",
+          url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + seedValue,
+          contentType: false,
+          processData: false,
+          data: form,
+          success: function(data) {
+            alert(JSON.parse(data).result);
+          }
+        });
+       });
+    </script>
   </body>
 </html>
