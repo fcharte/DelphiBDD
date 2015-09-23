@@ -17,6 +17,11 @@ object WebModule1: TWebModule1
       Name = 'DefaultAction'
       PathInfo = '/'
       OnAction = WebModuleDefaultAction
+    end
+    item
+      Name = 'RandServiceInvoker'
+      PathInfo = '/RandServiceInvoker'
+      Producer = RandServiceInvoker
     end>
   BeforeDispatch = WebModuleBeforeDispatch
   Height = 333
@@ -101,5 +106,10 @@ object WebModule1: TWebModule1
     Server = DSServer1
     Left = 208
     Top = 248
+  end
+  object RandServiceInvoker: TPageProducer
+    HTMLFile = 'C:\DelphiBDD\RESTjQueryMobile\RESTClient.htm'
+    Left = 288
+    Top = 184
   end
 end

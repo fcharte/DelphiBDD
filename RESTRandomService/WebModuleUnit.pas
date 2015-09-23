@@ -21,6 +21,7 @@ type
     WebFileDispatcher1: TWebFileDispatcher;
     DSProxyGenerator1: TDSProxyGenerator;
     DSServerMetaDataProvider1: TDSServerMetaDataProvider;
+    RandServiceInvoker: TPageProducer;
     procedure DSServerClass1GetClass(DSServerClass: TDSServerClass;
       var PersistentClass: TPersistentClass);
     procedure ServerFunctionInvokerHTMLTag(Sender: TObject; Tag: TTag;

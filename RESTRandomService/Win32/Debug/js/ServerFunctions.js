@@ -1,6 +1,5 @@
-﻿// 
+// 
 // Created by the DataSnap proxy generator.
-// 23/09/2015 15:40:04
 // 
 
 function DSAdmin(connectionInfo)
@@ -616,45 +615,21 @@ function DSAdmin(connectionInfo)
   };
 }
 
-function TRandomMethods(connectionInfo)
+function TServerMethods1(connectionInfo)
 {
-  this.executor = new ServerFunctionExecutor("TRandomMethods",connectionInfo);
+  this.executor = new ServerFunctionExecutor("TServerMethods1",connectionInfo);
 
   /*
-   * @param FromN [in] - Type on server: Integer
-   * @param ToN [in] - Type on server: Integer
-   * @return result - Type on server: Integer
+   * @param Value [in] - Type on server: string
+   * @return result - Type on server: string
    */
-  this.Rand = function(FromN, ToN) {
-    var returnObject = this.executor.executeMethod('Rand', "GET", [FromN, ToN], arguments[2], true, arguments[3], arguments[4]);
-    if (arguments[2] == null) {
-      if (returnObject != null && returnObject.result != null && isArray(returnObject.result)) {
-        var resultArray = returnObject.result;
-        var resultObject = new Object();
-        resultObject.FromN = FromN;
-        resultObject.ToN = ToN;
-        resultObject.result = resultArray[0];
-        return resultObject;
-      }
-      return returnObject;
-    }
-  };
-
-  this.Rand_URL = function(FromN, ToN) {
-    return this.executor.getMethodURL("Rand", "GET", [FromN, ToN], arguments[2])[0];
-  };
-
-  /*
-   * @param seed [in] - Type on server: Integer
-   * @return result - Type on server: Integer
-   */
-  this.updateRand = function(seed) {
-    var returnObject = this.executor.executeMethod('Rand', "POST", [seed], arguments[1], true, arguments[2], arguments[3]);
+  this.EchoString = function(Value) {
+    var returnObject = this.executor.executeMethod("EchoString", "GET", [Value], arguments[1], true, arguments[2], arguments[3]);
     if (arguments[1] == null) {
       if (returnObject != null && returnObject.result != null && isArray(returnObject.result)) {
         var resultArray = returnObject.result;
         var resultObject = new Object();
-        resultObject.seed = seed;
+        resultObject.Value = Value;
         resultObject.result = resultArray[0];
         return resultObject;
       }
@@ -662,13 +637,35 @@ function TRandomMethods(connectionInfo)
     }
   };
 
-  this.updateRand_URL = function(seed) {
-    return this.executor.getMethodURL("Rand", "POST", [seed], arguments[1])[0];
+  this.EchoString_URL = function(Value) {
+    return this.executor.getMethodURL("EchoString", "GET", [Value], arguments[1])[0];
+  };
+
+  /*
+   * @param Value [in] - Type on server: string
+   * @return result - Type on server: string
+   */
+  this.ReverseString = function(Value) {
+    var returnObject = this.executor.executeMethod("ReverseString", "GET", [Value], arguments[1], true, arguments[2], arguments[3]);
+    if (arguments[1] == null) {
+      if (returnObject != null && returnObject.result != null && isArray(returnObject.result)) {
+        var resultArray = returnObject.result;
+        var resultObject = new Object();
+        resultObject.Value = Value;
+        resultObject.result = resultArray[0];
+        return resultObject;
+      }
+      return returnObject;
+    }
+  };
+
+  this.ReverseString_URL = function(Value) {
+    return this.executor.getMethodURL("ReverseString", "GET", [Value], arguments[1])[0];
   };
 }
 
 var JSProxyClassList = {
   "DSAdmin": ["GetPlatformName","ClearResources","FindPackages","FindClasses","FindMethods","CreateServerClasses","DropServerClasses","CreateServerMethods","DropServerMethods","GetServerClasses","ListClasses","DescribeClass","ListMethods","DescribeMethod","GetServerMethods","GetServerMethodParameters","GetDatabaseConnectionProperties","GetDSServerName","ConsumeClientChannel","ConsumeClientChannelTimeout","CloseClientChannel","RegisterClientCallbackServer","UnregisterClientCallback","BroadcastToChannel","BroadcastObjectToChannel","NotifyCallback","NotifyObject"],
-  "TRandomMethods": ["Rand","updateRand"]
+  "TServerMethods1": ["EchoString","ReverseString"]
 };
 
