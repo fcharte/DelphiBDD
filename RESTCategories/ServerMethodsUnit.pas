@@ -22,6 +22,7 @@ type
     { Private declarations }
   public
     function GetProductCategories: TFDJSONDataSets;
+    procedure ApplyChangesProductCategories(DeltaList: TFDJSONDeltas);
   end;
 {$METHODINFO OFF}
 
@@ -33,6 +34,14 @@ implementation
 
 
 { TServerMethods1 }
+
+procedure TProductInfo.ApplyChangesProductCategories(DeltaList: TFDJSONDeltas);
+var
+  listChanges: IFDJSONDeltasApplyUpdates;
+begin
+  listChanges := TFDJSONDeltasApplyUpdates.Create(DeltaList);
+  listChanges.ApplyUpdates('Production.ProductCategory', ProductcategoryTable.Command);
+end;
 
 function TProductInfo.GetProductCategories: TFDJSONDataSets;
 var
