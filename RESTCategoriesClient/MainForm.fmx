@@ -12,13 +12,30 @@ object frmMain: TfrmMain
   object Grid1: TGrid
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 415.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     RowCount = 100
     RowHeight = 21.000000000000000000
     Viewport.Width = 636.000000000000000000
-    Viewport.Height = 455.000000000000000000
+    Viewport.Height = 390.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object btnAplicarCambios: TButton
+      Position.X = 280.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Aplicar cambios'
+      OnClick = btnAplicarCambiosClick
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule2.ProductCategoryTable

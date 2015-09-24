@@ -40,7 +40,7 @@ var
   listChanges: IFDJSONDeltasApplyUpdates;
 begin
   listChanges := TFDJSONDeltasApplyUpdates.Create(DeltaList);
-  listChanges.ApplyUpdates('Production.ProductCategory', ProductcategoryTable.Command);
+  listChanges.ApplyUpdates('ProductcategoryTable', ProductcategoryTable.Command);
 end;
 
 function TProductInfo.GetProductCategories: TFDJSONDataSets;

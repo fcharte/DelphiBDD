@@ -15,3 +15,9 @@ Coordinates=10,10,173,69
 [BindingsList1]
 Coordinates=236,1,82,33
 
+[Panel1]
+Coordinates=202,1,47,33
+
+[btnAplicarCambios]
+Coordinates=202,53,108,51
+

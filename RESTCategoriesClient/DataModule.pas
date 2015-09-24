@@ -17,6 +17,7 @@ type
     { Private declarations }
   public
     procedure GetProductCategories;
+    procedure ApplyChangesProduct;
   end;
 
 var
@@ -27,6 +28,15 @@ uses  Data.FireDACJSONReflect, ClientClassesUnit1, ClientModuleUnit1;
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TDataModule2.ApplyChangesProduct;
+var
+  listChanges: TFDJSONDeltas;
+begin
+  listChanges := TFDJSONDeltas.Create;
+  TFDJSONDeltasWriter.ListAdd(listChanges, 'ProductcategoryTable', ProductDataModule.ProductCategoryTable);
+  ClientModule1.ProductInfoClient.ApplyChangesProductCategories(listChanges);
+end;
 
 procedure TDataModule2.GetProductCategories;
 var
