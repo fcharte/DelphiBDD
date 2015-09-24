@@ -1,64 +1,67 @@
+<!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Cliente REST jQuery Mobile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
-  <body>
-    <div id="pageone" data-role="page">
-      <div data-role="header">
-        <h1>Rand REST Services</h1>
+<body>
+<div id="pageone" data-role="page">
+  <div data-role="header">
+    <h1>Rand REST Services</h1>
+  </div>
+  <div class="ui-content" data-role="main">
+    <div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Rand - GET</h3>
+        <label for="MinValue">Límite inferior:</label><input type="text" name="MinValue" id="MinValue">
+        <label for="MaxValue">Límite superior:</label><input type="text" name="MaxValue" id="MaxValue">
+        <input type="button" value="Invocar" id="RandGET" name="RandGET">
       </div>
-      <div class="ui-content" data-role="main">
-        <div data-role="collapsibleset">
-          <div data-role="collapsible">
-            <h3>Rand - GET</h3>
-            <label for="MinValue">Límite inferior:</label><input type="text" name="MinValue" id="MinValue">
-            <label for="MaxValue">Límite superior:</label><input type="text" name="MaxValue" id="MaxValue">
-            <input type="button" value="Invocar" id="RandGET" name="RandGET">
-          </div>
-          <div data-role="collapsible">
-            <h3>Rand - POST</h3>
-            <label for="SeedValue">Semilla:</label><input type="text" name="SeedValue" id="SeedValue">
-            <input type="button" value="Invocar" id="RandPOST" name="RandPOST">
-          </div>
-        </div>
-      </div>
-      <div data-role="footer">
-        <h1>Haga clic en el servicio a invocar</h1>
+      <div data-role="collapsible">
+        <h3>Rand - POST</h3>
+        <label for="SeedValue">Semilla:</label><input type="text" name="SeedValue" id="SeedValue">
+        <input type="button" value="Invocar" id="RandPOST" name="RandPOST">
       </div>
     </div>
-    <script>
-      $('#RandGET').click(function() {
-        var min = $("#MinValue").val();
-        var max = $("#MaxValue").val();
+  </div>
+  <div data-role="footer">
+    <h1>Haga clic en el servicio a invocar</h1>
+  </div>
+</div>
+<script>
+$('#RandGET').click(function() {
+var min = $("#MinValue").val();
+var max = $("#MaxValue").val();
 
-        $.ajax({
-          type: "GET",
-          url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + min + "/" + max,
-          success: function(data) {
-            alert(JSON.parse(data).result);
-          }
-        });
-       });
+$.ajax({
+  type: "GET",
+  url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + min + "/" + max,
+  success: function(data) {
+    alert(JSON.parse(data).result);
+  }
+});
+});
 
-      $('#RandPOST').click(function() {
-        var seedValue = $("#SeedValue").val();
-        var form = new FormData();
-        form.append('seed', seedValue);
+$('#RandPOST').click(function() {
+var seedValue = $("#SeedValue").val();
+var form = new FormData();
+form.append('seed', seedValue);
 
-        $.ajax({
-          type: "POST",
-          url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + seedValue,
-          contentType: false,
-          processData: false,
-          data: form,
-          success: function(data) {
-            alert(JSON.parse(data).result);
-          }
-        });
-       });
-    </script>
+$.ajax({
+  type: "POST",
+  url: "http://localhost:8080/datasnap/rest/TRandomMethods/Rand/" + seedValue,
+  contentType: false,
+  processData: false,
+  data: form,
+  success: function(data) {
+    alert(JSON.parse(data).result);
+  }
+});
+});
+</script>
   </body>
 </html>

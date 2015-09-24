@@ -46,14 +46,14 @@ object WebModule1: TWebModule1
   object ServerFunctionInvoker: TPageProducer
     HTMLFile = 'Templates\ServerFunctionInvoker.html'
     OnHTMLTag = ServerFunctionInvokerHTMLTag
-    Left = 56
-    Top = 184
+    Left = 200
+    Top = 112
   end
   object ReverseString: TPageProducer
     HTMLFile = 'templates\ReverseString.html'
     OnHTMLTag = ServerFunctionInvokerHTMLTag
-    Left = 168
-    Top = 184
+    Left = 312
+    Top = 112
   end
   object WebFileDispatcher1: TWebFileDispatcher
     WebFileExtensions = <
@@ -92,24 +92,24 @@ object WebModule1: TWebModule1
         DirectoryMask = '\templates\*'
       end>
     RootDirectory = '.'
-    Left = 56
-    Top = 136
+    Left = 200
+    Top = 64
   end
   object DSProxyGenerator1: TDSProxyGenerator
     ExcludeClasses = 'DSMetadata'
     MetaDataProvider = DSServerMetaDataProvider1
     Writer = 'Java Script REST'
-    Left = 48
-    Top = 248
+    Left = 192
+    Top = 176
   end
   object DSServerMetaDataProvider1: TDSServerMetaDataProvider
     Server = DSServer1
-    Left = 208
-    Top = 248
+    Left = 320
+    Top = 176
   end
   object RandServiceInvoker: TPageProducer
     HTMLFile = 'C:\DelphiBDD\RESTjQueryMobile\RESTClient.htm'
-    Left = 288
-    Top = 184
+    Left = 48
+    Top = 232
   end
 end
