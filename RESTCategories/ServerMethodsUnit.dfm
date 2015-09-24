@@ -6,22 +6,22 @@ object ProductInfo: TProductInfo
     Params.Strings = (
       'ConnectionDef=AdventureWorks')
     LoginPrompt = False
-    Left = 92
-    Top = 81
+    Left = 52
+    Top = 33
   end
   object ProductcategoryTable: TFDQuery
     Connection = AdventureworksConnection
     SQL.Strings = (
       'SELECT * FROM AdventureWorks.Production.ProductCategory')
-    Left = 92
-    Top = 129
+    Left = 52
+    Top = 81
   end
   object FDStanStorageJSONLink1: TFDStanStorageJSONLink
-    Left = 320
-    Top = 80
+    Left = 200
+    Top = 32
   end
   object FDStanStorageBinLink1: TFDStanStorageBinLink
-    Left = 320
-    Top = 144
+    Left = 200
+    Top = 96
   end
 end

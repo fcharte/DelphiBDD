@@ -10,8 +10,8 @@ object DataModule2: TDataModule2
     ResourceOptions.SilentMode = True
     UpdateOptions.AssignedValues = [uvCheckRequired]
     UpdateOptions.CheckRequired = False
-    Left = 160
-    Top = 112
+    Left = 64
+    Top = 72
   end
   object FDStanStorageJSONLink1: TFDStanStorageJSONLink
     Left = 64
