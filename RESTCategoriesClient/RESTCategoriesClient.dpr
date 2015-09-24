@@ -3,14 +3,17 @@ program RESTCategoriesClient;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  MainForm in 'MainForm.pas' {Form12},
-  DataModule in 'DataModule.pas' {DataModule2: TDataModule};
+  MainForm in 'MainForm.pas' {frmMain},
+  DataModule in 'DataModule.pas' {DataModule2: TDataModule},
+  ClientClassesUnit1 in 'ClientClassesUnit1.pas',
+  ClientModuleUnit1 in 'ClientModuleUnit1.pas' {ClientModule1: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm12, Form12);
-  Application.CreateForm(TDataModule2, DataModule2);
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TDataModule2, ProductDataModule);
+  Application.CreateForm(TClientModule1, ClientModule1);
   Application.Run;
 end.
