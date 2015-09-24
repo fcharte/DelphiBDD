@@ -1,4 +1,4 @@
-object ServerMethods1: TServerMethods1
+object ProductInfo: TProductInfo
   OldCreateOrder = False
   Height = 266
   Width = 422

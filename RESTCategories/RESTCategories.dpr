@@ -6,7 +6,7 @@ uses
   Web.WebReq,
   IdHTTPWebBrokerBridge,
   MainForm in 'MainForm.pas' {Form1},
-  ServerMethodsUnit in 'ServerMethodsUnit.pas' {ServerMethods1: TDataModule},
+  ServerMethodsUnit in 'ServerMethodsUnit.pas' {ProductInfo: TDataModule},
   WebModuleUnit in 'WebModuleUnit.pas' {WebModule1: TWebModule};
 
 {$R *.res}

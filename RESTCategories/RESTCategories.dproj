@@ -90,7 +90,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="ServerMethodsUnit.pas">
-            <Form>ServerMethods1</Form>
+            <Form>ProductInfo</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
