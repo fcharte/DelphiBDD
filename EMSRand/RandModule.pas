@@ -12,6 +12,8 @@ type
   [ResourceName('Rand')]
   TRandResource1 = class(TDataModule)
   published
+    [ResourceSuffix('Random/{FromN}/{ToN}')]
+    procedure GetRandom(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
     procedure Get(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
     [ResourceSuffix('{item}')]
     procedure GetItem(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
@@ -37,6 +39,17 @@ begin
   LItem := ARequest.Params.Values['item'];
   // Sample code
   AResponse.Body.SetValue(TJSONString.Create('Rand ' + LItem), True)
+end;
+
+procedure TRandResource1.GetRandom(const AContext: TEndpointContext;
+  const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  FromN, ToN: Integer;
+begin
+  FromN := StrToInt(ARequest.Params.Values['FromN']);
+  ToN := StrToInt(ARequest.Params.Values['ToN']);
+
+  AResponse.Body.SetValue(TJSONNumber.Create(Random(ToN-FromN) + FromN), True);
 end;
 
 procedure TRandResource1.Post(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);

@@ -52,10 +52,6 @@ begin
 end;
 
 procedure TForm12.FormShow(Sender: TObject);
-var
-  I: Integer;
-  EMSClient: TEMSClientAPI;
-  userName: String;
 begin
   RefreshGroups;
   RefreshUsers;
