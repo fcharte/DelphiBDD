@@ -1,9 +1,9 @@
-object Form8: TForm8
+object Form12: TForm12
   Left = 0
   Top = 0
-  Caption = 'Form8'
-  ClientHeight = 495
-  ClientWidth = 654
+  Caption = 'Form12'
+  ClientHeight = 480
+  ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
