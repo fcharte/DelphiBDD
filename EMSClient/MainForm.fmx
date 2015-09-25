@@ -1,11 +1,66 @@
 object Form12: TForm12
   Left = 0
   Top = 0
-  Caption = 'Form12'
-  ClientHeight = 480
-  ClientWidth = 640
+  Caption = 'Cliente EMS'
+  ClientHeight = 286
+  ClientWidth = 379
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMasterStyle = 0
+  object lbGroups: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 117.000000000000000000
+    Viewport.Height = 109.000000000000000000
+    object Label1: TLabel
+      Position.Y = -24.000000000000000000
+      Text = 'Grupos'
+    end
+    object lbUsers: TListBox
+      Position.X = 140.000000000000000000
+      Position.Y = -4.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 117.000000000000000000
+      Viewport.Height = 109.000000000000000000
+      object Label2: TLabel
+        Position.Y = -24.000000000000000000
+        Text = 'Usuarios'
+      end
+    end
+  end
+  object BackendGroups1: TBackendGroups
+    Provider = EMSProvider1
+    Left = 216
+    Top = 160
+  end
+  object EMSProvider1: TEMSProvider
+    ApiVersion = '1'
+    URLHost = 'localhost'
+    URLPort = 8085
+    Left = 48
+    Top = 160
+  end
+  object BackendQuery1: TBackendQuery
+    Provider = EMSProvider1
+    BackendService = 'Groups'
+    Left = 136
+    Top = 160
+  end
 end
