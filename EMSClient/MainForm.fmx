@@ -63,4 +63,28 @@ object Form12: TForm12
     Left = 136
     Top = 160
   end
+  object BackendEndpoint1: TBackendEndpoint
+    Provider = EMSProvider1
+    Params = <>
+    Resource = 'Users'
+    Left = 152
+    Top = 232
+  end
+  object BackendUsers1: TBackendUsers
+    Provider = EMSProvider1
+    Left = 240
+    Top = 232
+  end
+  object BackendStorage1: TBackendStorage
+    Left = 320
+    Top = 232
+  end
+  object BackendAuth1: TBackendAuth
+    Provider = EMSProvider1
+    LoginPrompt = False
+    UserDetails = <>
+    DefaultAuthentication = Application
+    Left = 48
+    Top = 232
+  end
 end

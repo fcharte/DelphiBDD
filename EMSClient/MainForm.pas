@@ -10,7 +10,7 @@ uses
   REST.Backend.Providers, REST.Backend.ServiceComponents, FMX.Layouts,
   FMX.ListBox, Data.Bind.Components, Data.Bind.ObjectScope,
   REST.Backend.BindSource, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo,
-  FMX.StdCtrls;
+  FMX.StdCtrls, REST.Client, REST.Backend.EndPoint;
 
 type
   TForm12 = class(TForm)
@@ -21,6 +21,10 @@ type
     Label1: TLabel;
     lbUsers: TListBox;
     Label2: TLabel;
+    BackendEndpoint1: TBackendEndpoint;
+    BackendUsers1: TBackendUsers;
+    BackendStorage1: TBackendStorage;
+    BackendAuth1: TBackendAuth;
     procedure FormShow(Sender: TObject);
   private
     { Private declarations }
@@ -30,7 +34,6 @@ type
 
 var
   Form12: TForm12;
-  EMSClient: TEMSClientAPI;
 
 implementation
 
@@ -39,6 +42,8 @@ implementation
 procedure TForm12.FormShow(Sender: TObject);
 var
   I: Integer;
+  EMSClient: TEMSClientAPI;
+  userName: String;
 begin
   BackendQuery1.BackendService := 'Groups';
   BackendQuery1.Execute;
@@ -52,6 +57,10 @@ begin
   for I := 0 to Count-1 do
     lbUsers.Items.Add(Items[I].GetValue<String>('username'));
 
+  EMSClient := TEMSClientAPI.Create;
+  // Host y puerto del servidor
+  for userName in EMSClient.RetrieveUsersNames do
+    lbUsers.Items.Add(userName);
 end;
 
 end.
