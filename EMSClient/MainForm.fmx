@@ -44,24 +44,42 @@ object Form12: TForm12
         Text = 'Usuarios'
       end
     end
+    object edlGrupo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.Y = 120.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnGrupo: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Crear'
+      OnClick = btnGrupoClick
+    end
   end
   object BackendGroups1: TBackendGroups
     Provider = EMSProvider1
     Left = 216
-    Top = 160
+    Top = 176
   end
   object EMSProvider1: TEMSProvider
     ApiVersion = '1'
     URLHost = 'localhost'
     URLPort = 8085
     Left = 48
-    Top = 160
+    Top = 176
   end
   object BackendQuery1: TBackendQuery
     Provider = EMSProvider1
     BackendService = 'Groups'
     Left = 136
-    Top = 160
+    Top = 176
   end
   object BackendEndpoint1: TBackendEndpoint
     Provider = EMSProvider1
